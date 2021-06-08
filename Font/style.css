@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+/*the margin of whole*/
+.all_fonts,
+.instruction,
+.vertical_tab_font,
+.all_for_font,
+.fontShortHand,
+.link_to_website_reference,
+.wrapper {
+  margin: 10px 20px;
+}
+.vertical_tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+.vertical_tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  stransition: 0.3s;
+}
+
+.vertical_tab button:hover {
+  background-color: #ddd;
+}
+.vertical_tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+/*second_line*/
+.live_sample {
+  float: left;
+  margin-right: 5px;
+  width: 120px;
+}
+.to_show_the_font {
+  margin-top: 150px;
+}
+/*show*/
+.to_show_the_font,
+.show_font {
+  margin-bottom: 1em;
+}
+.show_font {
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  width: 80px;
+}
+.tar {
+  width: 40px;
+  text-align: right;
+}
+/*showed text*/
+.fontShortHand {
+  margin-top: 250px;
+}
+/**/
+.section {
+  width: 300px;
+  border: 1px solid #4d4e53;
+  border-radius: 2px;
+  padding: 10px 14px 10px 10px;
+  margin-bottom: 10px;
+}
