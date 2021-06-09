@@ -1,35 +1,92 @@
-/* Container needed to position the overlay. Adjust the width as needed */
+.all_circle {
+  display: flex;
+}
+
 .container {
   position: relative;
   width: 50%;
 }
-
-/* Make the image to responsive */
-.image {
-  width: 250px;
-  height: 250px;
+/* circle 1 */
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: #d6d5cf;
+  border-radius: 50%;
 }
 
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
+.overlay1 {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008cba;
+  background-color: #00ff00;
   overflow: hidden;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease;
 }
-
-/* When you mouse over the container, the overlay text will "zoom" in display */
-.container:hover .overlay {
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(214, 122, 127);
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(30, 100%, 50%);
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(30, 100%, 50%, 0.3);
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.overlay5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rebeccapurple;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.container:hover .overlay1,
+.container:hover .overlay2,
+.container:hover .overlay3,
+.container:hover .overlay4,
+.container:hover .overlay5 {
   transform: scale(1);
 }
 
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .text {
   color: white;
   font-size: 20px;

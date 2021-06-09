@@ -8,6 +8,7 @@
     <title>Color Test</title>
   </head>
   <body>
+    <hr />
     <div class="enter_color"></div>
     <hr />
     <label for="color">Enter a Valid Color value: </label>
@@ -17,10 +18,11 @@
 
     <script>
       const inputElem = document.querySelector("input");
-      console.log(inputElem);
+      //console.log(inputElem);
       const divElem = document.querySelector("div");
 
       function validTextColor(stringToTest) {
+        console.log(stringToTest); //red
         if (stringToTest === "") {
           return false;
         }
