@@ -1,0 +1,14 @@
+.box {
+  width: 600px;
+  height: 220px;
+  border: solid;
+  border-width: 0.2px;
+}
+
+.orora {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+}
