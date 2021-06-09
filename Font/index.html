@@ -393,18 +393,19 @@
 
 <!--------------------------------script for 2. vertical tap font-->
     <script>
-    
-      function openCity(evt, cityName) {
-        let i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
+      function openCity(evt, fontName) {
+        let tabcontent = document.getElementsByClassName("tabcontent");
+        let tablinks = document.getElementsByClassName("tablinks");
+        //no then display
+        for (let i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
+        document.getElementById(fontName).style.display = "block";
+
+        //add active background color
+        for (let i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
       }
 
@@ -412,7 +413,7 @@
       document.getElementById("defaultOpen").click();
     </script>
 
-<!--------------------------------script for live example font-->
+<!--------------------------------script for 3. live example font-->
     <script>
     let shortText="";
     // get the id name from click radio
@@ -454,7 +455,7 @@
    //最终执行
     setCss()
     </script>
-<!--------------------------------script for width-->
+<!--------------------------------script for 4. width-->
     <script>
     let section1=document.querySelector('.section1')
     let editable1=document.querySelector('.editable1')
