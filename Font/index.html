@@ -20,6 +20,8 @@
 
 
   <body>
+      <a href="file:///Users/estelle.wu/Desktop/css_html_doc_portpolio/Home/index.html#Home"><button>Back to Home</button></a>
+
     <!--0 all fonts-->
     <div class="all_fonts">
       <a href="https://devdocs.io/css-fonts/"><h2>All Fonts</h2></a>
@@ -163,6 +165,7 @@
 
 
     <!--3 form of live example of font-->
+    <!-- An HTML 'form' is used to collect user input. The user input is most often sent to a server for processing.  -->
     <form action="createShortHand()">
       <!--how to change style -->
     <div class="all_for_font">
@@ -316,76 +319,79 @@
 
 
     <!--4 weight display-->
-    <div class="wrapper">
-      <h2 style="color: blueviolet;">3. Weight Display</h2>
+    <h2 class="h2_four" style="color: blueviolet;">3. Weight Display</h2>
+    <div class="wrapper" >
       <!--demo1-->
       <div class="demo1">
-          <section class="section section1">
-              <div class="container container1"><p>Weight</p></div>
+          <section class="section section1"  style="text-align: center;">
+              <div class="container container1" ><p>Weight</p></div>
             </section>
-            <textarea class="playable-css1" cols="30" rows="10">
-                /* width range is from 55% to 100% */
-                .container1 * {
-                  font-stretch: 100%;
-                }
+            <textarea class="playable-css1" cols="30" rows="10" style="background-color: cornsilk; ">
+/* width range is from 55% to 100% */
+.container1 * {
+    font-stretch: 100%;
+    /*add some css here*/
+  }
             </textarea>
-            <textarea id="code1" class="playable-html1" cols="30" rows="10">
-                <div class="container container1">
-                    <p>Weight</p>
-                </div>
+            <textarea id="code1" class="playable-html1" cols="30" rows="10" style="background-color: lightcyan">
+<div class="container container1">
+  <p>Weight</p>
+</div>
             </textarea>
       </div>
       <!--demo2-->
-      <div class="demo2">
-          <section class="section section2">
-              <div class="container container2"><p>Weight</p></div>
+      <div class="demo2" >
+          <section class="section section2"  style="text-align: center;">
+              <div class="container container2"><p >Weight</p></div>
             </section>
-            <textarea class="playable-css2" cols="30" rows="10">
-                /* width range is an integer from 55 to 100 */
-                .container2 * {
-                  font-weight: 100;
-                }             
+            <textarea class="playable-css2" cols="30" rows="10" style="background-color: cornsilk;">
+/* width range is an integer from 55 to 100 */
+.container2 * {
+    font-weight: 100;
+    /*add some css here*/
+  }             
             </textarea>
-            <textarea id="code2" class="playable-html2" cols="30" rows="10">
-                <div class="container container2">
-                    <p>Weight</p>
-                </div>
+            <textarea id="code2" class="playable-html2" cols="30" rows="10" style="background-color: lightcyan">
+<div class="container container2">
+  <p>Weight</p>
+</div>
             </textarea>
       </div>
       <!--demo3-->
-      <div class="demo3" style="--text-vf-wght:100;">
-      <section class="section section3">
+      <div class="demo3" style="--text-vf-wght:100;" >
+      <section class="section section3"  style="text-align: center;">
         <div class="container container3"><p>Weight</p></div>
       </section>
-      <textarea class="playable-css3" cols="30" rows="10">
-          /* Adjusted with slider and custom property */
-          .container3 * {
-            font-weight: var(--text-vf-wght);
-          }
-        
+      <textarea class="playable-css3" cols="30" rows="10" style="background-color: cornsilk;">
+/* Adjusted with slider and custom property */
+.container3 * {
+    font-weight: var(--text-vf-wght);
+    /*add some css here*/
+}
       </textarea>
-      <textarea id="code3" class="playable-html3" cols="30" rows="10">
-          <div class="container container3">
-              <h1>Weight</h1>
-          </div>
+      <textarea id="code3" class="playable-html3" cols="30" rows="10" style="background-color: lightcyan">
+<div class="container container3">
+  <p>Weight</p>
+</div>
       </textarea>
+
       <!--control slider-->
       <div class="controls range-slider">
         <label for="controls__slider">Adjust Weight:</label>
         <input type="range" name="range-slider" id="text-vf-wght" class="controls--slider" value="100" min="100" max="1000">
       </div>
+      <!--reset button-->
+       <div class="displayable-buttons">
+        <input type="button" value="Reset" id="reset"  class="reset_button">
+    </div>
       </div>
+      
     </div>
-     <!--reset button-->
-    <div class="displayable-buttons">
-        <input type="button" value="Reset" id="reset">
-    </div>
-
-
+     
     <!-- 5 -->
 
 
-<!--------------------------------script for vertical tap font-->
+<!--------------------------------script for 2. vertical tap font-->
     <script>
     
       function openCity(evt, cityName) {

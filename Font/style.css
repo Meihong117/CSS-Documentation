@@ -14,9 +14,12 @@ body {
 .all_for_font,
 .fontShortHand,
 .link_to_website_reference,
+.h2_four,
 .wrapper {
   margin: 10px 20px;
 }
+
+/**/
 .vertical_tab {
   float: left;
   border: 1px solid #ccc;
@@ -80,11 +83,26 @@ body {
 .fontShortHand {
   margin-top: 250px;
 }
-/**/
+/* 3 */
 .section {
   width: 300px;
   border: 1px solid #4d4e53;
   border-radius: 2px;
   padding: 10px 14px 10px 10px;
   margin-bottom: 10px;
+}
+/* 4 */
+.section {
+  width: 150px;
+}
+.wrapper {
+  display: flex;
+  border-style: dotted;
+  border-width: 0.3px;
+}
+.reset_button {
+  height: 30px;
+  width: 90px;
+  font-size: 15px;
+  border-radius: 5px;
 }
