@@ -1,0 +1,22 @@
+**Chnage/Add/Replace ClassName:
+
+let dots = document.getElementsByClassName("demo");
+dots[i].className.replace(" active", "") : 
+
+1. To <change> all classes for an element and to replace all the existing classes with one or more new classes, 
+set the className attribute like this: 
+
+dots.className = "MyClass"; 
+
+2. To <add> an additional class to an element and to add the class to an element, without removing/affecting existing values, 
+append a space and the new classname, this way:
+
+dots.className += " MyClass";
+
+3. To <remove> a class from an element and to remove a single class to an element, without affecting other potential classes, 
+a simple regex replace is required like this:
+
+dots.className =dots.className.replace( "sth" , '' )
+
+** this.nextElementSibling
+The nextElementSibling property returns the element immediately following the specified element, in the same tree level.

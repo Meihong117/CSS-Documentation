@@ -1,0 +1,59 @@
+.background_scroll p {
+  background-image: url("city.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat, repeat-y;
+  overflow: auto;
+}
+/* Accordian */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+/* Bitmap */
+#bitmap {
+  width: 200px;
+  border: 30px solid;
+  padding: 20px;
+  margin: 30px;
+  border-image: url("city.jpg") /* source */ 27 / /* slice */ 36px 28px 18px 8px /
+    /* width */ 18px 14px 9px 4px /* outset */ round; /* repeat */
+}
+/* Gardient */
+#gradient {
+  width: 200px;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 10px 5px 5px red;
+}
+/* linear_gradient */
+#linear_gradient {
+  width: 200px;
+  border: 30px solid;
+  background-color: orange;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+  border-image-outset: 1.5; /* 1.5 × 1.4rem = 2.1rem */
+  padding: 20px;
+  margin: 30px;
+}

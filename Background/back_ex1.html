@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="back_ex1.css" />
+    <title>Background example1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="city.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="et.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="swan.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="sea.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="orora.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="whale.jpg" style="width:100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="city.jpg"
+            style="width:100%"
+            onclick="currentSlide(1)"
+            alt="City"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="et.jpg"
+            style="width:100%"
+            onclick="currentSlide(2)"
+            alt="Et"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="swan.jpg"
+            style="width:100%"
+            onclick="currentSlide(3)"
+            alt="Swan"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="sea.jpg"
+            style="width:100%"
+            onclick="currentSlide(4)"
+            alt="Sea"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="orora.jpg"
+            style="width:100%"
+            onclick="currentSlide(5)"
+            alt="Orora"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="whale.jpg"
+            style="width:100%"
+            onclick="currentSlide(6)"
+            alt="Whale"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //default=first page
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      //翻页 pre,next
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      // click demo显示相应的图片
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        //收到有变化大 className/Id
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        //from page 6 to page 1
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        //from page 1 to page 6
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        //不显示任何slides里的图片
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        //remove demo里 active classname
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+          //console.log(dots[i].className); //demo cursor
+        }
+        //显示图片 //dots class里加active //在caption里数显对应的名字
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
