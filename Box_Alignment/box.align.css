@@ -1,0 +1,123 @@
+/* 2. Align Content  */
+#container {
+  height: 200px;
+  width: 240px;
+  align-content: center;
+
+  background-color: #8c8c8c;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+}
+/* the div are selected by the div with id=container */
+div#container > div {
+  box-sizing: border-box;
+  border: 2px solid #8c8c8c;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#item1 {
+  background-color: #8cffa0;
+  min-height: 30px;
+}
+#item2 {
+  background-color: #a0c8ff;
+  min-height: 50px;
+}
+#item3 {
+  background-color: #ffa08c;
+  min-height: 40px;
+}
+#item4 {
+  background-color: #ffff8c;
+  min-height: 60px;
+}
+#item5 {
+  background-color: #ff8cff;
+  min-height: 70px;
+}
+#item6 {
+  background-color: #8cffff;
+  min-height: 50px;
+}
+.select {
+  font-size: 16px;
+}
+.row {
+  margin-top: 10px;
+}
+/* 4. Align Section */
+.align_self_section {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  width: 20%;
+  background: beige;
+}
+.self {
+  height: 60px;
+  background: cyan;
+  margin: 5px;
+}
+.self:nth-child(3) {
+  align-self: flex-end;
+  background: pink;
+}
+.self:nth-child(2) {
+  align-self: self-start;
+  background: yellow;
+}
+.self:nth-child(1) {
+  align-self: flex-start;
+  background: green;
+}
+/* 5.Gap */
+#flexbox > div {
+  border: 1px solid green;
+  background-color: lime;
+  flex: auto;
+}
+#grid > div {
+  border: 1px solid green;
+  background-color: lime;
+}
+/* 6.Justify Content */
+#justify_id > div {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #788cff, #b4c8ff);
+}
+/* 7. Place Content */
+#place_container {
+  display: flex;
+  height: 240px;
+  width: 240px;
+  flex-wrap: wrap;
+  background-color: #8c8c8c;
+  writing-mode: horizontal-tb; /* Can be changed in the live sample */
+  direction: ltr; /* Can be changed in the live sample */
+  place-content: flex-end center; /* Can be changed in the live sample */
+}
+
+#place_container > div {
+  border: 2px solid #8c8c8c;
+  width: 50px;
+  background-color: #a0c8ff;
+}
+
+.small {
+  font-size: 12px;
+  height: 40px;
+}
+
+.large {
+  font-size: 14px;
+  height: 50px;
+}
