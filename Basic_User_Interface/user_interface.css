@@ -1,0 +1,74 @@
+.default_caret {
+  caret-color: auto;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.custom_caret {
+  caret-color: red;
+}
+
+.para_caret {
+  caret-color: #5729e9;
+}
+/* Cursor */
+.cursor1 {
+  cursor: pointer;
+}
+
+.cursor2 {
+  cursor: wait;
+}
+.cursor3 {
+  cursor: crosshair;
+}
+.cursor4 {
+  cursor: zoom-in;
+}
+/* Pesoudo classes */
+.hover_button,
+.active_button {
+  font-size: 15px;
+}
+.hover_button:hover {
+  color: blueviolet;
+}
+.active_button:active {
+  color: blueviolet;
+}
+
+.target_para:target {
+  background-color: gold;
+  width: 50%;
+}
+.target_para:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: 0.25em;
+}
+
+.target_para:target i {
+  color: red;
+}
+/* resize */
+.resizable {
+  height: 300px;
+  width: 300px;
+  resize: both;
+  overflow: scroll;
+  border: 1px solid black;
+}
+/* user-select */
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.all_select {
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}

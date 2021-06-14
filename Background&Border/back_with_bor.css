@@ -1,7 +1,20 @@
+/* border vs outline */
+.outline1 {
+  border: 1px solid;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  /* width | style |  color*/
+  outline: 4px dotted #e73;
+  outline-offset: 4px;
+  background: bisque;
+}
+
 .background_scroll p {
   background-image: url("city.jpg");
   background-attachment: scroll;
-  background-repeat: no-repeat, repeat-y;
+  /* background-repeat: no-repeat, repeat-y; */
   overflow: auto;
 }
 /* Accordian */
