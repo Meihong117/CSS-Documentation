@@ -1,0 +1,95 @@
+CSS: Cascading Style Sheet
+具体看：https://blog.csdn.net/qq_31455841/article/details/108811894
+
+CSS 四种引入方式:
+1. 内联式
+	行内式是在标签的style属性中设定CSS样式,这种方式没有体现出CSS的优势,不推荐使用
+	<p style="color: red;font-size: 50px;text-align: center">我是内联式</p>
+
+2. 嵌入式
+<head>
+    <style>
+        p {
+              color: red;
+              font-size: 50px;
+              text-align: center
+         }
+     </style>
+</head>
+3. 导入式
+<head>
+    <meta charset="utf-8">
+    <style>
+        /*形式一：*/
+        @import "css/mystyle.css";
+        /*形式二：*/
+        @import url("css/mystyle.css");
+    </style>
+</head>
+
+4. 链接式（推荐使用）
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+导入式与链接式的区别
+	1. <link/>标签属于XHTML,@import是属于CSS2.1特有的,对于不兼容CSS2.1的浏览器来说是无效的
+	2. 导入式的缺点：
+	   导入式会在整个网页装载完后再装载CSS文件,因此这就导致了一个问题
+	   如果网页比较大则会儿出现先显示无样式的页面,闪烁一下之后,再出现网页的样式
+	   这是导入式固有的一个缺陷,用户体验差
+	3. 链接式的优点：
+	   使用链接式与导入式不同的是它会在网页文件主体装载前装载CSS文件
+	   因此显示出来的网页从一开始就是带样式效果的
+	   它不会象导入式那样先显示无样式的网页,然后再显示有样式的网页,这是链接式的优点
+------------------------------------------------------------------------------------------------------------------------
+2. 组合选择器
+2.1. 后代选择器（后代不仅仅是儿子,也包括孙子、重孙子）
+#id1 li p {
+            font-size: 50px;
+        }
+2.2. 子元素选择器（只会查找儿子）
+div>p {
+            color: red;
+        }
+
+2.3. 毗邻选择器（毗邻选择器只能选中紧跟其后的那个标签,不能选中被隔开的标签）
+h1+p {
+    font-size: 50px;
+    }
+2.4. 弟弟选择器（通用兄弟选择器选中的是指选择器后面的某个选择器选中的所有标签 无论有没有被隔开,都可以被选中）
+h1~p {
+            color: red;
+        }
+3.1. 交集选择器（交集选择器在企业开发中并不多见,了解即可。原因: p.part1 完全可以用.part1取代）
+p.part1 {
+            color: red;
+        }
+3.2. 并集选择器（给所有满足条件的标签设置属性）
+.part1,h1,a {
+            color: red;
+        }
+4. 序列选择器
+    1. 同级别
+        :first-child         同级别的第一个
+        :last-child    	     同级别的最后一个
+        :nth-child(n)        同级别的第n个
+        :nth-last-child(n)   同级别的倒数第n个
+
+    2. 同级别同类型
+        :first-of-type       同级别同类型的第一个
+        :last-of-type        同级别同类型的最后一个
+        :nth-of-type(n)      同级别同类型的第n个
+        :nth-last-of-type(n) 同级别同类型的倒数第n个
+
+    3. 唯一
+        :only-of-type        同类型的唯一一个
+        :only-child          同级别的唯一一个
+5. 属性选择器（根据指定的属性名称找到对应的标签,然后设置属性，该选择器,最常用于input标签）
+p[id] {
+        font-size: 30px;
+        }
+p[class="part1"] {
+            color: green;
+         }
