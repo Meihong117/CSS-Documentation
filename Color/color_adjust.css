@@ -1,0 +1,18 @@
+/* 2. color adjust */
+.color_adjust {
+  background-color: black;
+  background-image: linear-gradient(
+    rgba(0, 0, 180, 0.5),
+    rgba(70, 140, 220, 0.5)
+  );
+  color: white;
+  font: 24px "Helvetica", sans-serif;
+  width: 15rem;
+  height: 6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color-adjust: exact; /*to tell the browser not to make color or style adjustments to the box when rendering it.*/
+  /*color-adjust: economy*/
+}
