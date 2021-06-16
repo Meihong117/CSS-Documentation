@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="box.css" />
+    <title>Box Model</title>
+  </head>
+  <body>
+    <a
+      href="file:///Users/estelle.wu/Desktop/css_html_doc_portpolio/Home/index.html#Home"
+      ><button>Back to Home</button></a
+    >
+    <!-- 1. box model overall -->
+    <div class="box_model">
+      <h2>1. Box Model</h2>
+      <ol>
+        <a href="https://devdocs.io/css/css_box_model"
+          ><li>CSS Box Model: overflow/height/weigh/margin/padding</li></a
+        >
+        <a
+          href="https://devdocs.io/css/css_box_model/introduction_to_the_css_box_model"
+          ><li>CSS Box Model: Introduction to the CSS box model</li></a
+        >
+        <a href="https://devdocs.io/css/margin"
+          ><li>margin</li>
+          <ol>
+            <a href="https://devdocs.io/css/margin-bottom"
+              ><li>margin-bottom</li></a
+            >
+            <a href="https://devdocs.io/css/margin-left"
+              ><li>margin-left</li></a
+            >
+            <a href="https://devdocs.io/css/margin-right"
+              ><li>margin-right</li></a
+            >
+            <a href="https://devdocs.io/css/margin-top"><li>margin-top</li></a>
+          </ol></a
+        >
+        <a href="https://devdocs.io/css/padding"
+          ><li>padding</li>
+          <ol>
+            <a href="https://devdocs.io/css/padding-bottom"
+              ><li>padding-bottom</li></a
+            >
+            <a href="https://devdocs.io/css/padding-left"
+              ><li>padding-left</li></a
+            >
+            <a href="https://devdocs.io/css/padding-right"
+              ><li>padding-right</li></a
+            >
+            <a href="https://devdocs.io/css/padding-top"
+              ><li>padding-top</li></a
+            >
+          </ol></a
+        >
+      </ol>
+    </div>
+    <!-- 1.1 box-sizeing overall -->
+    <div class="box_size">
+      <h2>2. Box Sizing</h2>
+      <ol>
+        <a href="https://devdocs.io/css/aspect-ratio"><li>aspect-ratio</li></a>
+        <a href="https://devdocs.io/css/box-sizing"><li>box-sizing</li></a>
+        <a href="https://devdocs.io/css/column-width"><li>column-width</li></a>
+        <a href="https://devdocs.io/css/fit-content"
+          ><li>
+            fit-content: When used as laid out box size for width, height,
+            min-width, min-height, max-width and max-height
+          </li></a
+        >
+        <a href="https://devdocs.io/css/fit-content()"
+          ><li>fit-content()</li></a
+        >
+        <a href="https://devdocs.io/css/height"
+          ><li>height</li>
+          <ul>
+            <a href="https://devdocs.io/css/height"><li>max-height</li></a>
+            <a href="https://devdocs.io/css/height"><li>min-height</li></a>
+          </ul>
+        </a>
+        <a href="https://devdocs.io/css/height"
+          ><li>width</li>
+          <ul>
+            <a href="https://devdocs.io/css/height"><li>max-width</li></a>
+            <a href="https://devdocs.io/css/height"><li>min-width</li></a>
+          </ul>
+        </a>
+      </ol>
+    </div>
+    <!-- 3. margin -->
+    <div class="margin">
+      <h2>3. Margin</h2>
+    </div>
+    <!-- 2.1 margin-trim -->
+    <div class="margin_trip">
+      <h2>3.1 Margin-trim</h2>
+      <article>
+        In <span>English</span>, both "the" and "a/an" are articles, which
+        combine with nouns to form noun phrases. <span>Articles</span> typically
+        specify the grammatical definiteness of the noun phrase, but in many
+        languages, they carry additional grammatical information such as gender,
+        number, and case. Articles are part of a broader category called
+        determiners, which also include demonstratives, possessive determiners,
+        and quantifiers. In <span>interlinear</span> glossing, articles are
+        abbreviated as ART.
+      </article>
+    </div>
+    <!-- 4. padding -->
+    <div class="padding">
+      <h2>4. Padding</h2>
+    </div>
+    <!-- 5. aspect-ratio -->
+    <div class="sapect_ration">
+      <div class="text">Test the aspect-ratio(1:1).</div>
+    </div>
+    <!-- 6. box sizing -->
+    <div class="box_sizing">
+      <h2>6. Box Sizing</h2>
+      <div class="content_box">
+        <span>Content box:</span> <br />
+        Total width: 160px + (2 * 20px) + (2 * 8px) = 216px <br />
+        Total height: 80px +(2 * 20px) + (2 * 8px) = 136px <br />
+        Content box width: 160px <br />
+        Content box height: 80px
+      </div>
+      <br />
+      <div class="border_box">
+        <span>Border box:</span> <br />
+        Total width: 160px <br />
+        Total height: 80px <br />
+        Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px <br />
+        Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px
+      </div>
+    </div>
+    <!-- 7. column width -->
+    <div class="column_width">
+      <h2>7. Column Width</h2>
+      <div>
+        <p style="column-width: 300px; ">
+          The column-width CSS property sets the ideal column width in a
+          multi-column layout. The container will have as many columns as can
+          fit without any of them having a width less than the column-width
+          value. If the width of the container is narrower than the specified
+          value, the single column's width will be smaller than the declared
+          column width.
+        </p>
+      </div>
+    </div>
+    <!-- 8.1 fit content -->
+    <div class="fit_content">
+      <h2>8.1 Fit Content</h2>
+      <div
+        style="border: 2px solid #ccc;
+      padding: 10px;
+      width: 20em;"
+      >
+        <div class="item">Item</div>
+        <div class="item">Item with more text in it.</div>
+        <div class="item">
+          Item with more text in it, hopefully we have added enough text so the
+          text will start to wrap.
+        </div>
+      </div>
+    </div>
+    <!-- 8.2 fit content()-->
+    <div class="fit_content2">
+      <h2>8.2 Fit-content()</h2>
+      <div class="fit_content2_container">
+        <div>Item as wide as the content.</div>
+        <div>
+          Item with more text in it. Because the contents of it are wider than
+          the maximum width, it is clamped at 300 pixels.
+        </div>
+        <div>Flexible item</div>
+      </div>
+    </div>
+    <!-- 9.max-height -->
+    <div class="max_height">
+      <h2>9. Max Hieght with overflow:auto</h2>
+      <p style="max-height: 100px; width: 20%; overflow: auto;">
+        The max-height CSS property sets the maximum height of an element. It
+        prevents the used value of the height property from becoming larger than
+        the value specified for max-height.
+        <br />
+        max-height overrides height, but min-height overrides max-height.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/* ------------------------------------------- 2.1 margin-trim */
+article {
+  box-sizing: border-box;
+  border: solid #5b6dcd 10px;
+  width: 50%;
+  background-color: red;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  /* margin-trim: in-flow; */ /*cannt find trim*/
+}
+
+article > span {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+span:last-child {
+  margin-right: 0;
+}
+/* ------------------------------------------- 5. aspect tatio */
+.sapect_ration {
+  background-color: red;
+  width: 100%;
+  position: relative;
+  /*padding-top: 100%;*/ /* 1:1 Aspect Ratio */
+  /*padding-top: 56.25%;*/ /* 16:9 Aspect Ratio */
+  padding-top: 10%;
+}
+.text {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  color: aliceblue;
+}
+/* ------------------------------------------- 6. box-sizing */
+.box_sizing div {
+  width: 160px;
+  height: 80px;
+  padding: 20px;
+  border: 8px solid red;
+  background: yellow;
+  overflow: scroll;
+}
+.box_sizing div span {
+  color: red;
+}
+.content_box {
+  box-sizing: content-box;
+}
+.border_box {
+  box-sizing: border-box;
+}
+/*  ------------------------------------------- 8.1 fit content */
+.item {
+  width: -moz-fit-content; /* Firefox/Gecko */
+  /*width: -webkit-max-content; */ /* Chrome */
+  width: fit-content; /* Safari/WebKit uses a non-standard name */
+  background-color: #8ca0ff;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+/* -------------------------------------------  8.2 fit-content() */
+.fit_content2_container {
+  display: grid;
+  grid-template-columns: fit-content(150px) fit-content(450px) 1fr; /*split to the size of 150px,450px and rest*/
+  grid-gap: 5px;
+  box-sizing: border-box;
+  height: 200px;
+  width: 100%;
+  background-color: #8cffa0;
+  padding: 10px;
+}
+.fit_content2_container > div {
+  background-color: #8ca0ff;
+  padding: 5px;
+}
+/* -------------------------------------------  */
