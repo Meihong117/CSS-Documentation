@@ -1,0 +1,45 @@
+1. Animation&Transition
+   1) ::before
+   2) ::after
+   3) animation
+
+2. Background and Border
+   1）margin
+   2）padding
+   3) border(2px solid blue) : 边框
+
+3. Basic User Interface
+   1）input： ｜ 颜色
+   2）cursor：shape of mouse
+   3）outline vs margin
+   4）pseudo： ：hover / ：link
+   5）resize：content框
+   6）user-select：不同browser：-moz-user-select / -webkit-user-select / -ms-user-select
+
+4. Box Alignment
+   好几个box分开来
+
+5. Box model
+   1)box size
+   2)content分段（x-axis）
+
+
+6. Cascading and Inheritance
+
+
+7. Color
+
+
+8. Composition and Blending
+   mix two img
+
+9. Conditional Rules
+   @media / @support / @keyframes etc
+
+10. Containment
+    eg: put the img in the content
+
+11. Counter Styles
+    style of the <list::before{}>
+
+12. Device Adaptation
