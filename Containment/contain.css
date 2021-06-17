@@ -1,0 +1,20 @@
+/* 2. */
+.contain_img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  border: 3px solid black;
+}
+
+article {
+  border: 1px solid black;
+  contain: content; /*put all inside of the <article>*/
+}
+/*3 */
+.content_visibility {
+  /* content-visibility: hidden; */
+}
+/* 4. */
+.contain_article {
+  contain: strict style;
+}

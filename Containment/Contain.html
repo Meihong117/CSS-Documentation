@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="contain.css" />
+    <title>Containment</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div>
+      <h2>1. Containment</h2>
+      <ol>
+        <a href="https://devdocs.io/css/contain"><li>contain</li></a>
+        <a href="https://devdocs.io/css/content-visibility"
+          ><li>content-visibility</li></a
+        >
+        <a href="https://devdocs.io/css/css_containment"
+          ><li>CSS Containment</li></a
+        >
+      </ol>
+    </div>
+    <!-- 2. Contain -->
+    <div class="contain">
+      <h2>2. Contain</h2>
+      <h1>My blog</h1>
+      <article>
+        <h2>Heading of a nice article</h2>
+        <p>Content here.</p>
+        <img src="city.jpg" alt="social" class="contain_img" />
+      </article>
+      <article>
+        <h2>Another heading of another article</h2>
+        <img src="love.jpg" alt="photo" class="contain_img" />
+        <p>More content here.</p>
+      </article>
+    </div>
+    <!-- 3. content visibility -->
+    <div>
+      <h2>3. Content Visibility</h2>
+      <p class="content_visibility">
+        The content-visibility CSS property controls whether or not an element
+        renders its contents at all, along with forcing a strong set of
+        containments, allowing user agents to potentially omit large swathes of
+        layout and rendering work until it becomes needed. Basically it enables
+        the user agent to skip an element's rendering work (including layout and
+        painting) until it is needed — which makes the initial page load much
+        faster.
+      </p>
+    </div>
+    <!-- 4.  -->
+    <div>
+      <h2>4. Containment</h2>
+      <h1>My blog</h1>
+      <article class="contain_article">
+        <h2>Heading of a nice article</h2>
+        <p>Content here.</p>
+      </article>
+      <article class="contain_article">
+        <h2>Another heading of another article</h2>
+        <p>More content here.</p>
+      </article>
+    </div>
+  </body>
+</html>
