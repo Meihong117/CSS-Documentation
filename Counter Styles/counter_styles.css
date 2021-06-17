@@ -1,0 +1,115 @@
+/* all_counter_style */
+.all_counter_style {
+  display: flex;
+  float: left;
+}
+.all_counter_style div {
+  width: 200px;
+  border: 0.1px solid black;
+}
+.all_counter_style h2 {
+  text-align: center;
+}
+/* 2 */
+@counter-style circled-alpha {
+  system: fixed;
+  symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+  suffix: " ";
+}
+.items {
+  list-style: circled-alpha;
+}
+/* 3 */
+@counter-style additive-symbols {
+  system: additive;
+  additive-symbols: V 5, IV 4, I 1;
+}
+.list {
+  list-style: additive-symbols;
+}
+/* 4fallback */
+@counter-style fallback_list {
+  system: fixed;
+  symbols: "\24B6""\24B7""\24B8";
+  fallback: upper-alpha;
+}
+.fallback_list {
+  list-style: fallback_list;
+}
+/* 5. negative */
+@counter-style neg {
+  system: numeric;
+  symbols: "-2" "-1" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  negative: "-";
+}
+.negative_list {
+  list-style: neg;
+}
+/* 6. pad */
+@counter-style pad-example {
+  system: numeric;
+  symbols: "0" "1" "2" "3" "4" "5";
+  pad: 3 "0";
+}
+.pad_list {
+  list-style: pad-example;
+}
+/* 7. prefix */
+@counter-style chapters {
+  system: numeric;
+  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  prefix: "Chapter ";
+}
+.index {
+  list-style: chapters;
+  padding-left: 10ch;
+}
+/* 8. range */
+@counter-style range-multi {
+  system: cyclic; /*循环的*/
+  symbols: "\25A0""\25A1";
+  range: 2 4, 7 9; /*2 to 4, 7 to 9*/
+}
+.range_list {
+  list-style: range-multi;
+}
+/* 9. speak-as */
+@counter-style speak-as-example {
+  system: fixed;
+  symbols:     ;
+  suffix: " ";
+  speak-as: numbers;
+}
+.speak_as_list {
+  list-style: speak-as-example;
+}
+/* 10.suffix */
+@counter-style options {
+  system: fixed;
+  symbols: A B C D;
+  suffix: ") ";
+}
+.choices {
+  list-style: options;
+}
+/* 11. */
+@counter-style symbols-example {
+  system: fixed;
+  symbols: A "1" "\24B7"D E;
+}
+.symbols_list {
+  list-style: symbols-example;
+}
+/*  */
+@counter-style fisheye {
+  system: cyclic;
+  symbols: ◉;
+  suffix: " ";
+}
+.systems_list {
+  list-style: fisheye;
+}
+/* 13 */
+.list_style_type_list {
+  list-style-type: disc;
+}
