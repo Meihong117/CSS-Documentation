@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ease.css" />
+    <title>Easing Function</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div>
+      <h2>Orverall</h2>
+      <ol>
+        <a href="https://devdocs.io/css/easing-function"
+          ><li>easing function</li></a
+        >
+        <ul>
+          <code>cubic-bezier(x1, y1, x2, y2); range [0, 1] </code>
+          <br />
+          <code>steps(number_of_steps, direction)</code>
+        </ul>
+      </ol>
+    </div>
+    <!-- example -->
+    <div
+      class="exmaple"
+      style="position: relative;
+    height: 100px;"
+    >
+      <div class="ball"></div>
+    </div>
+    <ul>
+      <li class="ex_li">
+        <button class="animation-button">Start animation</button>
+      </li>
+      <li class="ex_li">
+        <label for="easing-select">Choose an easing function:</label>
+        <select id="easing-select">
+          <option selected>linear</option>
+          <option>ease</option>
+          <option>ease-in</option>
+          <option>ease-in-out</option>
+          <option>ease-out</option>
+          <option>cubic-bezier(0.1, -0.6, 0.2, 0)</option>
+          <option>cubic-bezier(0, 1.1, 0.8, 4)</option>
+          <option>steps(5, end)</option>
+          <option>steps(3, start)</option>
+          <option>steps(4)</option>
+        </select>
+      </li>
+    </ul>
+    <!-- ex script -->
+    <script>
+      const selectElem = document.querySelector("#easing-select");
+      const startBtn = document.querySelector(".animation-button");
+      const divElem = document.querySelector(".ball");
+
+      startBtn.addEventListener("click", () => {
+        if (startBtn.textContent === "Start animation") {
+          divElem.style.animationName = "move-right";
+          startBtn.textContent = "Stop animation";
+          divElem.style.animationTimingFunction = selectElem.value;
+        } else {
+          divElem.style.animationName = "unset";
+          startBtn.textContent = "Start animation";
+        }
+      });
+
+      selectElem.addEventListener("change", () => {
+        divElem.style.animationTimingFunction = selectElem.value;
+      });
+    </script>
+  </body>
+</html>

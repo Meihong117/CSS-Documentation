@@ -35,7 +35,7 @@
     2) initial
     3) revert
     4) unset
-    
+
 7. Color
 
 
@@ -58,3 +58,6 @@
     4)display-legacy
     5)display-listitem
     6)display-outside
+
+13. Easing Function (animation: how to move )
+    
