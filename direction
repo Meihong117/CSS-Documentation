@@ -61,4 +61,8 @@
 
 13. Easing Function (animation: how to move )
 
-14.Environment
+14.Environment (env())
+
+15. Extensions:
+    1) -moz-(Firefox)
+    2) -webkit-(Chrome, Safari)
