@@ -12,16 +12,141 @@
     <div class="overall">
       <h2>1. Overall</h2>
       <ol>
-        <a href=""><li>display</li></a>
+        <a href="https://devdocs.io/css/display"><li>display</li></a>
         <ul>
-          <a href=""><li>display-box</li></a>
-          <a href=""><li>display-inside</li></a>
-          <a href=""><li>display-internal</li></a>
-          <a href=""><li>display-legacy</li></a>
-          <a href=""><li>display-listitem</li></a>
-          <a href=""><li>display-outside</li></a>
+          <a href="https://devdocs.io/css/display-box"
+            ><li>
+              display-box(property): <code>display: content / none;</code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/display-inside"
+            ><li>
+              display-inside(property):
+              <code>display flow-root / table / flex / grid / ruby; </code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/display-internal"
+            ><li>
+              display-internal: like tables(property):
+              <code
+                >display: table-row-group / table-header-group /
+                table-footer-group / table-row / table-cell / table-column-group
+                / table-column / table-caption;
+              </code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/display-legacy"
+            ><li>
+              display-legacy(property):
+              <code
+                >display: inline-block/ inline-table / inline-flex /
+                inline-grid;</code
+              >
+            </li></a
+          >
+          <a href="https://devdocs.io/css/display-listitem"
+            ><li>
+              display-listitem(property): <code>display: list-item;</code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/display-outside"
+            ><li>
+              display-outside(property): <code>display: inline / block;</code>
+            </li></a
+          >
         </ul>
       </ol>
     </div>
+    <!-- display -->
+    <div class="display">
+      <h2>2. Display</h2>
+      <article class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+      </article>
+
+      <article class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+      </article>
+
+      <div>
+        <label for="display">Choose a display value:</label>
+        <select id="display">
+          <option selected>block</option>
+          <option>inline</option>
+          <option>inline-block</option>
+          <option>none</option>
+          <option>flex</option>
+          <option>inline-flex</option>
+          <option>grid</option>
+          <option>inline-grid</option>
+          <option>table</option>
+          <option>list-item</option>
+        </select>
+      </div>
+    </div>
+    <!-- 3. display-box -->
+    <div class="display_box">
+      <h2>3. Display Box</h2>
+      <div class="dis_none">
+        1.
+        <code>display:none;</code>
+        <p>Visible text</p>
+        <p class="secret" style="display: none;">Invisible text</p>
+      </div>
+
+      <div class="outer">
+        2.
+        <code>display:contents;</code>
+        <div class="inner">Inner div.</div>
+      </div>
+    </div>
+    <!-- 4. display inside -->
+    <div>
+      <h2>4. Display Inside: <code>display: flow-root;</code></h2>
+      <div class="box">
+        <div class="float">I am a floated box!</div>
+        <p>I am content inside the container.</p>
+      </div>
+    </div>
+    <!-- 5. display internal -->
+    <div>
+      <h2>5. Display Internal: set the property one-by-one, show like table</h2>
+      <main style="display: table;">
+        <div class="internal" style="display: table-row;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="internal" style="display: table-row;">
+          <label for="age">Age</label>
+          <input type="text" id="age" name="age" />
+        </div>
+      </main>
+    </div>
+    <!-- 6. display legacy -->
+    <div>
+      <h2>6. Display Legacy: <code>display: inline-table;</code></h2>
+      <div style="display: inline-table;">
+        <div>Flex Item</div>
+        <div>Flex Item</div>
+      </div>
+    </div>
+    <!-- display -->
+    <script>
+      const articles = document.querySelectorAll(".container");
+      const select = document.querySelector("select");
+
+      function updateDisplay() {
+        articles.forEach(article => {
+          article.style.display = select.value;
+        });
+      }
+      //选option的时候，上面的会变。
+      select.addEventListener("change", updateDisplay);
+      //updateDisplay(); //刷新也不会update
+    </script>
   </body>
 </html>

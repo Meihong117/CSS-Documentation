@@ -1,0 +1,45 @@
+article {
+  background-color: rgb(233, 173, 173);
+}
+article span {
+  background-color: rgb(215, 224, 90);
+  margin: 1px;
+}
+article,
+span {
+  padding: 10px;
+  border-radius: 7px;
+}
+article {
+  margin: 20px;
+}
+/* 3. display-box */
+.outer {
+  border: 2px solid red;
+  width: 300px;
+  display: contents;
+}
+.inner {
+  width: -moz-fit-content;
+  border: 1px solid green;
+}
+/* 4. display inside */
+.box {
+  background-color: rgb(224, 206, 247);
+  border: 5px solid rebeccapurple;
+  display: flow-root; /*ruby / table/ */
+}
+.float {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+/* 5. display internal */
+.internal label,
+.internal input {
+  display: table-cell;
+  margin: 5px;
+}

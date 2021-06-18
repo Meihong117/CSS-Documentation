@@ -17,16 +17,25 @@
    6）user-select：不同browser：-moz-user-select / -webkit-user-select / -ms-user-select
 
 4. Box Alignment
+   1) align-content
+   2) gap(column/row)
+   3) justify-content
+   4) place-content
+ 
    好几个box分开来
-
-5. Box model
-   1)box size
-   2)content分段（x-axis）
+   * box size
+      1. fit-content
+      2. height
+      3. width
+   
 
 
 6. Cascading and Inheritance
-
-
+    1) inherit
+    2) initial
+    3) revert
+    4) unset
+    
 7. Color
 
 
@@ -43,3 +52,9 @@
     style of the <list::before{}>
 
 12. Display
+    1)display-box
+    2)display-inside
+    3)display-internal
+    4)display-legacy
+    5)display-listitem
+    6)display-outside
