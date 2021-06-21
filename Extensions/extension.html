@@ -16,11 +16,11 @@
         <ul>
           <a href=""><li>-moz-image-</li></a>
           <ul>
-            <a href=""><li>-moz-image-rect</li></a>
-            <a href=""><li>-moz-image-region</li></a>
+            <a href="https://devdocs.io/css/-moz-image-rect"><li>-moz-image-rect: <code>-moz-image-rect(<uri>(), top, right, bottom, left)</code></li></a>
+            <a href="https://devdocs.io/css/-moz-image-region"><li>-moz-image-region: <code>-moz-image-region: rect(0, 8px, 4px, 4px);</code></li></a>
           </ul>
 
-          <a href=""><li>-moz-outline-radius</li></a>
+          <a href="https://devdocs.io/css/-moz-outline-radius"><li>-moz-outline-radius</li></a>
           <ul>
             <a href=""><li>-moz-outline-radius-bottomleft</li></a>
             <a href=""><li>-moz-outline-radius-bottomright</li></a>
@@ -54,9 +54,58 @@
       </ol>
     </div>
     <!-- 1. -moz-image-rect -->
-    <div>
+    <div class="">
       <h2>1. -moz-image-rect</h2>
-      show here
+      <p>box4: Bottom right -> Top left -> Top right -> Bottom left </p>
+      <div id="rect_container" onclick="rotate()">
+        <div id="box1" style="left:0px;top:0px;">Top left</div>
+        <div id="box2" style="left:133px;top:0px;">Top right</div>
+        <div id="box3" style="left:0px;top:136px;">Bottom left</div>
+        <div id="box4" style="left:133px;top:136px;">Bottom right</div>
+      </div>
     </div>
+    <!-- 2.  -moz-image-region-->
+    <div class="region">
+        <h2>2. -moz-image-region ??</h2>
+        <div><button id="region_button">click it</button></div>
+    </div>
+    <!-- 3.  -moz-outline-radius-->
+    <div class="radius">
+        <h2>3.  -moz-outline-radius</h2>
+       <p class="outline-radius">This element has a rounded outline!</p>
+    </div>
+    <!-- 4. -webkit-line-clamp -->
+    <div>
+        <h2>4. -webkit-line-clamp</h2>
+        <p>
+                In this example the <code>-webkit-line-clamp</code> property is set to <code>3</code>, which means the text is clamped after three lines.
+                An ellipsis will be shown at the point where the text is clamped.
+              </p>
+    </div>
+
+
+
+
+    <!-- script -->
+    <!-- 1. rect -->
+    <script>
+        //rotate box 4:
+      function rotate() {
+        let prevStyle = window
+          .getComputedStyle(document.getElementById("box4"), null)
+          .getPropertyValue("background-image");
+
+        for (let i = 1; i <= 4; i++) {
+          let curId = "box" + i;
+          let curStyle = window
+            .getComputedStyle(document.getElementById(curId), null)
+            .getPropertyValue("background-image");
+            //console.log(curStyle)
+          document.getElementById(curId).style.backgroundImage = prevStyle;
+          //console.log(prevStyle)
+          prevStyle = curStyle;
+        }
+      }
+    </script>
   </body>
 </html>

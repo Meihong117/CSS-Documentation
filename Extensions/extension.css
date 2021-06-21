@@ -1,0 +1,55 @@
+/* 1. rect */
+#rect_container {
+  width: 267px;
+  height: 272px;
+  position: absolute;
+  font-size: 16px;
+  text-shadow: white 0px 0px 6px;
+  text-align: center;
+}
+#box1 {
+  background-image: -moz-image-rect(url(city.jpg), 0%, 50%, 50%, 0%);
+  width: 133px;
+  height: 136px;
+  position: absolute;
+}
+#box2 {
+  background-image: -moz-image-rect(url(city.jpg), 0%, 100%, 50%, 50%);
+  width: 133px;
+  height: 136px;
+  position: absolute;
+}
+#box3 {
+  background-image: -moz-image-rect(url(city.jpg), 50%, 50%, 100%, 0%);
+  width: 133px;
+  height: 136px;
+  position: absolute;
+}
+#box4 {
+  background-image: -moz-image-rect(url(city.jpg), 50%, 100%, 100%, 50%);
+  width: 133px;
+  height: 136px;
+  position: absolute;
+}
+/* 2.  */
+.region {
+  position: relative;
+  top: 300px;
+}
+.region_button {
+  list-style-image: url("city.jpg");
+  -moz-image-region: rect(0px, 40px, 40px, 0px);
+}
+/* 3.  */
+.radius {
+  position: relative;
+  top: 400px;
+}
+.outline-radius {
+  width: max-content;
+  margin: 5px;
+  border: 1px solid black;
+  outline: dotted red;
+  -moz-outline-radius: 12% 1em 25px;
+}
+/*  */

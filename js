@@ -54,3 +54,11 @@ document.getElementById("myDIV").classList.add("mystyle");
     The number of callbacks is usually 60 times per second, but will generally match the display refresh 
     rate in most web browsers as per W3C recommendation. requestAnimationFrame() calls are paused in most 
     browsers when running in background tabs or hidden <iframe>s in order to improve performance and battery life.
+------------------------------------------------------------------------------------------------------
+ window.getComputedStyle(element, pseudoElement)
+ eg1:
+ window.getComputedStyle(document.getElementById("test"), null).getPropertyValue(cssObjProp)
+ eg2:
+ window.getComputedStyle(document.getElementById("test"), ":first-letter").getPropertyValue("font-size")
+
+The getComputedStyle() method gets all the actual (computed) CSS property and values of the specified element.
