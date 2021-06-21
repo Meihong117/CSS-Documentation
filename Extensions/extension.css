@@ -52,4 +52,50 @@
   outline: dotted red;
   -moz-outline-radius: 12% 1em 25px;
 }
-/*  */
+/* 4.  */
+.clamp {
+  position: relative;
+  top: 500px;
+}
+.clamp_p {
+  width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+/* 5 */
+.overflow_scrolling {
+  position: relative;
+  top: 600px;
+}
+.overflow_scrolling p {
+  width: 100%;
+  background: #f5f9fa;
+  border: 2px solid #eaf2f4;
+  padding: 10px;
+}
+.scroll-touch {
+  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+.scroll-auto {
+  -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+}
+/* 6. */
+.stroke {
+  margin: 0;
+  font-size: 4em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* 7. */
+.first_node p span:-moz-first-node {
+  background-color: lime;
+}
+.first_node p span:-moz-last-node {
+  background-color: orange;
+}
+/* 8. */
+.whitespace div:-moz-only-whitespace {
+  border-color: lime;
+}
