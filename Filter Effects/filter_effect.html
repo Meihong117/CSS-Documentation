@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="filter_effect.css" />
+    <title>Filter Effects</title>
+  </head>
+  <body>
+    <div class="">
+      <h2>Overall</h2>
+      <ol>
+        <a href="https://devdocs.io/css/backdrop-filter"
+          ><li>backdrop-filter</li></a
+        >
+        <a href=""
+          ><li>
+            filter:
+            <code
+              >filter: url("..."); / filter: grayscale(80%); / filter:
+              hue-rotate(90deg);</code
+            >
+          </li></a
+        >
+        <a href="https://devdocs.io/css/filter-function"
+          ><li>filter-function()</li></a
+        >
+        <ul>
+          <a href="https://devdocs.io/css/filter-function/blur()"
+            ><li>blur()(): 模糊程度 <code>filter: blur(4px)</code></li></a
+          >
+          <a href="https://devdocs.io/css/filter-function/brightness()"
+            ><li>
+              brightness()(): 亮度 <code>filter: brightness(1.75)</code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/filter-function/contrast()"
+            ><li>contrast()(): 对比度 <code>filter: contrast(65%)</code></li></a
+          >
+          <a href="https://devdocs.io/css/filter-function/drop-shadow()"
+            ><li>
+              drop-shadow()(): 影子位置及程度
+              <code>filter: drop-shadow(0 0 0.75rem crimson);</code>
+            </li></a
+          >
+          <a href=""><li>grayscale()()</li></a>
+          <a href=""><li>hue-rotate()()</li></a>
+          <a href=""><li>invert()()</li></a>
+          <a href=""><li>opacity()()</li></a>
+          <a href=""><li>saturate()()</li></a>
+          <a href=""><li>sepia()()</li></a>
+        </ul>
+      </ol>
+    </div>
+    <!-- 1. backdrop-filter -->
+    <div>
+      <h2>1. backdrop-filter</h2>
+      <div class="filter_container">
+        <div class="filter_box">
+          backdrop-filter: blur(10px)
+        </div>
+      </div>
+    </div>
+    <!-- 2. filter -->
+    <div class="filter_all">
+      <h2>2. filter</h2>
+      <div class="filter">
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img1" />
+            <p>filter: blur(5px)</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img2" />
+            <p>filter: brightness(0.4)</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img3" />
+            <p>filter: contrast(200%)</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img4" />
+            <p>filter: grayscale(50%)</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img5" />
+            <p>filter: drop-shadow(16px 16px 20px blue)</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="img_container">
+          <div class="content">
+            <img src="people.jpg" alt="poeple" class="image poeple_img6" />
+            <p>sepia(60%)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3. filter-function -->
+    <div class="filter_func">
+      <h2>3. Filter Function</h2>
+      <!--  -->
+      <div class="show_here" id="show"></div>
+      <ul>
+        <li>
+          <label for="filter-select">Choose a filter function:</label>
+          <select
+            id="filter-select"
+            style=" width: 40%;
+          margin-left: 2px;"
+          >
+            <option selected>blur</option>
+            <option>brightness</option>
+            <option>contrast</option>
+            <option>drop-shadow</option>
+            <option>grayscale</option>
+            <option>hue-rotate</option>
+            <option>invert</option>
+            <option>opacity</option>
+            <option>saturate</option>
+            <option>sepia</option>
+          </select>
+        </li>
+        <li>
+          <input type="range" style="width: 60%" /><output
+            style=" width: 5%;
+            text-align: center;"
+          ></output>
+        </li>
+        <li>
+          <p>Current value: <code id="code"></code></p>
+        </li>
+      </ul>
+    </div>
+    <!-- 3. script -->
+    <script>
+      const selectElem = document.querySelector("#filter-select");
+      const divElem = document.querySelector("#show");
+      const slider = document.querySelector("input");
+      const output = document.querySelector("output");
+      const curValue = document.querySelector("#code");
+
+      selectElem.addEventListener("change", () => {
+        setSlider(selectElem.value);
+        setDiv(selectElem.value);
+      });
+
+      slider.addEventListener("input", () => {
+        setDiv(selectElem.value);
+      });
+
+      function setSlider(filter) {
+        if (filter === "blur") {
+          slider.value = 0;
+          slider.min = 0;
+          slider.max = 30;
+          slider.step = 1;
+          slider.setAttribute("data-unit", "px");
+        } else if (
+          filter === "brightness" ||
+          filter === "contrast" ||
+          filter === "saturate"
+        ) {
+          slider.value = 1;
+          slider.min = 0;
+          slider.max = 4;
+          slider.step = 0.05;
+          slider.setAttribute("data-unit", "");
+        } else if (filter === "drop-shadow") {
+          slider.value = 0;
+          slider.min = -20;
+          slider.max = 40;
+          slider.step = 1;
+          slider.setAttribute("data-unit", "px");
+        } else if (filter === "opacity") {
+          slider.value = 1;
+          slider.min = 0;
+          slider.max = 1;
+          slider.step = 0.01;
+          slider.setAttribute("data-unit", "");
+        } else if (
+          filter === "grayscale" ||
+          filter === "invert" ||
+          filter === "sepia"
+        ) {
+          slider.value = 0;
+          slider.min = 0;
+          slider.max = 1;
+          slider.step = 0.01;
+          slider.setAttribute("data-unit", "");
+        } else if (filter === "hue-rotate") {
+          slider.value = 0;
+          slider.min = 0;
+          slider.max = 360;
+          slider.step = 1;
+          slider.setAttribute("data-unit", "deg");
+        }
+      }
+
+      function setDiv(filter) {
+        if (filter === "drop-shadow") {
+          divElem.style.filter = `${selectElem.value}(${Math.round(
+            slider.value
+          )}${slider.getAttribute("data-unit")}${Math.round(
+            slider.value
+          )}${slider.getAttribute("data-unit")}${Math.round(
+            Math.abs(slider.value / 2)
+          )}${slider.getAttribute("data-unit")})`;
+        } else {
+          divElem.style.filter = `${selectElem.value}(${
+            slider.value
+          }${slider.getAttribute("data-unit")}`;
+        }
+
+        updateOutput();
+        updateCurValue();
+      }
+
+      function updateOutput() {
+        output.textContent = slider.value;
+      }
+
+      function updateCurValue() {
+        curValue.textContent = `filter: ${divElem.style.filter}`;
+      }
+
+      setSlider(selectElem.value);
+      setDiv(selectElem.value);
+    </script>
+  </body>
+</html>
