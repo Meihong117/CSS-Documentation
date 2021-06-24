@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="align_item.css" />
+    <title>align-items</title>
+  </head>
+  <body>
+    <!-- 1. align-item -->
+    <h2 style="color: red;">align-items</h2>
+    <code>
+      align-item value: <br />
+      <ul>
+        <li>align-items: flex-start</li>
+        <li>align-items: flex-end</li>
+        <li>align-items: center</li>
+        <li>align-items: stretch</li>
+        <li>align-items: baseline</li>
+      </ul>
+    </code>
+
+    <img src="align item.png" alt="" style="width: 500px; height: 350px;" />
+    <div>
+      <section class="editable">
+        <div class="box">
+          <div>stretch</div>
+          <div>flex-start</div>
+          <div class="selected">center</div>
+          <div>flex-end</div>
+        </div>
+      </section>
+      <textarea name="" id="" cols="30" rows="15" class="playable-html1">
+<div class="box">
+    <div>stretch</div>
+    <div>flex-start</div>
+    <div class="selected">center</div>
+    <div>flex-end</div>
+</div>      
+    </textarea
+      >
+      <textarea name="" id="code" cols="30" rows="15" class="playable-css1">
+.box {
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
+    }
+.box>*:first-child {
+    align-self: stretch;
+    }
+.box .selected {
+    align-self: center;
+    }
+.box>*:last-child {
+    align-self: flex-end;
+    }    
+    
+    </textarea
+      >
+      <div class="playable-btn1">
+        <input type="button" name="" id="reset" value="Reset" />
+      </div>
+    </div>
+
+    <!-- script: align-item -->
+    <script>
+      let section = document.querySelector("section");
+      let editable = document.querySelector(".editable");
+      let textareaHTML = document.querySelector(".playable-html1");
+      let textareaCSS = document.querySelector(".playable-css1");
+      let reset = document.querySelector("input");
+      let htmlCode = textareaHTML.value;
+      let cssCode = textareaCSS.value;
+      console.log(reset);
+
+      function fillCode() {
+        editable.innerHTML = textareaCSS.value;
+        section.innerHTML = textareaHTML.value;
+      }
+      reset.addEventListener("click", function() {
+        textareaHTML.value = htmlCode;
+        textareaCSS.value = cssCode;
+        fillCode();
+      });
+      textareaHTML.addEventListener("input", fillCode);
+      textareaCSS.addEventListener("input", fillCode);
+      window.addEventListener("load", fillCode);
+    </script>
+  </body>
+</html>

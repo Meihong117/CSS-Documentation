@@ -68,3 +68,10 @@
     2) -webkit-(Chrome, Safari)
     3) @media.-ms-high-contrast
 16. Filter Effects
+    1) 图片的透明度，亮度，对比度等。。。
+17. Flexible Box Layout 
+
+    justify-content(左右) — controls alignment of all items on the main axis.
+    align-items(上下) — controls alignment of all items on the cross axis.
+    align-self — controls alignment of an individual flex item on the cross axis.
+    align-content — described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.

@@ -1,0 +1,60 @@
+/* img */
+
+.image {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+}
+/* 图片大小!=div大小 */
+.image div {
+  width: 600px;
+  height: 600px;
+}
+/*  */
+.justify-content-all {
+  width: 400px;
+  border: 2px dotted rgb(96, 139, 168);
+}
+.justify-content-all > * {
+  padding: 20px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
+
+/* justify-content1 */
+.justify-content1 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+/* justify-content2 */
+.justify-content2 {
+  display: flex;
+  /* direction: rtl; */
+  /* or */
+  flex-direction: row-reverse; /*column-reverse*/
+  height: 300px;
+  justify-content: flex-end;
+}
+
+/*  */
+.margin {
+  display: flex;
+}
+.push {
+  margin-left: auto;
+}
+/* flex */
+.flex {
+  height: 500px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.flex > * {
+  flex: 0 0 33.3333%;
+}

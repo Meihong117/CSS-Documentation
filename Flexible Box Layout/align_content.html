@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="align_content.css" />
+    <title>align-content</title>
+  </head>
+  <body>
+    <div>
+      <h2 style="color: red;">align-content</h2>
+      <code>
+        <ul>
+          <li>align-content: flex-start</li>
+          <li>align-content: flex-end</li>
+          <li>align-content: center</li>
+          <li>align-content: space-between</li>
+          <li>align-content: space-around</li>
+          <li>align-content: stretch</li>
+          <li>
+            align-content: space-evenly (not defined in the Flexbox
+            specification)
+          </li>
+        </ul>
+      </code>
+    </div>
+    <!-- justify-content -->
+    <div>
+      <h2>
+        The <span style="color: red;">justify-content</span> property accepts
+        the same values as align-content.
+      </h2>
+      <code>
+        <ul>
+          <li>justify-content: flex-start</li>
+          <li>justify-content: flex-end</li>
+          <li>justify-content: center</li>
+          <li>justify-content: space-between</li>
+          <li>justify-content: space-around</li>
+          <li>
+            justify-content: space-evenly (not defined in the Flexbox
+            specification)
+          </li>
+        </ul>
+      </code>
+    </div>
+    <!-- flex-direction -->
+    <div>
+      <h2 style="color: red;">flex-direction</h2>
+      <code>
+        <ul>
+          <li>direction: rtl;(right-to-left)</li>
+          <li>flex-direction: row;(left-to-right)</li>
+          <li>flex-direction: row-reverse;(right-to-left)</li>
+          <li>flex-direction: column;(top-to-bottom)</li>
+          <li>flex-direction: column-reverse;(bottom-to-top)</li>
+        </ul>
+      </code>
+    </div>
+    <!--  -->
+    <div>
+      <h2>
+        <span style="color: red;">flex</span> : 1 1 auto (shorthand of
+        flex-grow, flex-shrink, flex-basis)
+      </h2>
+      <code>
+        <ul>
+          <li>flex-wrap: wrap;(往下自动串行)</li>
+          <li>flex-flow: row wrap;(横排，串行)</li>
+          <li>flex-grow: 3</li>
+          <li>flex-shrink: 1</li>
+          <li>flex-basis: 200px</li>
+        </ul>
+      </code>
+    </div>
+    <div>
+      <h2 style="color: red;">visibility</h2>
+      <code>visibility: collapse;</code>
+    </div>
+    <!-- img -->
+    <h3>图片大小!=div大小</h3>
+    <div class="image">
+      <div>
+        <img
+          src="align-content1.png"
+          alt=""
+          style="width: 500px; height: 500px;"
+        />
+      </div>
+      <div>
+        <img
+          src="align-content2.png"
+          alt=""
+          style="width: 500px; height: 500px;"
+        />
+      </div>
+    </div>
+    <!-- justify-content -->
+    <h2>
+      <code
+        >justify-content:space-between <br />flex-direction: column;
+        <br />height: 300px;(height不一样，间距不一样)</code
+      >
+    </h2>
+    <!-- 1 -->
+    <div class="justify-content1 justify-content-all">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+    <!-- 2 -->
+    <h2>
+      <code
+        >justify-content: flex-end <br />direction: rtl(right-to-left) or can
+        use flex-direction: row-reverse; <br />height: 300px;</code
+      >
+    </h2>
+    <div class="justify-content2 justify-content-all">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+    <!-- 3. display -->
+    <h2>
+      <code>display: flex; <br />margin-left: auto; </code>
+    </h2>
+    <div class="margin justify-content-all">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div class="push">Four</div>
+      <div>Five</div>
+    </div>
+    <!-- flex -->
+    <div>
+      <h2>flex</h2>
+      <div class="flex justify-content-all">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+        <div>Eight</div>
+        <div>Nine</div>
+        <div>Ten</div>
+      </div>
+    </div>
+    <!-- visibility -->
+    <div>
+      <h2>visibility</h2>
+    </div>
+  </body>
+</html>
