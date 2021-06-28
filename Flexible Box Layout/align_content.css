@@ -1,5 +1,39 @@
-/* img */
+/* ------------------------align-item */
+section {
+  width: 50%;
+  max-width: 700px;
+  border: 1px solid #4d4e53;
+  border-radius: 2px;
+  padding: 10px 14px 10px 10px;
+  margin-bottom: 10px;
+}
 
+.box {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+}
+.box {
+  width: 400px;
+  border: 2px dotted rgb(96, 139, 168);
+}
+.box > * {
+  padding: 20px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
+.box > *:first-child {
+  align-self: stretch;
+}
+.box .selected {
+  align-self: center;
+}
+.box > *:last-child {
+  align-self: flex-end;
+}
+
+/* ------------------------img */
 .image {
   display: flex;
   width: 1200px;
@@ -12,7 +46,7 @@
   width: 600px;
   height: 600px;
 }
-/*  */
+/* ------------------------ deco for the number box*/
 .justify-content-all {
   width: 400px;
   border: 2px dotted rgb(96, 139, 168);
@@ -24,14 +58,14 @@
   background-color: rgba(96, 139, 168, 0.2);
 }
 
-/* justify-content1 */
+/* ------------------------justify-content1 */
 .justify-content1 {
   display: flex;
   flex-direction: column;
   height: 400px;
   justify-content: space-between;
 }
-/* justify-content2 */
+/* ------------------------justify-content2 */
 .justify-content2 {
   display: flex;
   /* direction: rtl; */
@@ -41,20 +75,51 @@
   justify-content: flex-end;
 }
 
-/*  */
+/* ------------------------ */
 .margin {
   display: flex;
 }
 .push {
   margin-left: auto;
 }
-/* flex */
+/* ------------------------flex */
 .flex {
-  height: 500px;
+  /* height: 500px; */
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
 }
 .flex > * {
-  flex: 0 0 33.3333%;
+  flex: 1 1 60px;
+}
+/*------------------------order */
+.order {
+  display: flex;
+  flex-direction: row;
+}
+.order :nth-child(1) {
+  order: 2;
+}
+.order :nth-child(2) {
+  order: 3;
+}
+.order :nth-child(3) {
+  order: 1;
+}
+.order :nth-child(4) {
+  order: 3;
+}
+.order :nth-child(5) {
+  order: 1;
+}
+
+/*------------------------visibility */
+.collapse {
+  visibility: collapse;
+}
+table {
+  border: 1px solid red;
+}
+td {
+  border: 1px solid gray;
 }

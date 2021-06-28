@@ -9,6 +9,62 @@
   </head>
   <body>
     <div>
+      <!-- 1. align-item -->
+      <h2 style="color: red;">align-items</h2>
+      <code>
+        align-item value: <br />
+        <ul>
+          <li>align-items: flex-start</li>
+          <li>align-items: flex-end</li>
+          <li>align-items: center</li>
+          <li>align-items: stretch</li>
+          <li>align-items: baseline</li>
+        </ul>
+      </code>
+
+      <img src="align item.png" alt="" style="width: 500px; height: 350px;" />
+      <div>
+        <section class="editable">
+          <div class="box">
+            <div>stretch</div>
+            <div>flex-start</div>
+            <div class="selected">center</div>
+            <div>flex-end</div>
+          </div>
+        </section>
+        <textarea name="" id="" cols="30" rows="15" class="playable-html1">
+<div class="box">
+    <div>stretch</div>
+    <div>flex-start</div>
+    <div class="selected">center</div>
+    <div>flex-end</div>
+</div>      
+    </textarea
+        >
+        <textarea name="" id="code" cols="30" rows="15" class="playable-css1">
+.box {
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
+    }
+.box>*:first-child {
+    align-self: stretch;
+    }
+.box .selected {
+    align-self: center;
+    }
+.box>*:last-child {
+    align-self: flex-end;
+    }    
+    
+    </textarea
+        >
+        <div class="playable-btn1">
+          <input type="button" name="" id="reset" value="Reset" />
+        </div>
+      </div>
+
+      <!-- align-content -->
       <h2 style="color: red;">align-content</h2>
       <code>
         <ul>
@@ -28,8 +84,8 @@
     <!-- justify-content -->
     <div>
       <h2>
-        The <span style="color: red;">justify-content</span> property accepts
-        the same values as align-content.
+        <span style="color: red;">justify-content</span> property accepts the
+        same values as align-content.
       </h2>
       <code>
         <ul>
@@ -45,20 +101,8 @@
         </ul>
       </code>
     </div>
-    <!-- flex-direction -->
-    <div>
-      <h2 style="color: red;">flex-direction</h2>
-      <code>
-        <ul>
-          <li>direction: rtl;(right-to-left)</li>
-          <li>flex-direction: row;(left-to-right)</li>
-          <li>flex-direction: row-reverse;(right-to-left)</li>
-          <li>flex-direction: column;(top-to-bottom)</li>
-          <li>flex-direction: column-reverse;(bottom-to-top)</li>
-        </ul>
-      </code>
-    </div>
-    <!--  -->
+
+    <!-- flex -->
     <div>
       <h2>
         <span style="color: red;">flex</span> : 1 1 auto (shorthand of
@@ -66,18 +110,39 @@
       </h2>
       <code>
         <ul>
-          <li>flex-wrap: wrap;(往下自动串行)</li>
-          <li>flex-flow: row wrap;(横排，串行)</li>
           <li>flex-grow: 3</li>
           <li>flex-shrink: 1</li>
-          <li>flex-basis: 200px</li>
+          <li>flex-basis: 200px(size of the first item)</li>
         </ul>
       </code>
     </div>
+    <!-- flex flow -->
+    <div>
+      <h2><span style="color: red;">flex-flow</span>: row wrap;(横排，串行)</h2>
+      <ul>
+        <li><span style="color: red;">flex-direction</span></li>
+        <ul>
+          <li>direction: rtl;(right-to-left)</li>
+          <li>flex-direction: row;(left-to-right)</li>
+          <li>flex-direction: row-reverse;(right-to-left)</li>
+          <li>flex-direction: column;(top-to-bottom)</li>
+          <li>flex-direction: column-reverse;(bottom-to-top)</li>
+        </ul>
+        <li>
+          <span style="color: red;">flex-wrap</span> : wrap;(往下自动串行)
+        </li>
+      </ul>
+    </div>
+    <!-- order -->
+    <div>
+      <h2><span style="color: red;">order</span>:integer</h2>
+    </div>
+    <!-- visibility -->
     <div>
       <h2 style="color: red;">visibility</h2>
       <code>visibility: collapse;</code>
     </div>
+
     <!-- img -->
     <h3>图片大小!=div大小</h3>
     <div class="image">
@@ -97,12 +162,12 @@
       </div>
     </div>
     <!-- justify-content -->
-    <h2>
-      <code
-        >justify-content:space-between <br />flex-direction: column;
-        <br />height: 300px;(height不一样，间距不一样)</code
-      >
-    </h2>
+    <h2>justify-content: column</h2>
+    <code
+      >.class{ <br />justify-content:space-between <br />flex-direction: column;
+      <br />height: 300px;(height不一样，间距不一样) <br />
+      }
+    </code>
     <!-- 1 -->
     <div class="justify-content1 justify-content-all">
       <div>One</div>
@@ -111,12 +176,14 @@
       <div>Four</div>
     </div>
     <!-- 2 -->
-    <h2>
-      <code
-        >justify-content: flex-end <br />direction: rtl(right-to-left) or can
-        use flex-direction: row-reverse; <br />height: 300px;</code
-      >
-    </h2>
+    <h2>justify-content: row-reverse</h2>
+    <code
+      >.class{ <br />
+      justify-content: flex-end <br />direction: rtl(right-to-left) <br />
+      /* or can use*/ <br />
+      flex-direction: row-reverse; <br />height: 300px;<br />
+      }
+    </code>
     <div class="justify-content2 justify-content-all">
       <div>One</div>
       <div>Two</div>
@@ -124,9 +191,11 @@
       <div>Four</div>
     </div>
     <!-- 3. display -->
-    <h2>
-      <code>display: flex; <br />margin-left: auto; </code>
-    </h2>
+    <h2>Display</h2>
+    <code>
+      .display{<br />display: flex; <br />margin-left: auto; <br />
+      }
+    </code>
     <div class="margin justify-content-all">
       <div>One</div>
       <div>Two</div>
@@ -134,9 +203,15 @@
       <div class="push">Four</div>
       <div>Five</div>
     </div>
-    <!-- flex -->
+    <!-- 4. flex -->
     <div>
       <h2>flex</h2>
+      <code
+        >.flex > * { <br />
+        flex: 1 1 60px;
+        <br />
+        }</code
+      >
       <div class="flex justify-content-all">
         <div>One</div>
         <div>Two</div>
@@ -148,11 +223,77 @@
         <div>Eight</div>
         <div>Nine</div>
         <div>Ten</div>
+        <div>Eleven</div>
       </div>
     </div>
-    <!-- visibility -->
+    <!-- 5. order -->
+    <div>
+      <h2>Order</h2>
+      <code
+        >.order :nth-child(1) { <br />
+        order: 2;
+        <br />
+        }</code
+      >
+      <div class="order justify-content-all">
+        <div><a href="#">1</a></div>
+        <div><a href="#">2</a></div>
+        <div><a href="#">3</a></div>
+        <div><a href="#">4</a></div>
+        <div><a href="#">5</a></div>
+      </div>
+    </div>
+
+    <!-- 6. visibility -->
     <div>
       <h2>visibility</h2>
+      <code
+        >.collapse { <br />
+        visibility: collapse;
+        <br />
+        }</code
+      >
+      <table>
+        <tr>
+          <td>1.1</td>
+          <td class="collapse">1.2</td>
+          <td>1.3</td>
+        </tr>
+        <tr class="collapse">
+          <td>2.1</td>
+          <td>2.2</td>
+          <td>2.3</td>
+        </tr>
+        <tr>
+          <td>3.1</td>
+          <td>3.2</td>
+          <td>3.3</td>
+        </tr>
+      </table>
     </div>
+    <!---------------------------------------- script: align-item -->
+    <script>
+      let section = document.querySelector("section");
+      let editable = document.querySelector(".editable");
+      let textareaHTML = document.querySelector(".playable-html1");
+      let textareaCSS = document.querySelector(".playable-css1");
+      let reset = document.querySelector("input");
+      let htmlCode = textareaHTML.value;
+      let cssCode = textareaCSS.value;
+      console.log(reset);
+
+      function fillCode() {
+        editable.innerHTML = textareaCSS.value;
+        section.innerHTML = textareaHTML.value;
+      }
+      reset.addEventListener("click", function() {
+        textareaHTML.value = htmlCode;
+        textareaCSS.value = cssCode;
+        fillCode();
+      });
+      textareaHTML.addEventListener("input", fillCode);
+      textareaCSS.addEventListener("input", fillCode);
+      window.addEventListener("load", fillCode);
+    </script>
   </body>
 </html>

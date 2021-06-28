@@ -69,7 +69,7 @@
     3) @media.-ms-high-contrast
 16. Filter Effects
     1) 图片的透明度，亮度，对比度等。。。
-17. Flexible Box Layout 
+17. Flexible Box Layout(布局)
 
     justify-content(左右) — controls alignment of all items on the main axis.
     align-items(上下) — controls alignment of all items on the cross axis.
