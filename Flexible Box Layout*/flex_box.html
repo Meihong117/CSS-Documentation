@@ -10,7 +10,7 @@
   <body>
     <!-- overall -->
     <div class="overall">
-      <h2>overall</h2>
+      <h2>Overall of Box Layout</h2>
       <ol>
         <a href="https://devdocs.io/css/css_flexible_box_layout"
           ><li>
@@ -73,7 +73,10 @@
                 <br />
                 <span style="color: red;">justify-content</span>(left-right)
                 <br />
-                <span style="color: red;">align-content</span>
+                <span style="color: red;">align-content</span>(top-bottom)
+                <br />
+                <span style="color: red;">align-self</span>(move
+                itself;top-bottom)
               </code></a
             >
           </li></a
@@ -113,14 +116,77 @@
         <a href=""><li>Typical Use Cases of Flexbox</li></a>
       </ol>
     </div>
-    <!-- align-item -->
-    <div>
-      <img src="layout.png" alt="" style="width: 700px; height: 400px;" />
-      <h2>Box Layout</h2>
-      <code
-        >.class{ <br />display: flex; <br />align-items: flex-start;<br />
-        direction: row;<br />}</code
+    <!--------------------------------------       box-layout    -->
+    <h3>Box Layout</h3>
+    <div class="box-layout">
+      <img
+        src="img/layout.png"
+        alt=""
+        style="width: 700px; height: 400px; margin: 40px;"
+      />
+      <code style="margin: 40px;"
+        >div{ <br />display: flex; <br />align-items: flex-start;<br />
+        }</code
       >
+    </div>
+    <!--------------------------------------        all    -->
+    <h3>
+      <code>align-items || align-content || justify-content || align-self</code>
+    </h3>
+    <div class="all">
+      <!-- align-items -->
+      <div class="align-items">
+        <img src="img/align-items.png" alt="" />
+      </div>
+      <!-- align-content -->
+      <div class="align-content">
+        <img src="img/align-content.png" alt="" />
+      </div>
+      <!-- justify-content -->
+      <div class="justify-content">
+        <img src="img/justify-content.png" alt="" />
+      </div>
+      <!-- align-self -->
+      <div class="align-self">
+        <img src="img/align-self.png" alt="" />
+      </div>
+    </div>
+    <!--------------------------------------       property      -->
+    <div class="property">
+      <!-- flex -->
+      <h3>
+        <code>1. flex: flex-grow || flex-shrink || flex-basis </code>
+      </h3>
+
+      <div class="flex">
+        <div class="flex-grow">
+          <img src="img/flex-grow.png" alt="" />
+        </div>
+        <div class="flex-shrink">
+          <img src="img/flex-shrink.png" alt="" />
+        </div>
+        <div class="flex-basis">
+          <img src="img/" alt="" />
+        </div>
+      </div>
+
+      <!-- flex-flow -->
+      <h3><code>2. flex-flow: flex-direction || flex-wrap</code></h3>
+      <div class="flex-flow">
+        <img src="" alt="" />
+
+        <img src="img/wrap.png" alt="" />
+      </div>
+      <!-- order -->
+      <h3><code>3. order: integer</code></h3>
+      <div class="order">
+        <img src="img/order.png" alt="" />
+      </div>
+      <!-- visibility -->
+      <h3><code>4. visibility: hidden</code></h3>
+      <div class="visibility">
+        <img src="" alt="" />
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,42 @@
+/* overall */
+ol a {
+  text-decoration: none;
+}
+/* layout for all of imgs */
+.box-layout,
+.all,
+.flex,
+.flex-flow,
+.order,
+.visibility {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box-layout code {
+  display: flex;
+  align-self: center;
+  font-size: 16px;
+}
+
+/* all */
+.all img {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+/* property  */
+.flex img,
+.flex-flow img,
+.order img,
+.visibility img {
+  height: 300px;
+  width: 320px;
+  margin: 20px;
+}
+/* text */
+h3 {
+  text-align: center;
+}
