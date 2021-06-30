@@ -1,0 +1,16 @@
+/* overall */
+.overall ol a {
+  text-decoration: none;
+}
+/* Backdrop is only displayed when full-screen of video*/
+video::backdrop {
+  background-color: rgb(80, 80, 192);
+}
+/*  */
+#fullscreen:fullscreen {
+  background-color: yellow;
+  height: 500px;
+}
+#fullscreen::backdrop {
+  background-color: skyblue;
+}

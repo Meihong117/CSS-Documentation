@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="api.css" />
+    <title>Fullscreen API</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="overall">
+      <h2>Overall</h2>
+      <ol>
+        <a href=""
+          ><li><code>::backdrop</code></li></a
+        >
+        <a href=""
+          ><li><code>:fullscreen</code></li></a
+        >
+      </ol>
+    </div>
+    <!-- ::backdrop -->
+    <h2>::backdrop(see in full screen)</h2>
+    <video
+      controls
+      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+      width="620"
+    ></video>
+    <!-- ::fullscreen -->
+    <h2>:fullscreen</h2>
+
+    <div id="fullscreen">
+      <button id="button">Toggle to Fullscreen</button>
+    </div>
+    <!-- script for fullscreen -->
+    <script>
+      let fullscreen = document.querySelector("#fullscreen");
+      let button = document.querySelector("#button");
+
+      button.addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+          fullscreen.requestFullscreen();
+        } else {
+          document.exitFullscreen();
+        }
+      });
+    </script>
+  </body>
+</html>

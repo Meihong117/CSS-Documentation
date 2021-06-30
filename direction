@@ -28,8 +28,6 @@
       2. height
       3. width
    
-
-
 6. Cascading and Inheritance
     1) inherit
     2) initial
@@ -85,4 +83,6 @@
 
 19.Fragmentation: 分段（背景颜色，大小，分段程度）
 
-20. 
+20. Fullscreen API:
+    ::backdrop-全频后的（eg：背景颜色）
+    :fullscreen-全频后的（eg：背景颜色）
