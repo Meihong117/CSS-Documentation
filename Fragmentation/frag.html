@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="frag.css" />
+    <title>Fragmentation</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="overall">
+      <h2>Overall</h2>
+      <ol>
+        <a href="https://devdocs.io/css/css_fragmentation"
+          ><li>CSS Fragmentation</li></a
+        >
+        <ul>
+          <a href="https://devdocs.io/css/box-decoration-break"
+            ><li>
+              <code style="color: red;"
+                >box-decoration-break: slice || clone</code
+              >: <br />
+              The specified value will impact the appearance of the following
+              properties: <br />
+              background || border || border-image || box-shadow || clip-path ||
+              margin || padding
+            </li></a
+          >
+          <a href="https://devdocs.io/css/break-after"
+            ><li>
+              <code style="color: red;"
+                >break-after: or break-before <br />
+                <span style="color: green;">/* Generic break values */</span>
+                <br />
+                auto || avoid || always || all <br />
+
+                <span style="color: green;"> /* Page break values */</span>
+                <br />
+                avoid-page || page || left || right || recto || verso <br />
+
+                <span style="color: green;">/* Column break values */</span>
+                <br />
+                avoid-column || column <br />
+                <span style="color: green;">/* Region break values */</span>
+                <br />
+
+                avoid-region || region
+              </code>
+            </li></a
+          >
+          <a href="https://devdocs.io/css/break-inside"
+            ><li>
+              <code style="color: red;"
+                >break-inside: auto || avoid || avoid-page || avoid-column ||
+                avoid-region</code
+              >
+            </li></a
+          >
+          <a href="https://devdocs.io/css/orphans"
+            ><li><code style="color: red;">orphans: 2 || 3</code></li></a
+          >
+          <a href="https://devdocs.io/css/widows"
+            ><li><code style="color: red;">widows</code></li></a
+          >
+        </ul>
+      </ol>
+    </div>
+    <!-- box-decoration-break -->
+    <div class="">
+      <h2>1. box-decoration-break</h2>
+      <h3>#1</h3>
+      <span class="box_deco_break1 option1"
+        >The quick orange fox <br />The quick orange fox
+      </span>
+      <br />
+      <h3>#2</h3>
+      <div class="box_deco_break2 option2">
+        <span class="">The quick orange fox <br />The quick orange fox</span>
+      </div>
+      <h3>#3</h3>
+      <div>
+        <span class="box_deco_break3 option3">iM </span>
+        <span class="box_deco_break3 option3">i<br />M <br /></span>
+      </div>
+      <h3>#4</h3>
+      <div class="columns">
+        <span class="box_deco_break4 option4"
+          >The <br />
+          quick <br />
+          orange <br />
+          fox</span
+        >
+      </div>
+    </div>
+    <!-- break-after -->
+    <div class="">
+      <h2>2. break-after</h2>
+      <div class="break-after">
+        <article>
+          <h1>Main heading</h1>
+          <h2>Subheading</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+            fringilla mauris. Quisque commodo eget nisi sed pretium. Mauris
+            luctus nec lacus in ultricies. Mauris vitae hendrerit arcu, ac
+            scelerisque lacus. Aliquam lobortis in lacus sit amet posuere. Fusce
+            iaculis urna id neque dapibus, eu lacinia lectus dictum.
+          </p>
+          <h2>Subheading</h2>
+          <p>
+            Praesent condimentum dui dui, sit amet rutrum diam tincidunt eu.
+            Cras suscipit porta leo sit amet rutrum. Sed vehicula ornare
+            tincidunt. Curabitur a ipsum ac diam mattis volutpat ac ut elit.
+            Nullam luctus justo non vestibulum gravida. Morbi metus libero,
+            pharetra non porttitor a, molestie nec nisi.
+          </p>
+          <h2>Subheading</h2>
+          <p>
+            Vivamus eleifend metus vitae neque placerat, eget interdum elit
+            mattis. Donec eu vulputate nibh. Ut turpis leo, malesuada quis nisl
+            nec, volutpat egestas tellus.
+          </p>
+          <h2>Subheading</h2>
+          <p>
+            In finibus viverra enim vel suscipit. Quisque consequat velit eu
+            orci malesuada, ut interdum tortor molestie. Proin sed pellentesque
+            augue. Nam risus justo, faucibus non porta a, congue vel massa. Cras
+            luctus lacus nisl, sed tincidunt velit pharetra ac. Duis suscipit
+            faucibus dui sed ultricies.
+          </p>
+        </article>
+      </div>
+    </div>
+    <!-- orphans -->
+    <div>
+      <h2>3. orphans</h2>
+      <div class="orphans">
+        <p>This is the first paragraph containing some text.</p>
+        <p>
+          This is the second paragraph containing some more text than the first
+          one. It is used to demonstrate how orphans work.
+        </p>
+        <p>
+          This is the third paragraph. It has a little bit more text than the
+          first one.
+        </p>
+      </div>
+    </div>
+    <!--  -->
+  </body>
+</html>

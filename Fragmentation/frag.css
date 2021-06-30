@@ -1,0 +1,76 @@
+/* overall */
+.overall ol a {
+  text-decoration: none;
+}
+
+/* box-decoration-break */
+.box_deco_break1,
+.box_deco_break2,
+.box_deco_break3,
+.box_deco_break4 {
+  background: linear-gradient(to bottom right, yellow, green);
+  box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue,
+    5px 5px 15px 0px yellow;
+  padding: 0em 1em;
+  border-style: solid;
+  margin-left: 10px;
+  font: 24px sans-serif;
+  line-height: 2;
+}
+.option1 {
+  border-radius: 16px;
+  box-decoration-break: clone; /*slice*/
+}
+.option2 {
+  display: block;
+  border-radius: 16px;
+  width: max-content;
+}
+.option3 {
+  border-radius: 250px;
+}
+.columns {
+  columns: 4;
+}
+.option4 {
+  display: block;
+  background: linear-gradient(to bottom right, yellow, green);
+  box-shadow: inset 8px 8px 10px 0px deeppink, inset -5px -5px 5px 0px blue,
+    inset 5px 5px 15px 0px yellow;
+  border-radius: 250px;
+  /* box-decoration-break: clone; */
+}
+
+/* break-after */
+.break-after h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  column-span: all;
+}
+.break-after h2 {
+  font-size: 1.2rem;
+  color: red;
+  letter-spacing: 1px;
+}
+.break-after p {
+  line-height: 1.5;
+  break-after: column;
+}
+.break-after article {
+  column-width: 200px;
+  gap: 20px;
+}
+/* orphans */
+.orphans {
+  background-color: #8cffa0;
+  height: 150px;
+  columns: 3;
+  orphans: 3;
+  /* widows: 2; */
+}
+.orphans p {
+  background-color: #8ca0ff;
+}
+.orphans p:first-child {
+  margin-top: 0;
+}
