@@ -9,16 +9,116 @@
   </head>
   <body>
     <!-- Overall -->
-    <div>
+    <div class="overall">
       <h2>overall</h2>
       <ol>
         <a href="https://devdocs.io/css/content"
-          ><li><code>content</code></li></a
+          ><li>
+            <code style="color: red;">content</code>: Objects inserted using the
+            content property are anonymous replaced elements.
+          </li></a
         >
-        <a href=""
-          ><li><code>quotes</code></li></a
+        <ul>
+          <li style="color: green;">/* image values */</li>
+          <ul>
+            <li>content: url("http://www.example.com/test.png");</li>
+            <li>content: linear-gradient(#e66465, #9198e5);</li>
+            <li>content: image-set("image1x.png" 1x, "image2x.png" 2x);</li>
+          </ul>
+          <li style="color: green;">
+            /* alt text for generated content, added in the Level 3
+            specification */
+          </li>
+          <ul>
+            <li>
+              content: url("http://www.example.com/test.png") / "This is the alt
+              text";
+            </li>
+          </ul>
+          <li style="color: green;">/* string value */</li>
+          <ul>
+            <li>content: "prefix";</li>
+          </ul>
+
+          <li style="color: green;">
+            /* counter values, optionally with list-style-type */
+          </li>
+          <ul>
+            <li>
+              content: counter(chapter_counter); content:
+              counter(chapter_counter,
+            </li>
+            <li>
+              upper-roman); content: counters(section_counter, "."); content:
+            </li>
+            <li>counters(section_counter, ".", decimal-leading-zero);</li>
+          </ul>
+
+          <li style="color: green;">
+            /* attr() value linked to the HTML attribute value */
+          </li>
+          <ul>
+            <li>content: attr(value string);</li>
+          </ul>
+
+          <li style="color: green;">
+            /* Language- and position-dependent keywords */
+          </li>
+          <ul>
+            <li>content: open-quote;</li>
+            <li>content: close-quote;</li>
+            <li>content: no-open-quote;</li>
+            <li>content: no-close-quote;</li>
+          </ul>
+          <li style="color: green;">
+            /* Except for normal and none, several values can be used
+            simultaneously */
+          </li>
+          <ul>
+            <li>content: open-quote counter(chapter_counter);</li>
+          </ul>
+        </ul>
+        <a href="https://devdocs.io/css/quotes"
+          ><li><code style="color: red;">quotes: "«" "»" "‹" "›" </code></li></a
         >
       </ol>
+    </div>
+    <!-- content -->
+    <div class="content1">
+      <h2>Content #1</h2>
+      <div>
+        <h3>5</h3>
+        <p>
+          <span>According to Sir Tim Berners-Lee,</span>
+          <q cite="http://www.w3.org/People/Berners-Lee/FAQ.html#Internet"
+            >I was lucky enough to invent the Web at the time when the Internet
+            already existed - and had for a decade and a half.</q
+          >
+          We must understand that there is nothing fundamentally wrong with
+          building on the contributions of others.
+        </p>
+        <h3>6</h3>
+        <p>
+          <span>According to the Mozilla Manifesto,</span>
+          <q cite="http://www.mozilla.org/en-US/about/manifesto/"
+            >Individuals must have the ability to shape the Internet and their
+            own experiences on the Internet.</q
+          >
+          Therefore, we can infer that contributing to the open web can protect
+          our own individual experiences on it.
+        </p>
+      </div>
+    </div>
+    <div class="content2">
+      <h2>Content #2</h2>
+      <a href="https://www.mozilla.org/en-US/" id="moz">Mozilla Home Page</a>
+    </div>
+    <!-- quotes -->
+    <div class="quotes">
+      <h2>quotes</h2>
+      <div lang="fr"><q>To be or not to be. That's the question!</q></div>
+      <div lang="de"><q>To be or not to be. That's the question!</q></div>
+      <div lang="en"><q>To be or not to be. That's the question!</q></div>
     </div>
   </body>
 </html>
