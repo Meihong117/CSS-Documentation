@@ -9,10 +9,12 @@
   </head>
   <body>
     <!-- overall -->
+    <div class="h1"><h1>Overall</h1></div>
     <div class="overall">
-      <h2>Overall</h2>
       <ol>
-        <a href=""><li>CSS Grid Layout</li></a>
+        <a href="https://devdocs.io/css/css_grid_layout"
+          ><li>CSS Grid Layout</li></a
+        >
         <ul>
           <a href=""><li>Basic Concepts of Grid Layout</li></a>
           <a href=""><li>Auto-placement in CSS Grid Layout</li></a>
@@ -32,41 +34,49 @@
           <a href=""><li>Relationship of Grid Layout</li></a>
           <a href=""><li>Subgrid</li></a>
         </ul>
-        <a href=""><li>flex value</li></a>
+        <a href="https://devdocs.io/css/flex_value"
+          ><li>flex value (grid-template-columns:1fr || 2.5fr)</li></a
+        >
+        <!-- grid -->
         <a href=""
           ><li>
             <span style="color: red;">grid</span> is the shorthand of:
           </li></a
         >
-        <ul>
+        <ol>
+          <!-- grid-area -->
           <a href=""><li style="color: red;">grid-area</li></a>
           <ul>
+            <!-- grid-column -->
             <a href=""
               ><li style="color: red;">
                 grid-column: grid-column-start / grid-column-end;
               </li></a
             >
-
+            <!-- grid-row -->
             <a href=""
               ><li style="color: red;">
                 grid-row: grid-row-start / grid-row-end
               </li></a
             >
           </ul>
+          <!-- grid-auto-columns -->
           <a href=""
             ><li style="color: red;">
               grid-auto-columns: lengt || percentage || flex || minmax() ||
               fit-content() || multiple track-size
             </li></a
           >
+          <!-- grid-auto-rows -->
           <a href="" style="color: red;"><li>grid-auto-rows</li></a>
+          <!-- grid-auto-flow -->
           <a href=""
             ><li style="color: red;">
               grid-auto-flow: row || column || dense || row dense || column
               dense
             </li></a
           >
-
+          <!-- grid-template -->
           <a href="" style="color: red;"
             ><li>
               grid-template: none || grid-template-rows / grid-template-columns
@@ -75,12 +85,13 @@
           >
           <ul>
             <a href="" style="color: red;"><li>grid-template-areas</li></a>
-
             <a href=""><li style="color: red;">grid-template-columns</li></a>
-            <a href=""><li style="color: red;">grid-template-rows</li></a>
+            <a href=""
+              ><li style="color: red;">grid-template-rows: masonry</li></a
+            >
           </ul>
-        </ul>
-
+        </ol>
+        <!-- minmax() -->
         <a href="https://devdocs.io/css/minmax()"
           ><li>
             <span style="color: red;">minmax()</span> can be used in <br />
@@ -90,24 +101,34 @@
             grid-auto-rows
           </li></a
         >
+        <!-- repeat() -->
         <a href="https://devdocs.io/css/repeat()"
           ><li>
             <span style="color: red;">repeat()</span>:repeat(number of
             columns/rows, the column width we want)
           </li></a
         >
+        <!-- fit-content() -->
         <a href="https://devdocs.io/css/fit-content()"
-          ><li>fit-content()</li></a
+          ><li style="color: red;">fit-content()</li></a
         >
-        <a href="https://devdocs.io/css/gap"><li>gap</li></a>
+        <!-- gap -->
+        <a href="https://devdocs.io/css/gap"
+          ><li style="color: red;">gap</li></a
+        >
         <ul>
-          <a href="https://devdocs.io/css/column-gap"><li>column-gap</li></a>
-          <a href="https://devdocs.io/css/row-gap"><li>row-gap</li></a>
+          <a href="https://devdocs.io/css/column-gap"
+            ><li style="color: red;">column-gap</li></a
+          >
+          <a href="https://devdocs.io/css/row-gap"
+            ><li style="color: red;">row-gap</li></a
+          >
         </ul>
       </ol>
     </div>
     <!-------------------------------------------- grid -->
-    <h2>gird #1</h2>
+    <div class="h1"><h1>1. Grid</h1></div>
+    <h2>#1</h2>
     <div class="grid">
       <div></div>
       <div></div>
@@ -117,17 +138,19 @@
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <h2>gird #2</h2>
+    <h2>#2</h2>
     <div style="display: grid;">
       I am a string and will become an anonymous item
       <div>A grid item</div>
       <div>A grid item</div>
     </div>
     <!-------------------------------------------- alignment in grid-->
-    <h2>
-      Box alignment in CSS Grid Layout
-    </h2>
+    <div class="h1"><h1>2. Box alignment in CSS Grid Layout</h1></div>
     <h3>
       <ul class="align_ul">
         <li>
@@ -158,7 +181,7 @@
     </h3>
 
     <div class="alignment"><img src="img/align.png" alt="alignment" /></div>
-    <h2>Example</h2>
+    <h2>#1</h2>
     <div class="alignment_ex1">
       <div class="alignment_item1">Item 1</div>
       <div class="alignment_item2">Item 2</div>
@@ -167,6 +190,7 @@
     </div>
 
     <!-------------------------------------------- grid-auto-columns & grid-auto-rows -->
+    <div class="h1"><h1>grid-auto-columns</h1></div>
     <div class="grid-auto-columns">
       <h2>
         grid-auto-columns(length of width) || grid-auto-rows(length of height)
@@ -178,7 +202,7 @@
       </div>
     </div>
     <!-------------------------------------------- grid-auto-flow -->
-    <h2>grid-auto-flow</h2>
+    <div class="h1"><h1>grid-auto-flow</h1></div>
     <div class="grid-auto-flow">
       <div class="first_flow">
         <img src="img/flow.png" alt="" style="height: 400px; width: 400px;" />
@@ -202,19 +226,26 @@
       </div>
     </div>
     <!-------------------------------------------- grid-column & row-->
-    <!-- #1 -->
-    <h1>Grid Area #1</h1>
-    <h2>
+    <div class="h1"><h1>grid-area</h1></div>
+    <h3>
       grid-column (左右)： grid-column-start(起点) / grid-column-end(终点)
-    </h2>
-    <h2>grid-row (上下)：grid-row-start(起点) / grid-row-end(终点)</h2>
+    </h3>
+    <h3>grid-row (上下)：grid-row-start(起点) / grid-row-end(终点)</h3>
+    <div class="grid-area">
+      <img src="img/area_a.png" alt="" />
+      <img src="img/area_b.png" alt="" />
+      <img src="img/area_c.png" alt="" />
+      <img src="img/area_4.png" alt="" />
+    </div>
+    <!-- #1 -->
+    <h2>#1</h2>
     <div class="grid-column">
       <img src="img/column1.png" alt="" />
       <img src="img/column2.png" alt="" />
       <img src="img/column3.png" alt="" />
     </div>
     <!-- #2 -->
-    <h1>Grid Area #2</h1>
+    <h2>#2</h2>
     <div class="grid_layout">
       <div class="one">
         grid-column: 1 / 3; /*左右：从第一个格到大二个格*/ <br />
@@ -242,7 +273,7 @@
       </div>
     </div>
     <!-- #3 -->
-    <h1>Grid Area #3</h1>
+    <h2>#3</h2>
     <div class="media flipped">
       <div class="image"></div>
       <div class="text">
@@ -251,7 +282,7 @@
       </div>
     </div>
     <!-- #4 named grid lines -->
-    <h2>Grid Area #4: named grid lines</h2>
+    <h2>#4: named grid lines</h2>
     <img
       src="img/named_grid_line.png"
       alt=""
@@ -275,15 +306,15 @@
     </div>
 
     <!-------------------------------------------- grid-template -->
-    <h2>
-      grid-template:
-    </h2>
+    <div class="h1"><h1>grid-template</h1></div>
+
     <h3>
       shorthand of <br />
       grid-template-areas <br />
       grid-template-columns <br />
       grid-template-rows
     </h3>
+    <!-- #1 -->
     <h3>#1</h3>
     <div class="grid-template">
       <section id="page">
@@ -293,15 +324,15 @@
         <footer>Footer</footer>
       </section>
     </div>
+    <!-- #2 -->
     <h3>
       #2 <br />
-      <code>grid-template-columns: 1fr 1fr 1fr;</code> <br />
-      or <br />
-      <code>grid-template-columns: repeat(3, 1fr);</code> <br />
-      or <br />
-      <code>grid-template-columns: 20px repeat(6, 1fr) 20px;</code> <br />
-      or <br />
-      <code>grid-template-columns: repeat(5, 1fr 2fr);</code>
+      <ul>
+        <li><code>grid-template-columns: 1fr 1fr 1fr;</code></li>
+        <li><code>grid-template-columns: repeat(3, 1fr);</code></li>
+        <li><code>grid-template-columns: 20px repeat(6, 1fr) 20px;</code></li>
+        <li><code>grid-template-columns: repeat(5, 1fr 2fr);</code></li>
+      </ul>
     </h3>
 
     <div class="grid-template2">
@@ -311,19 +342,29 @@
       <div>Four</div>
       <div>Five</div>
     </div>
-    <!-------------------------------------------- grid-area -->
-    <h2>grid-area</h2>
-    <div class="grid-area">
-      <img src="img/area_a.png" alt="" />
-      <img src="img/area_b.png" alt="" />
-      <img src="img/area_c.png" alt="" />
-      <img src="img/area_4.png" alt="" />
+    <!-- #3 -->
+    <h3>#3: masonry</h3>
+    <div class="masonry">
+      <div class="item" style="block-size: 2em;"></div>
+      <div class="item" style="block-size: 3em;"></div>
+      <div class="item" style="block-size: 1.6em;"></div>
+      <div class="item" style="block-size: 4em;"></div>
+      <div class="item" style="block-size: 2.2em;"></div>
+      <div class="item" style="block-size: 3em;"></div>
+      <div class="item" style="block-size: 4.5em;"></div>
+      <div class="item" style="block-size: 1em;"></div>
+      <div class="item" style="block-size: 3.5em;"></div>
+      <div class="item" style="block-size: 2.8em;"></div>
+    </div>
+    <h3>#4: subgrid</h3>
+    <div class="subgrid">
+      <div class="subgrid_item">
+        <div class="subitem"></div>
+      </div>
     </div>
     <!-------------------------------------------- minmax() -->
+    <div class="h1"><h1>minmax()</h1></div>
     <div>
-      <h2>
-        minmax()
-      </h2>
       <h3>
         <code
           >grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr)
@@ -332,14 +373,34 @@
       </h3>
     </div>
     <!-------------------------------------------- repeat() -->
+    <div class="h1"><h1>repeat()</h1></div>
     <div>
-      <h2>repeat()</h2>
       <h3>
         repeat(4, [col-start] min-content [col-middle] max-content [col-end])
       </h3>
     </div>
+    <!-- #1 -->
+    <h2>#1</h2>
+    <div class="repeat">
+      <div class="item1">I am placed from col-start line 1 to col-start 5</div>
+      <div class="item2">
+        I am placed from col-start line 7 spanning 3 lines
+      </div>
+    </div>
+    <!-- #2 -->
+    <h2>#2</h2>
+    <div class="repeat s2">
+      <div class="item1_s2">
+        I am placed from col1-start line 1 to col2-start line 2
+      </div>
+      <div class="item2_s2">
+        I am placed from col1-start line 2 spanning 2 lines named col1-start
+      </div>
+    </div>
+
     <!-------------------------------------------- overall example -->
-    <h2>Overall Examples #1</h2>
+    <div class="h1"><h1>Overall Examples</h1></div>
+    <h2>#1</h2>
     <div class="overall_example1">
       <div class="example1">
         <div>One</div>
@@ -359,7 +420,7 @@
         <div>Twelve</div>
       </div>
     </div>
-    <h2>Overall Examples #2</h2>
+    <h2>#2</h2>
     <div class="overall_example2">
       <div class="example2">
         <li><img src="img/portrait.jpg" alt="portrait" /></li>
@@ -383,7 +444,7 @@
         <li><img src="img/portrait.jpg" alt="portrait" /></li>
       </div>
     </div>
-    <h2>Overall Examples #3</h2>
+    <h2>#3</h2>
     <div class="overall-example3">
       <div class="example3">
         <dl>
@@ -400,6 +461,7 @@
       </div>
     </div>
     <!-------------------------------------------- writing-mode -->
+    <div class="h1"><h1>writing-mode</h1></div>
     <h2>
       <code>
         writing-mode: || horizontal-tb || vertical-rl || vertical-lr ||
@@ -407,19 +469,15 @@
       >
     </h2>
     <div class="writing-mode">
-      <p
-        style="writing-mode: horizontal-tb; background-color: lavenderblush;width: max-content;height: max-content;"
-      >
+      <p style="writing-mode: horizontal-tb; ">
         I have writing mode set to the default <code>horizontal-tb</code>
       </p>
-      <p
-        style="writing-mode: vertical-rl; background-color: lemonchiffon; width: max-content; height: max-content;"
-      >
+      <p style="writing-mode: vertical-rl; ">
         I have writing mode set to <code>vertical-rl</code>
       </p>
     </div>
     <!-------------------------------------------- Mixed writing modes and grid layout -->
-    <h2>Mixed writing modes and grid layout</h2>
+    <div class="h1"><h1>Mixed writing modes and grid layout</h1></div>
     <div class="mixed_mode">
       <div class="content">
         <p>
@@ -449,7 +507,50 @@
         </ul>
       </nav>
     </div>
-
+    <!-------------------------------------------- Card grid layout -->
+    <div class="h1"><h1>Card</h1></div>
+    <div>
+      <ul class="listing">
+        <li>
+          <h2>Item One</h2>
+          <div class="body">
+            <p>The content of this listing item goes here.</p>
+          </div>
+          <div class="cta"><a href="">Call to action!</a></div>
+        </li>
+        <li>
+          <h2>Item Two</h2>
+          <div class="body">
+            <p>The content of this listing item goes here.</p>
+          </div>
+          <div class="cta"><a href="">Call to action!</a></div>
+        </li>
+        <li class="wide">
+          <h2>Item Three</h2>
+          <div class="body">
+            <p>The content of this listing item goes here.</p>
+            <p>This one has more text than the other items.</p>
+            <p>Quite a lot more</p>
+            <p>Perhaps we could do something different with it?</p>
+          </div>
+          <div class="cta"><a href="">Call to action!</a></div>
+        </li>
+        <li>
+          <h2>Item Four</h2>
+          <div class="body">
+            <p>The content of this listing item goes here.</p>
+          </div>
+          <div class="cta"><a href="">Call to action!</a></div>
+        </li>
+        <li>
+          <h2>Item Five</h2>
+          <div class="body">
+            <p>The content of this listing item goes here.</p>
+          </div>
+          <div class="cta"><a href="">Call to action!</a></div>
+        </li>
+      </ul>
+    </div>
     <!-------------------------------------------- script for grid-auto-flow -->
     <script>
       function changeGridAutolow() {
