@@ -1,0 +1,22 @@
+.h1 {
+  text-align: center;
+}
+/* ----------------------------------initial-letter */
+.initial-letter {
+  border: 1px solid gray;
+  text-align: left;
+}
+.normal {
+  -webkit-initial-letter: normal;
+  initial-letter: normal;
+}
+
+.onefive {
+  -webkit-initial-letter: 1.5;
+  initial-letter: 1.5;
+}
+
+.three {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+}
