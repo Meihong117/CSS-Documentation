@@ -10,44 +10,240 @@
   <body>
     <!-- Overall -->
     <div class="h1"><h1>Overall</h1></div>
-    <div>
+    <div class="overall">
       <ol>
-        <a href=""><li>CSS Images</li></a>
-        <a href=""><li>CSS Images: Implementing image sprites in CSS</li></a>
-        <a href=""><li>CSS Images: Using CSS gradients</li></a>
+        <a href="https://devdocs.io/css/css_images"><li>CSS Images</li></a>
+        <a
+          href="https://devdocs.io/css/css_images/implementing_image_sprites_in_css"
+          ><li>CSS Images: Implementing image sprites in CSS</li></a
+        >
+        <ul>
+          <li>background: url(myfile.png);</li>
+          <li>background-position: -40px 0px;</li>
+        </ul>
+        <a href="https://devdocs.io/css/css_images/using_css_gradients"
+          ><li>CSS Images: Using CSS gradients</li></a
+        >
         <h3>Properties:</h3>
         <ol>
-          <a href=""><li>image-orientation:no longer recommended</li></a>
-          <a href=""
-            ><li>image-rendering: auto || crisp-edges || pixelated</li></a
+          <a href="https://devdocs.io/css/image-orientation"
+            ><li>image-orientation: no longer recommended</li></a
           >
-          <a href=""><li>image-resolution</li></a>
-          <a href=""><li>object-fit</li></a>
-          <a href=""><li>object-position</li></a>
+          <a href="https://devdocs.io/css/image-rendering"
+            ><li>
+              <span style="color: red;">image-rendering</span> : auto ||
+              crisp-edges || pixelated
+            </li></a
+          >
+          <a href="https://devdocs.io/css/image-rendering"
+            ><li>image-resolution: This is an experimental technology</li></a
+          >
+          <a href="https://devdocs.io/css/object-fit"
+            ><li>
+              <span style="color: red;">object-fit</span> : fill | contain |
+              cover | none | scale-down
+            </li></a
+          >
+          <a href="https://devdocs.io/css/object-position"
+            ><li>
+              <span style="color: red;">object-position</span> : center top |
+              200px 150px
+            </li></a
+          >
         </ol>
         <h3>Functions:</h3>
         <ol>
-          <a href=""><li>conic-gradient()</li></a>
-          <a href=""><li>cross-fade()</li></a>
-          <a href=""><li>element()</li></a>
-          <a href=""><li>image()</li></a>
-          <a href=""><li>image-set()</li></a>
-          <a href=""><li>url()</li></a>
-          <a href=""><li>linear-gradient()</li></a>
-          <a href=""><li>radial-gradient()</li></a>
-          <a href=""><li>repeating-conic-gradient()</li></a>
-          <a href=""><li>repeating-linear-gradient()</li></a>
-          <a href=""><li>repeating-radial-gradient()</li></a>
+          <a href="https://devdocs.io/css/conic-gradient()"
+            ><li>conic-gradient()</li></a
+          >
+          <a href="https://devdocs.io/css/cross-fade()"
+            ><li>cross-fade(): no at Firefox</li></a
+          >
+          <a href="https://devdocs.io/css/element()"><li>element()</li></a>
+          <a href="https://devdocs.io/css/image()"
+            ><li>image(): Experimental</li></a
+          >
+          <a href="https://devdocs.io/css/image-set()"
+            ><li>
+              image-set(): provide alternative background-image options
+            </li></a
+          >
+          <a href="https://devdocs.io/css/url()"><li>url()</li></a>
+          <a href="https://devdocs.io/css/gradient"><li>< gradient ></li></a>
+          <ul>
+            <a href="https://devdocs.io/css/linear-gradient()"
+              ><li>linear-gradient()</li></a
+            >
+            <a href="https://devdocs.io/css/radial-gradient()"
+              ><li>radial-gradient()</li></a
+            >
+            <a href="https://devdocs.io/css/repeating-conic-gradient()"
+              ><li>repeating-conic-gradient()</li></a
+            >
+            <a href="https://devdocs.io/css/repeating-linear-gradient()"
+              ><li>repeating-linear-gradient()</li></a
+            >
+            <a href="https://devdocs.io/css/repeating-radial-gradient()"
+              ><li>repeating-radial-gradient()</li></a
+            >
+          </ul>
         </ol>
         <h3>Data Types:</h3>
         <ol>
-          <a href=""><li>gradient</li></a>
-          <a href=""><li>image</li></a>
+          <a href="https://devdocs.io/css/image"><li>< image ></li></a>
+          <ul>
+            <li>
+              An image denoted by the url() data type
+            </li>
+            <li>A < gradient > data type</li>
+            <li>A part of the webpage, defined by the element() function</li>
+            <li>
+              An image, image fragment or solid patch of color, defined by the
+              image() function
+            </li>
+            <li>
+              A blending of two or more images defined by the cross-fade()
+              function.
+            </li>
+            <li>
+              A selection of images chosen based on resolution defined by the
+              image-set() function.
+            </li>
+          </ul>
         </ol>
       </ol>
     </div>
     <!-------------------------------------------- Propertires -->
-    <!-------------------image-orientation -->
+    <div class="h1" style="color: red;"><h1>Propertires</h1></div>
+    <!-------------------image-rendering -->
     <div class="h1"><h1>image-rendering</h1></div>
+    <div class="rendering">
+      <img src="img/bird.jpg" alt="" class="img1" />
+      <img src="img/bird.jpg" alt="" class="img2" />
+      <img src="img/bird.jpg" alt="" class="img3" />
+    </div>
+    <!-------------------object-fit -->
+    <div class="h1"><h1>object-fit</h1></div>
+    <div class="object_fit">
+      <div>
+        <h2>original image</h2>
+        <img class="original" src="img/bird.jpg" alt="bird" />
+      </div>
+      <div>
+        <h2>object-fit: fill</h2>
+        <img class="fill narrow" src="img/bird.jpg" alt="bird" />
+      </div>
+      <div>
+        <h2>object-fit: contain</h2>
+        <img class="contain narrow" src="img/bird.jpg" alt="bird" />
+      </div>
+      <div>
+        <h2>object-fit: cover</h2>
+        <img class="cover narrow" src="img/bird.jpg" alt="bird" />
+      </div>
+      <div>
+        <h2>object-fit: none</h2>
+        <img class="none narrow" src="img/bird.jpg" alt="bird" />
+      </div>
+      <div>
+        <h2>object-fit: scale-down</h2>
+        <img class="scale-down narrow" src="img/bird.jpg" alt="bird" />
+      </div>
+    </div>
+    <!-------------------object-position -->
+    <div class="h1"><h1>object-position</h1></div>
+    <div class="object-position">
+      <div>
+        <h3>object-position:10px</h3>
+        <img src="img/portrait.jpg" alt="" class="position1" />
+      </div>
+      <div>
+        <h3>object-position: 100% 10%;</h3>
+        <img src="img/portrait.jpg" alt="" class="position2" />
+      </div>
+    </div>
+    <!-------------------------------------------- Functions -->
+    <div class="h1" style="color: red;"><h1>Functions</h1></div>
+
+    <!-------------------conic-gradient() -->
+    <div class="h1"><h1>conic-gradient()</h1></div>
+    <div class="conic-gradient">
+      <div class="conic-gradient1"></div>
+      <div class="conic-gradient2"></div>
+      <div class="conic-gradient3"></div>
+      <div class="conic-gradient4"></div>
+    </div>
+    <!--------------------repeating-conic-gradient() -->
+    <div class="h1"><h1>repeating-conic-gradient()</h1></div>
+    <div class="repeating-conic-gradient">
+      <div class="repeating-conic-gradient1"></div>
+      <div class="repeating-conic-gradient2"></div>
+    </div>
+
+    <!-------------------element() -->
+    <div class="h1"><h1>element()</h1></div>
+    <div class="element">
+      <div>
+        <div
+          style="width:300px; height:300px; background:-moz-element(#myBackground1) no-repeat;"
+        >
+          <p>
+            This box uses the element with the #myBackground1 ID as its
+            background!
+          </p>
+        </div>
+
+        <div style="overflow:hidden; height:0;">
+          <div
+            id="myBackground1"
+            style="width:1024px; height:1024px; background-image: linear-gradient(to right, red, orange, yellow, white);"
+          >
+            <p
+              style="transform-origin:0 0; transform: rotate(45deg); color:white;"
+            >
+              This text is part of the background. Cool, huh?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------image-set() -->
+    <!-- <div class="h1"><h1>image-set()</h1></div>
+    <div class="image-set"></div> -->
+    <!--------------------linear-gradient() -->
+    <div class="h1"><h1>linear-gradient()</h1></div>
+    <div class="linear-gradient">
+      <div>
+        <img src="img/linear.png" alt="" style="width: 200px; height: 200px;" />
+      </div>
+      <div class="linear-gradient1"></div>
+      <div class="linear-gradient2"></div>
+      <div class="linear-gradient3"></div>
+      <div class="linear-gradient4"></div>
+    </div>
+    <!--------------------repeating-linear-gradient() -->
+    <div class="h1"><h1>repeating-linear-gradient()</h1></div>
+    <div class="repeating-linear-gradient">
+      <div class="repeating-linear-gradient1"></div>
+      <div class="repeating-linear-gradient2"></div>
+    </div>
+
+    <!--------------------radial-gradient() -->
+    <div class="h1"><h1>radial-gradient()</h1></div>
+    <div class="radial-gradient">
+      <div>
+        <img src="img/radial.png" alt="" style="width: 200px; height: 200px;" />
+      </div>
+      <div class="radial-gradient1"></div>
+      <div class="radial-gradient2"></div>
+      <div class="radial-gradient3"></div>
+      <div class="radial-gradient4"></div>
+    </div>
+    <!--------------------repeating-radial-gradient() -->
+    <div class="h1"><h1>repeating-radial-gradient()</h1></div>
+    <div class="repeating-radial-gradient">
+      <div class="repeating-radial-gradient1"></div>
+      <div class="repeating-radial-gradient2"></div>
+    </div>
   </body>
 </html>
