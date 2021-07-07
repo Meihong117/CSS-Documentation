@@ -28,14 +28,101 @@
         <a href=""><li>counter-set</li></a>
       </ol>
     </div>
-    <!-- Consistent list indentation -->
+    <!---------------------------------------------Consistent list indentation -->
     <div class="h1"><h1>Consistent list indentation</h1></div>
     <div class="indentation">
-      <ul>
-        <li>CSS Lists and Counters: Consistent list indentation</li>
-        <li>CSS Lists and Counters: Consistent list indentation</li>
-        <li>CSS Lists and Counters: Consistent list indentation</li>
-      </ul>
+      <div>
+        <ul>
+          <li>CSS Lists and Counters: Consistent list indentation</li>
+          <li>CSS Lists and Counters: Consistent list indentation</li>
+          <li>CSS Lists and Counters: Consistent list indentation</li>
+        </ul>
+      </div>
+    </div>
+    <!----------------------------------------------Using CSS counters -->
+    <div class="h1"><h1>Using CSS counters</h1></div>
+    <div class="counter_layout">
+      <div style="margin: 20px;">
+        <h3>#1</h3>
+        <div class="counters">
+          <h4>Introduction</h4>
+          <h4>Body</h4>
+          <h4>Conclusion</h4>
+        </div>
+      </div>
+      <div style="margin: 20px;">
+        <h3>#2</h3>
+        <div class="link">
+          <p>See <a href="#"></a></p>
+          <p>Do not forget to <a href="#">leave a message</a>!</p>
+          <p>See also <a href="#"></a></p>
+        </div>
+      </div>
+      <div style="margin: 20px;">
+        <h3>#3</h3>
+        <div class="nested_counter">
+          <ol>
+            <li>item</li>
+            <!-- 1     -->
+            <li>
+              item
+              <!-- 2     -->
+              <ol>
+                <li>item</li>
+                <!-- 2.1   -->
+                <li>item</li>
+                <!-- 2.2   -->
+                <li>
+                  item
+                  <!-- 2.3   -->
+                  <ol>
+                    <li>item</li>
+                    <!-- 2.3.1 -->
+                    <li>item</li>
+                    <!-- 2.3.2 -->
+                  </ol>
+                  <ol>
+                    <li>item</li>
+                    <!-- 2.3.1 -->
+                    <li>item</li>
+                    <!-- 2.3.2 -->
+                    <li>item</li>
+                    <!-- 2.3.3 -->
+                  </ol>
+                </li>
+                <li>item</li>
+                <!-- 2.4   -->
+              </ol>
+            </li>
+            <li>item</li>
+            <!-- 3     -->
+            <li>item</li>
+            <!-- 4     -->
+          </ol>
+          <ol>
+            <li>item</li>
+            <!-- 1     -->
+            <li>item</li>
+            <!-- 2     -->
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------::marker -->
+    <div class="h1"><h1>::marker</h1></div>
+    <div class="marker">
+      <div>
+        <ul>
+          <li>Peaches</li>
+          <li>Apples</li>
+          <li>Plums</li>
+        </ul>
+      </div>
+    </div>
+    <!----------------------------------------------counter-set -->
+    <div class="h1"><h1>counter-set</h1></div>
+    <div class="counter_set">
+      <h1>This is counter set</h1>
     </div>
   </body>
 </html>

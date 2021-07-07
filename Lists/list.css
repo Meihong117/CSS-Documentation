@@ -2,10 +2,59 @@
   text-align: center;
 }
 /*  */
+.indentation,
+.counter_layout,
+.marker,
+.counter_set {
+  display: flex;
+  justify-content: center;
+}
 .indentation ul {
   /* margin-left: 0;
   padding-left: 40px; */
 
   margin-left: 40px;
   padding-left: 0;
+}
+/* -------------------------------------------counters */
+.counter_layout h3 {
+  text-align: center;
+}
+/* #1 */
+.counters {
+  counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
+}
+.counters h4::before {
+  counter-increment: section; /* Increment the value of section counter by 1 */
+  content: "Section " counter(section) ": "; /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+}
+/* #2 */
+.link:root {
+  counter-reset: link;
+}
+.link a[href] {
+  counter-increment: link;
+}
+.link a[href]:empty::after {
+  content: "[" counter(link) "]";
+}
+/* #3 */
+.nested_counter ol {
+  counter-reset: section; /* Creates a new instance of the section counter with each ol element */
+  list-style-type: none;
+}
+.nested_counter li::before {
+  counter-increment: section; /* Increments only this instance of the section counter */
+  content: counters(section, ".") " "; /* Combines the values of all instances of the section counter, separated by a period */
+}
+/* -------------------------------------------::marker */
+.marker ul li::marker {
+  color: red;
+  font-size: 1.5em;
+}
+/* -------------------------------------------counter_set */
+.counter_set h1 {
+  counter-set: chapter section 1 page;
+  /* Sets the chapter and page counters to 0,
+       and the section counter to 1 */
 }
