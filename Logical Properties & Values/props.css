@@ -1,0 +1,73 @@
+.h1 {
+  text-align: center;
+}
+.overall a {
+  text-decoration: none;
+}
+/* ----------------------------------- layout for all */
+.size {
+  display: flex;
+  justify-content: center;
+}
+.size h3 {
+  text-align: center;
+}
+.size div {
+  margin: 20px;
+}
+/* ----------------------------------- sizing */
+.block-size p,
+.inline-size p,
+.max-block-size p,
+.max-inline-size p {
+  writing-mode: vertical-rl;
+  background-color: yellow;
+}
+.block-size p {
+  block-size: 200px;
+}
+.inline-size p {
+  inline-size: 110px;
+}
+.max-block-size p {
+  max-block-size: 160px;
+  min-block-size: 100px;
+}
+.max-inline-size p {
+  block-size: 300px;
+  max-inline-size: 200px; /*横向距离*/
+  min-inline-size: 200px; /*竖向距离*/
+}
+/* ------------------------------------ Properties for floating and positioning: */
+.inset div,
+.inset-block div,
+.inset-inline div {
+  background-color: yellow;
+  width: 150px;
+  height: 120px;
+  position: relative;
+}
+/* inset */
+.inset p {
+  writing-mode: sideways-rl;
+  position: absolute;
+  inset: 20px 40px 30px 10px;
+  background-color: #c8c800;
+}
+/* inset-block */
+.inset-block p {
+  writing-mode: vertical-lr;
+  position: relative;
+  inset-block: 20px 50px;
+  background-color: #c8c800;
+}
+/* inset-inline */
+.inset-inline p {
+  writing-mode: vertical-lr;
+  position: relative;
+  inset-inline: 20px 50px;
+  background-color: #c8c800;
+}
+/* ------------------------------------ Properties for margins, borders and padding: */
+/*  */
+/* border-block */
