@@ -69,5 +69,95 @@
   background-color: #c8c800;
 }
 /* ------------------------------------ Properties for margins, borders and padding: */
-/*  */
+.border-radius {
+  display: flex;
+  justify-content: center;
+}
+.border-radius div {
+  margin: 20px;
+}
+/* all */
+.border-block-ex,
+.border-block-end,
+.border-block-start,
+.border-end-end-radius,
+.border-end-start-radius,
+.border-start-end-radius,
+.border-start-start-radius,
+.inline,
+.border-inline-end,
+.border-inline-start {
+  background-color: rgb(209, 72, 228);
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
+}
+/*--------------------------- block */
 /* border-block */
+.border-block-ex > p {
+  writing-mode: vertical-rl;
+  border-block: 5px dashed blue;
+}
+/* border-block-end */
+.border-block-end > p {
+  writing-mode: vertical-rl;
+  border-block-end: 5px dashed blue;
+}
+/* border-block-start */
+.border-block-start > p {
+  writing-mode: vertical-rl;
+  border-block-start: 5px dashed blue;
+}
+/* border-end-end-radius */
+
+.border-end-end-radius p {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  background-color: #fff;
+  border-end-end-radius: 10px;
+}
+/* border-end-start-radius */
+.border-end-start-radius p {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  background-color: #fff;
+  border-end-start-radius: 10px;
+}
+/* border-start-end-radius */
+.border-start-end-radius p {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  background-color: #fff;
+  border-start-end-radius: 10px;
+}
+.border-start-start-radius p {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  background-color: #fff;
+  border-start-start-radius: 10px;
+}
+/* ----------------------------inline */
+.inline p {
+  writing-mode: vertical-rl;
+  border-inline: 5px groove blue;
+}
+.border-inline-end p {
+  writing-mode: vertical-rl;
+  border-inline-end: 5px groove blue;
+}
+.border-inline-start p {
+  writing-mode: vertical-rl;
+  border-inline-start: 5px groove blue;
+}
+/* ----------------------------margin-block */
+.margin-block {
+  background-color: yellow;
+  width: 120px;
+  height: auto;
+  border: 1px solid black;
+}
+.margin-block > p {
+  margin: 0;
+  /* margin-block: 20px 40px; */
+  background-color: tan;
+}

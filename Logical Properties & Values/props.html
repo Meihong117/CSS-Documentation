@@ -50,37 +50,54 @@
       <ol>
         <a href=""><li>border-block</li></a>
         <ul>
-          <a href=""><li>border-block-color</li></a>
+          <ul>
+            <a href=""><li>border-block-color</li></a>
+            <a href=""><li>border-block-style</li></a>
+            <a href=""><li>border-block-width</li></a>
+          </ul>
           <a href=""><li>border-block-end</li></a>
-          <a href=""><li>border-block-end-color</li></a>
-          <a href=""><li>border-block-end-style</li></a>
-          <a href=""><li>border-block-end-width</li></a>
+          <ul>
+            <a href=""><li>border-block-end-color</li></a>
+            <a href=""><li>border-block-end-style</li></a>
+            <a href=""><li>border-block-end-width</li></a>
+          </ul>
           <a href=""><li>border-block-start</li></a>
-          <a href=""><li>border-block-start-color</li></a>
-          <a href=""><li>border-block-start-style</li></a>
-          <a href=""><li>border-block-start-width</li></a>
-          <a href=""><li>border-block-style</li></a>
-          <a href=""><li>border-block-width</li></a>
+          <ul>
+            <a href=""><li>border-block-start-color</li></a>
+            <a href=""><li>border-block-start-style</li></a>
+            <a href=""><li>border-block-start-width</li></a>
+          </ul>
+          <a href=""><li>border radius</li></a>
+          <ul>
+            <a href=""><li>border-end-end-radius</li></a>
+            <a href=""><li>border-end-start-radius</li></a>
+            <a href=""><li>border-start-end-radius</li></a>
+            <a href=""><li>border-start-start-radius</li></a>
+          </ul>
         </ul>
 
-        <a href=""><li>border-end-end-radius</li></a>
-        <a href=""><li>border-end-start-radius</li></a>
-        <a href=""><li>border-start-end-radius</li></a>
-        <a href=""><li>border-start-start-radius</li></a>
         <!-- border-inline -->
         <a href=""><li>border-inline</li></a>
         <ul>
-          <a href=""><li>border-inline-color</li></a>
+          <ul>
+            <a href=""><li>border-inline-color</li></a>
+            <a href=""><li>border-inline-style</li></a>
+            <a href=""><li>border-inline-width</li></a>
+          </ul>
+
           <a href=""><li>border-inline-end</li></a>
-          <a href=""><li>border-inline-end-color</li></a>
-          <a href=""><li>border-inline-end-style</li></a>
-          <a href=""><li>border-inline-end-width</li></a>
+          <ul>
+            <a href=""><li>border-inline-end-color</li></a>
+            <a href=""><li>border-inline-end-style</li></a>
+            <a href=""><li>border-inline-end-width</li></a>
+          </ul>
+
           <a href=""><li>border-inline-start</li></a>
-          <a href=""><li>border-inline-start-color</li></a>
-          <a href=""><li>border-inline-start-style</li></a>
-          <a href=""><li>border-inline-start-width</li></a>
-          <a href=""><li>border-inline-style</li></a>
-          <a href=""><li>border-inline-width</li></a>
+          <ul>
+            <a href=""><li>border-inline-start-color</li></a>
+            <a href=""><li>border-inline-start-style</li></a>
+            <a href=""><li>border-inline-start-width</li></a>
+          </ul>
         </ul>
 
         <!-- margin -->
@@ -172,26 +189,114 @@
       <!-- inset-inline -->
       <div class="inset-inline">
         <h3>
-          <span>inset-inline</span> is a shorthand of inset-inline-end,
-          inset-inline-start
+          <span style="color: red;">inset-inline</span> is a shorthand of
+          inset-inline-end, inset-inline-start
         </h3>
         <div><p>Example text</p></div>
       </div>
     </div>
     <!------------------------------------------------ Properties for margins, borders and padding: -->
-    <div class="h1"><h1>Properties for margins, borders and padding:</h1></div>
-    <div class="mbp">
+    <div class="h1"><h1>Properties for borders, margins and padding:</h1></div>
+    <!-- block -->
+    <div class="mbp-block">
       <!-- border-block -->
       <div class="border-block">
         <h3>
           <span style="color: red;">border-block</span> is shorthand of
           border-block-color, border-block-style, border-block-width.
         </h3>
+        <div class="border-block-ex">
+          <p>Example text</p>
+        </div>
+      </div>
+      <!-- border-block-end -->
+      <div>
+        <h3>
+          <span style="color: red;">border-block-end</span> is shorthand of
+          border-block-end-color, border-block-end-style,
+          border-block-end-width.
+        </h3>
+        <div class="border-block-end">
+          <p>Example text</p>
+        </div>
+      </div>
+      <!-- border-block-start -->
+      <div>
+        <h3>
+          <span style="color: red;">border-block-start</span> is shorthand of
+          border-block-end-color, border-block-end-style,
+          border-block-end-width.
+        </h3>
+        <div class="border-block-start">
+          <p>Example text</p>
+        </div>
+      </div>
+      <!-- border-end-end-radius -->
+      <h3>
+        border-end-end-radius,
+        border-end-start-radius,border-start-start-radius,border-start-end-radius
+      </h3>
+      <div class="border-radius">
+        <div class="border-end-end-radius">
+          <p>border-end-end-radius</p>
+        </div>
+        <div class="border-end-start-radius">
+          <p>border-end-start-radius</p>
+        </div>
+        <div class="border-start-end-radius">
+          <p>border-start-end-radius</p>
+        </div>
+        <div class="border-start-start-radius">
+          <p>border-start-start-radius</p>
+        </div>
+      </div>
+    </div>
+    <!-- inline -->
+    <div class="mbp-inline">
+      <!-- border-inline -->
+      <div>
+        <h3>
+          <span style="color: red;">border-inline</span> is shorthand of
+          border-block-end-color, border-block-end-style,
+          border-block-end-width.
+        </h3>
+        <div class="inline">
+          <p>Example text</p>
+        </div>
+      </div>
+      <!-- border-inline-end -->
+      <div>
+        <h3>
+          <span style="color: red;">border-inline-end</span> is shorthand of
+          border-inline-end-color, border-inline-end-style,
+          border-inline-end-width.
+        </h3>
+        <div class="border-inline-end">
+          <p>Example text</p>
+        </div>
       </div>
       <!--  -->
-      <div></div>
-      <!--  -->
-      <div></div>
+      <div>
+        <h3>
+          <span style="color: red;">border-inline-start</span> is shorthand of
+          border-inline-start-color, border-inline-start-style,
+          border-inline-start-width.
+        </h3>
+        <div class="border-inline-start">
+          <p>Example text</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- margin -->
+    <div>
+      <h3>
+        <span style="color: red;">margin-block</span> is shorthand of
+        margin-block-end and margin-block-start.
+      </h3>
+      <div class="margin-block">
+        <p>Example text</p>
+      </div>
     </div>
   </body>
 </html>
