@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="mask.css" />
+    <title>Masking</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="h1"><h1>Masking Overall</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>clip-path</li></a>
+        <a href=""><li>mask</li></a>
+        <ul>
+          <a href=""><li>mask-clip</li></a>
+          <a href=""><li>mask-composite</li></a>
+          <a href=""><li>mask-image</li></a>
+          <a href=""><li>mask-mode</li></a>
+          <a href=""><li>mask-origin</li></a>
+          <a href=""><li>mask-position</li></a>
+          <a href=""><li>mask-repeat</li></a>
+          <a href=""><li>mask-size</li></a>
+          <a href=""><li>mask-type</li></a>
+        </ul>
+        <a href=""><li>mask-border</li></a>
+        <ul>
+          <a href=""><li>mask-border-mode</li></a>
+          <a href=""><li>mask-border-outset</li></a>
+          <a href=""><li>mask-border-repeat</li></a>
+          <a href=""><li>mask-border-slice</li></a>
+          <a href=""><li>mask-border-source</li></a>
+          <a href=""><li>mask-border-width</li></a>
+        </ul>
+      </ol>
+    </div>
+    <!-- -----------------------------------------clip-path -->
+    <div class="h1"><h1>clip-path</h1></div>
+
+    <div class="clip-path">
+      <div>
+        <img
+          id="clipped"
+          src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+          alt="MDN logo"
+        />
+        <svg height="0" width="0">
+          <defs>
+            <clipPath id="cross">
+              <rect y="110" x="137" width="90" height="90" />
+              <rect x="0" y="110" width="90" height="90" />
+              <rect x="137" y="0" width="90" height="90" />
+              <rect x="0" y="0" width="90" height="90" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="selection">
+        <select id="clipPath">
+          <option value="none">none</option>
+          <option value="circle(100px at 110px 100px)">circle</option>
+          <option value="url(#cross)" selected>cross</option>
+          <option value="inset(20px round 20px)">inset</option>
+          <option
+            value="path('M 0 200 L 0,110 A 110,90 0,0,1 240,100 L 200 340 z')"
+            >path</option
+          >
+        </select>
+      </div>
+    </div>
+    <script>
+      const clipPathSelect = document.getElementById("clipPath");
+      clipPathSelect.addEventListener("change", function(evt) {
+        document.getElementById("clipped").style.clipPath = evt.target.value;
+      });
+    </script>
+
+    <!-- -----------------------------------------mask -->
+    <div class="h1"><h1>Mask: need no background img</h1></div>
+    <div class="mask"></div>
+    <!-- -----------------------------------------mask-border -->
+    <div class="h1"><h1>mask-border(not at Firefox)</h1></div>
+    <div class="mask-border">
+      This element is surrounded by a bitmap-based mask border! Pretty neat,
+      isn't it?
+    </div>
+  </body>
+</html>

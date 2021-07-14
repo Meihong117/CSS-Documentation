@@ -1,0 +1,37 @@
+.h1 {
+  text-align: center;
+}
+.clip-path {
+  display: flex;
+  justify-content: center;
+}
+.selection {
+  display: flex;
+  align-self: center;
+}
+.clip-path div {
+  margin: 20px;
+}
+/* clip-path */
+#clipped {
+  margin-bottom: 20px;
+  clip-path: url(#cross);
+}
+/* mask */
+.mask {
+  width: 100px;
+  height: 100px;
+  background-color: #8cffa0;
+
+  /* mask-image: url(./masked.jpg); */
+}
+/* mask-border */
+.mask-border {
+  width: 200px;
+  background-color: lavender;
+  border: 18px solid salmon;
+  padding: 10px;
+}
+.mask-border {
+  mask-border: url("masked.jpg") 30 fill / 20px / 1px round;
+}
