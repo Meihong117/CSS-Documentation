@@ -5,16 +5,28 @@
   text-decoration: none;
 }
 /* ----------------------------------- layout for all */
-.size {
+.size,
+.position,
+.border-block-container,
+.border-radius,
+.border-inline,
+.margin,
+.padding {
   display: flex;
   justify-content: center;
 }
-.size h3 {
+.size h3,
+.position > h3 {
   text-align: center;
 }
-.size div {
+.size div,
+.inset,
+.inset-block,
+.inset-inline,
+.border-radius div {
   margin: 20px;
 }
+
 /* ----------------------------------- sizing */
 .block-size p,
 .inline-size p,
@@ -68,16 +80,10 @@
   inset-inline: 20px 50px;
   background-color: #c8c800;
 }
-/* ------------------------------------ Properties for margins, borders and padding: */
-.border-radius {
-  display: flex;
-  justify-content: center;
-}
-.border-radius div {
-  margin: 20px;
-}
+/* ------------------------------------ Properties for borders, margins and padding: */
+/*---------------------------- border */
 /* all */
-.border-block-ex,
+.border-block,
 .border-block-end,
 .border-block-start,
 .border-end-end-radius,
@@ -92,51 +98,44 @@
   width: 120px;
   height: 120px;
 }
-/*--------------------------- block */
+/*---- block */
 /* border-block */
-.border-block-ex > p {
-  writing-mode: vertical-rl;
+.border-block > p {
   border-block: 5px dashed blue;
 }
 /* border-block-end */
 .border-block-end > p {
-  writing-mode: vertical-rl;
   border-block-end: 5px dashed blue;
 }
 /* border-block-start */
 .border-block-start > p {
-  writing-mode: vertical-rl;
   border-block-start: 5px dashed blue;
 }
+/* ----- radius */
 /* border-end-end-radius */
-
 .border-end-end-radius p {
-  writing-mode: vertical-rl;
   padding: 10px;
   background-color: #fff;
   border-end-end-radius: 10px;
 }
 /* border-end-start-radius */
 .border-end-start-radius p {
-  writing-mode: vertical-rl;
   padding: 10px;
   background-color: #fff;
   border-end-start-radius: 10px;
 }
 /* border-start-end-radius */
 .border-start-end-radius p {
-  writing-mode: vertical-rl;
   padding: 10px;
   background-color: #fff;
   border-start-end-radius: 10px;
 }
 .border-start-start-radius p {
-  writing-mode: vertical-rl;
   padding: 10px;
   background-color: #fff;
   border-start-start-radius: 10px;
 }
-/* ----------------------------inline */
+/* ---- inline */
 .inline p {
   writing-mode: vertical-rl;
   border-inline: 5px groove blue;
@@ -149,15 +148,43 @@
   writing-mode: vertical-rl;
   border-inline-start: 5px groove blue;
 }
-/* ----------------------------margin-block */
-.margin-block {
+/* ----------------------------margin-block & margin-inline */
+.margin-block,
+.margin-inline {
   background-color: yellow;
   width: 120px;
-  height: auto;
+  height: 120px;
   border: 1px solid black;
 }
+/* block */
 .margin-block > p {
   margin: 0;
-  /* margin-block: 20px 40px; */
+  margin-block: 20px 40px;
   background-color: tan;
+}
+/* inline */
+.margin-inline p {
+  margin: 0;
+  margin-inline: 20px 40px;
+  background-color: tan;
+  /* writing-mode: vertical-rl; */
+}
+/* ----------------------------padding-block & padding-inline */
+.padding-block,
+.padding-inline {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+}
+/* block */
+.padding-block p {
+  writing-mode: vertical-rl;
+  padding-block: 20px 40px;
+  background-color: #c8c800;
+}
+/* inline */
+.padding-inline p {
+  writing-mode: vertical-rl;
+  padding-inline: 20px 40px;
+  background-color: #c8c800;
 }
