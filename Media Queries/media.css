@@ -1,0 +1,132 @@
+.h1 {
+  text-align: center;
+}
+/* ------------------------------------vertical tab */
+.container {
+  margin-left: 5%;
+}
+.tab {
+  float: left;
+  border: 1px solid #faedfa;
+  background-color: #faedfa;
+  width: 20%;
+  height: 500px;
+  overflow: scroll;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.tab button:hover {
+  background-color: rgb(241, 213, 241);
+}
+.tab button.active {
+  background-color: rgb(242, 202, 243);
+}
+.tabcontent {
+  float: left;
+  padding-left: 30px;
+  border: 1px solid #faedfa;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+}
+/* =========  any-hover: can be used in the overall */
+@media (any-hover: hover) {
+  a:hover {
+    background: yellow;
+  }
+}
+/* =========  any-pointer */
+input[type="checkbox"]:checked {
+  background: gray;
+}
+@media (any-pointer: fine) {
+  input[type="checkbox"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+  }
+}
+
+/* =========  aspect-ratio */
+/* Minimum aspect ratio */
+@media (min-aspect-ratio: 8/5) {
+  .aspect-ratio-inner {
+    background: #9af; /* blue */
+  }
+}
+/* Maximum aspect ratio */
+@media (max-aspect-ratio: 3/2) {
+  .aspect-ratio-inner {
+    background: #9ff; /* cyan */
+  }
+}
+/* =========  aspect-ratio */
+.color {
+  color: black;
+}
+/* Any color device */
+@media (color) {
+  .color {
+    color: red;
+  }
+}
+/* Any color device with at least 8 bits per color component */
+@media (min-color: 8) {
+  .color {
+    color: #24ba13;
+  }
+}
+
+/* =========  display-mode */
+@media all and (display-mode: fullscreen) {
+  body {
+    margin: 0;
+    border: 5px solid black;
+  }
+}
+/* =========  forced-colors */
+.forced-colors-button {
+  border: 0;
+  padding: 10px;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px gray;
+}
+@media (forced-colors: active) {
+  .forced-colors-button {
+    /* Use a border instead, since box-shadow is forced to 'none' in forced-colors mode */
+    border: 2px ButtonText solid;
+  }
+}
+/* =========  grid */
+/* :not(.unknown) {
+  color: lightgray;
+} */
+@media (grid: 0) {
+  .unknown {
+    color: lightgray;
+  }
+  .bitmap {
+    color: red;
+    text-transform: uppercase;
+  }
+}
+@media (grid: 1) {
+  .unknown {
+    color: lightgray;
+  }
+  .grid {
+    color: black;
+    text-transform: uppercase;
+  }
+}
