@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="writing_mode.css" />
+    <title>Writing Mode</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="h1"><h1>Writing Mode Overall</h1></div>
+    <div class="overall">
+      <ol>
+        <a href=""><li>writing-mode</li></a>
+        <a href=""><li>text-combine-upright</li></a>
+        <a href=""><li>text-orientation</li></a>
+      </ol>
+    </div>
+    <!-- writing-mode -->
+    <div class="h1"><h1>writing-mode</h1></div>
+    <div class="writing-mode">
+      <table class="table">
+        <tr>
+          <th>Value</th>
+          <th>Vertical script</th>
+          <th>Horizontal (LTR) script</th>
+          <th>Horizontal (RTL) script</th>
+          <th>Mixed script</th>
+        </tr>
+        <tr>
+          <td>horizontal-tb</td>
+          <td class="example Text1"><span>我家没有电脑。</span></td>
+          <td class="example Text1"><span>Example text</span></td>
+          <td class="example Text1"><span>מלל ארוך לדוגמא</span></td>
+          <td class="example Text1"><span>1994年に至っては</span></td>
+        </tr>
+        <tr>
+          <td>vertical-lr</td>
+          <td class="example Text2"><span>我家没有电脑。</span></td>
+          <td class="example Text2"><span>Example text</span></td>
+          <td class="example Text2"><span>מלל ארוך לדוגמא</span></td>
+          <td class="example Text2"><span>1994年に至っては</span></td>
+        </tr>
+        <tr>
+          <td>vertical-rl</td>
+          <td class="example Text3"><span>我家没有电脑。</span></td>
+          <td class="example Text3"><span>Example text</span></td>
+          <td class="example Text3"><span>מלל ארוך לדוגמא</span></td>
+          <td class="example Text3"><span>1994年に至っては</span></td>
+        </tr>
+        <tr>
+          <td>sideways-lr</td>
+          <td class="example Text4"><span>我家没有电脑。</span></td>
+          <td class="example Text4"><span>Example text</span></td>
+          <td class="example Text4"><span>מלל ארוך לדוגמא</span></td>
+          <td class="example Text4"><span>1994年に至っては</span></td>
+        </tr>
+        <tr>
+          <td>sideways-rl</td>
+          <td class="example Text5"><span>我家没有电脑。</span></td>
+          <td class="example Text5"><span>Example text</span></td>
+          <td class="example Text5"><span>מלל ארוך לדוגמא</span></td>
+          <td class="example Text5"><span>1994年に至っては</span></td>
+        </tr>
+      </table>
+    </div>
+    <!-- text-combine-upright -->
+    <div class="h1"><h1>text-combine-upright</h1></div>
+    <div>
+      <p lang="ja" class="text-combine-upright">平成20年4月16日に</p>
+    </div>
+    <!-- text-orientation -->
+    <div class="h1"><h1>text-orientation</h1></div>
+    <div class="text-orientation">
+      <p>Lorem ipsum dolet semper quisquam.</p>
+    </div>
+  </body>
+</html>
