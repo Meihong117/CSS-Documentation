@@ -1,0 +1,47 @@
+.h1 {
+  text-align: center;
+}
+/* --* */
+:root {
+  --first-color: #16f;
+  --second-color: #ff7;
+  --third-color: white;
+  --fourth-color: rgb(241, 219, 219);
+}
+
+#firstParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+#secondParagraph {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+#container {
+  --first-color: #290;
+}
+
+#thirdParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+/* var() */
+body {
+  background-color: var(--fourth-color);
+}
+h2 {
+  border-bottom: 2px solid var(--first-color);
+}
+.container {
+  color: var(--first-color);
+  background-color: var(--third-color);
+  padding: 15px;
+}
+button {
+  background-color: var(--second-color);
+  color: var(--first-color);
+  border: 1px solid var(--first-color);
+  padding: 5px;
+}
