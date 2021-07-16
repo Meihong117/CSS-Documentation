@@ -1,6 +1,7 @@
 .h1 {
   text-align: center;
 }
+
 /* ------------------------------------vertical tab */
 .container {
   margin-left: 5%;
@@ -130,3 +131,173 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
   }
 }
+/* =========  height */
+/* Exact height */
+@media (height: 360px) {
+  .height {
+    color: red;
+  }
+}
+/* Minimum height */
+@media (min-height: 25rem) {
+  .height {
+    background: yellow;
+  }
+}
+/* Maximum height */
+@media (max-height: 40rem) {
+  .height {
+    border: 2px solid blue;
+  }
+}
+/* =========  hover */
+@media (hover: hover) {
+  .hover:hover {
+    background: yellow;
+  }
+}
+/* =========  monochrome */
+/* #monochrome p {
+  display: none;
+} */
+/* Any monochrome device */
+@media (monochrome) {
+  .mono {
+    display: block;
+    color: #333;
+  }
+}
+/* Any non-monochrome device */
+@media (monochrome: 0) {
+  .no-mono {
+    display: block;
+    color: #ee3636;
+  }
+}
+/* =========  prefers-color-scheme */
+.day {
+  background: #eee;
+  color: black;
+}
+.night {
+  background: #333;
+  color: white;
+}
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
+}
+.day,
+.night {
+  display: inline-block;
+  padding: 1em;
+  width: 7em;
+  height: 2em;
+  vertical-align: middle;
+}
+/* =========  prefers-reduced-motion */
+.animation {
+  background-color: #306;
+  color: #fff;
+  font: 1.2em sans-serif;
+  width: 10em;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  animation: pulse 1s linear infinite both;
+}
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: dissolve;
+  }
+}
+/* =========  resolution */
+/* Exact resolution */
+@media (resolution: 150dpi) {
+  .resolution {
+    color: red;
+  }
+}
+/* Minimum resolution */
+@media (min-resolution: 72dpi) {
+  .resolution {
+    text-decoration: underline;
+  }
+}
+/* Maximum resolution */
+@media (max-resolution: 300dpi) {
+  .resolution {
+    background: yellow;
+  }
+}
+/* =========  scan */
+.scan {
+  font-family: cursive;
+}
+@media (scan: interlace) {
+  .scan {
+    font-family: sans-serif;
+  }
+}
+@media (scan: progressive) {
+  .scan {
+    font-family: serif;
+  }
+}
+/* =========  scan */
+#scripting p {
+  color: lightgray;
+}
+
+@media (scripting: none) {
+  .script-none {
+    color: red;
+  }
+}
+@media (scripting: initial-only) {
+  .script-initial-only {
+    color: red;
+  }
+}
+@media (scripting: enabled) {
+  .script-enabled {
+    color: red;
+  }
+}
+/* =========  width */
+/* Exact width */
+@media (width: 360px) {
+  .width {
+    color: red;
+  }
+}
+/* Minimum width */
+@media (min-width: 35rem) {
+  .width {
+    background: yellow;
+  }
+}
+/* Maximum width */
+@media (max-width: 50rem) {
+  .width {
+    border: 2px solid blue;
+  }
+}
+/* ------------------------------------vertical tab */

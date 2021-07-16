@@ -56,7 +56,7 @@
       </ol>
     </div>
 
-    <!-- Vertical Tabs -->
+    <!------------------------------------ Vertical Tabs -->
     <div class="h1"><h1>@media</h1></div>
     <div class="container">
       <!-- tab -->
@@ -163,6 +163,7 @@
         </button>
       </div>
       <!-- content -->
+
       <div class="content-container">
         <div id="any-hover" class="tabcontent">
           <h3>Syntax: none | hover</h3>
@@ -248,72 +249,119 @@
         </div>
 
         <div id="height" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <div class="height">
+            Watch this element as you resize your viewport's height.
+          </div>
         </div>
 
         <div id="hover" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <a href="#" class="hover">Try hovering over me!</a>
         </div>
 
         <div id="inverted-colors" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: none | inverted</h3>
+          <p>Not be supported by Firefox.</p>
         </div>
 
         <div id="monochrome" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <p class="mono">Your device supports monochrome pixels!</p>
+          <p class="no-mono">Your device doesn't support monochrome pixels.</p>
         </div>
 
         <div id="orientation" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: portrait | landscape</h3>
         </div>
 
         <div id="overflow-block" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: none | scroll | optional-paged | paged</h3>
         </div>
 
         <div id="overflow-inline" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: none | scroll</h3>
         </div>
 
         <div id="pointer" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: none | coarse | fine</h3>
         </div>
 
         <div id="prefers-color-scheme" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: light | dark</h3>
+          <div>
+            <div class="day">Day (initial)</div>
+            <div class="day light-scheme">Day (changes in light scheme)</div>
+            <div class="day dark-scheme">Day (changes in dark scheme)</div>
+            <br />
+
+            <div class="night">Night (initial)</div>
+            <div class="night light-scheme">
+              Night (changes in light scheme)
+            </div>
+            <div class="night dark-scheme">Night (changes in dark scheme)</div>
+          </div>
         </div>
 
         <div id="prefers-contrast" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <p>This is an experimental technology</p>
         </div>
 
         <div id="prefers-reduced-motion" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: no-preference | reduce</h3>
+          <p>
+            The prefers-reduced-motion CSS media feature is used to detect if
+            the user has requested that the system minimize the amount of
+            non-essential motion it uses.
+          </p>
+          <div class="animation">animated box</div>
         </div>
 
         <div id="prefers-reduced-transparency" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <p>This is an experimental technology</p>
         </div>
 
         <div id="resolution" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <p class="resolution">
+            This is a test of your device's pixel density.
+          </p>
+        </div>
+
+        <div id="scan" class="tabcontent">
+          <p class="scan">
+            If your screen uses interlaced rendering, this text should be in a
+            sans-serif font. If your screen uses progressive scanning, you
+            should see a serif font.
+          </p>
         </div>
 
         <div id="scripting" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>
+            Syntax: none | initail-only | enabled (Not available in Firefox)
+          </h3>
+          <p class="script-none">You do not have scripting available. :-(</p>
+          <p class="script-initial-only">
+            Your scripting is only enabled during the initial page load. Weird.
+          </p>
+          <p class="script-enabled">You have scripting enabled! :-)</p>
         </div>
 
         <div id="update-frequency" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <h3>Syntax: none | slow | fast (Not available in Firefox)</h3>
         </div>
 
         <div id="width" class="tabcontent">
-          <p>Tokyo is the capital of Japan.</p>
+          <div class="width">
+            Watch this element as you resize your viewport's width.
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- ----------------------------------script -->
+    <!------------------------------------ example -->
+    <div class="h1"><h1>Example #1</h1></div>
+    <iframe
+      src="file:///Users/estelle.wu/Desktop/css_html_doc_portpolio/Media%20Queries/ex1.html"
+      frameborder="0"
+      style="width: 90%; height: 600px; margin-left: 5%;"
+    ></iframe>
+    <!-- ---------------------------------- script -->
     <script>
       function Media(evt, mediaName) {
         let tabcontent = document.getElementsByClassName("tabcontent");
