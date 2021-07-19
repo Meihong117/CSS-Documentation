@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="transforms.css" />
+    <title>Transforms</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="h1"><h1>Transforms Overall</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>CSS Transforms</li></a>
+        <a href=""><li>CSS Transforms: Using CSS transforms</li></a>
+
+        <ul>
+          <a href=""><li>backface-visibility</li></a>
+          <a href=""><li>perspective</li></a>
+          <a href=""><li>perspective()()</li></a>
+          <a href=""><li>perspective-origin</li></a>
+          <a href=""><li>transform</li></a>
+          <ul>
+            <a href=""><li>transform-box</li></a>
+            <a href=""><li>transform-origin</li></a>
+            <a href=""><li>transform-style</li></a>
+          </ul>
+          <a href=""><li>transform-function()</li></a>
+          <ol>
+            <a href=""><li>rotate</li></a>
+            <ul>
+              <a href=""
+                >rotate()()
+                <li></li
+              ></a>
+              <a href=""><li>rotate3d()()</li></a>
+              <a href=""><li>rotateX()()</li></a>
+              <a href=""><li>rotateY()()</li></a>
+              <a href=""><li>rotateZ()()</li></a>
+            </ul>
+            <a href=""><li>scale</li></a>
+            <ul>
+              <a href=""><li>scale()()</li></a>
+              <a href=""><li>scale3d()()</li></a>
+              <a href=""><li>scaleX()()</li></a>
+              <a href=""><li>scaleY()()</li></a>
+              <a href=""><li>scaleZ()()</li></a>
+            </ul>
+
+            <a href=""><li>skew()()</li></a>
+            <ul>
+              <a href=""><li>skewX()()</li></a>
+              <a href=""><li>skewY()()</li></a>
+            </ul>
+
+            <a href=""><li>translate</li></a>
+            <ul>
+              <a href=""><li>translate()()</li></a>
+              <a href=""><li>translate3d()()</li></a>
+              <a href=""><li>translateX()</li></a>
+
+              <a href=""><li>translateY()()</li></a>
+              <a href=""><li>translateZ()()</li></a>
+            </ul>
+
+            <a href=""><li>matrix</li></a>
+            <ul>
+              <a href=""><li>matrix()()</li></a>
+              <a href=""><li>matrix3d()()</li></a>
+            </ul>
+          </ol>
+        </ul>
+      </ol>
+    </div>
+    <!-- backface-visibility -->
+    <div class="h1">
+      <h1>
+        backface-visibility | perspective | perspective-origin | rotate |
+        translate | rotate3d()
+      </h1>
+    </div>
+    <div class="back-face">
+      <table>
+        <tr>
+          <th><code>backface-visibility: visible;</code></th>
+          <th><code>backface-visibility: hidden;</code></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="container">
+              <div class="cube showbf pers250">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+              </div>
+            </div>
+            <p>
+              Since all faces are partially transparent, the back faces (2, 4,
+              5) are visible through the front faces (1, 3, 6).
+            </p>
+          </td>
+          <td>
+            <div class="container">
+              <div class="cube hidebf pers300">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+              </div>
+            </div>
+            <p>
+              The three back faces (2, 4, 5) are hidden.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- rotate -->
+    <div class="h1"><h1>rotate(x, y, or z axis name plus angle)</h1></div>
+    <div>
+      <div class="rotate">
+        <p>rotate: 1 -0.5 1 180deg;</p>
+      </div>
+    </div>
+    <!-- scale -->
+    <div class="h1"><h1>scale: 2 0.5;</h1></div>
+    <div class="scale">
+      <p>Scaling</p>
+    </div>
+    <!-- skew() -->
+    <div class="h1"><h1>skew()</h1></div>
+    <div class="skewed"><p>Skewed</p></div>
+
+    <!-- translate -->
+    <div class="h1"><h1>translate</h1></div>
+    <div class="translate">
+      <p>Translation</p>
+    </div>
+
+    <!-- transform -->
+    <div class="h1">
+      <h1>
+        transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+      </h1>
+    </div>
+    <div></div>
+    <!-- transform-origin -->
+    <div class="h1"><h1>transform-origin</h1></div>
+    <div class="origin-container">
+      <div>
+        <p>center</p>
+        <img src="img/origin1.png" alt="" />
+      </div>
+      <div>
+        <p>top left</p>
+        <img src="img/origin2.png" alt="" />
+      </div>
+    </div>
+    <!-- transform-style -->
+    <div class="h1"><h1>transform-style</h1></div>
+    <div style="display: flex; justify-content: center;">
+      <div>
+        <section id="transform-style">
+          <div class="face front">1</div>
+          <div class="face back">2</div>
+          <div class="face right">3</div>
+          <div class="face left">4</div>
+          <div class="face top">5</div>
+          <div class="face bottom">6</div>
+        </section>
+      </div>
+
+      <div class="checkbox">
+        <label for="preserve"><code>preserve-3d</code></label>
+        <input type="checkbox" id="preserve" checked />
+      </div>
+    </div>
+
+    <!--  -->
+    <script>
+      const cube = document.getElementById("transform-style");
+      const checkbox = document.getElementById("preserve");
+
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          cube.style.transformStyle = "preserve-3d";
+        } else {
+          cube.style.transformStyle = "flat";
+        }
+      });
+    </script>
+  </body>
+</html>
