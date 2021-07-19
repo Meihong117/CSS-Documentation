@@ -12,23 +12,109 @@
     <div class="h1"><h1>Values & Units Overall</h1></div>
     <div>
       <ol>
-        <a href=""><li>CSS Types</li></a>
-        <a href=""><li>< angle ></li></a>
-        <a href=""><li>< frequency ></li></a>
-        <a href=""><li>< resolution ></li></a>
-        <a href=""><li>angle-percentage</li></a>
+        <a href=""
+          ><li>
+            CSS Types: Textual/Numeric data types | Quantities | Combinations of
+            types | Color | Images | 2D positioning
+          </li></a
+        >
+        <h4>Quantities</h4>
+        <ul>
+          <a href=""><li>< angle ></li></a>
+          <a href=""><li>< frequency ></li></a>
+          <a href=""><li>< resolution ></li></a>
+        </ul>
+
+        <h4>Combinatios of types</h4>
+        <ul>
+          <a href=""><li>angle-percentage</li></a>
+          <a href=""
+            ><li>
+              frequency-percentage: This is an experimental technology
+            </li></a
+          >
+          <a href=""><li>length-percentage</li></a>
+          <a href=""><li>time-percentage</li></a>
+        </ul>
+
         <a href=""><li>calc()</li></a>
         <a href=""><li>clamp()</li></a>
-        <a href=""><li>frequency-percentage</li></a>
         <a href=""><li>ident</li></a>
-        <a href=""><li>length-percentage</li></a>
         <a href=""><li>max()</li></a>
         <a href=""><li>min()</li></a>
-        <a href=""><li>time-percentage</li></a>
       </ol>
     </div>
+
     <!-- <angle> -->
     <div class="h1"><h1>< angle ></h1></div>
+    <div class="angle">
+      <img src="img/angle1.png" alt="" />
+      <img src="img/angle2.png" alt="" />
+      <img src="img/angle3.png" alt="" />
+    </div>
+    <div class="rotate">
+      <div class="transform1 shape">
+        transform: rotate(45deg);
+      </div>
+      <div class="transform2 shape">
+        transform: rotate(3.1416rad);
+      </div>
+      <div class="transform3 shape">
+        transform: rotate(-50grad);
+      </div>
+      <div class="transform4 shape">
+        transform: rotate(1.75turn);
+      </div>
+    </div>
+    <!-- <resolution> -->
+    <div class="h1"><h1>< resolution ></h1></div>
+    <div>
+      <h3>
+        Units(1 inch is 2.54 cm):
+      </h3>
+      <h4>
+        dpi(1dpi ≈ 0.39dpcm) <br />dppx(1dpcm ≈ 2.54dpi) <br />dppx(1dppx =
+        96dpi) <br />x
+      </h4>
+    </div>
+    <!-- angle-percentage-->
+    <div class="h1"><h1>angle-percentage</h1></div>
+
+    <!-- length-percentage-->
+    <div class="h1"><h1>length-percentage</h1></div>
+    <div class="length-percentage">
+      <p>You can use percentages and lengths in so many places.</p>
+    </div>
+
+    <!-- time-percentage-->
+    <div class="h1"><h1>time-percentage</h1></div>
     <div></div>
+    <!-- calc()-->
+    <div class="h1">
+      <h1>
+        calc(expression)
+      </h1>
+      <div>
+        <form>
+          <div id="formbox">
+            <label>Type something:</label>
+            <input type="text" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- clamp(MIN, VAL, MAX) -->
+    <div class="h1"><h1>clamp(MIN, VAL, MAX)</h1></div>
+    <div class="clamp">
+      <p>This text is: font-size: max(1.2rem, 1.2vw);</p>
+    </div>
+    <!-- max() & min() -->
+    <div class="h1"><h1>max() & min()</h1></div>
+    <div class="minmax">
+      <h1>This text is always legible, but doesn't change size</h1>
+      <h1 class="responsive">
+        This text is always legible, and is responsive, to a point
+      </h1>
+    </div>
   </body>
 </html>
