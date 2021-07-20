@@ -1,0 +1,43 @@
+.h1 {
+  text-align: center;
+}
+p {
+  font-size: 3em;
+}
+/*  */
+.color s {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+  /* text-decoration-thickness: 5px; */
+  /* text-underline-offset: 1em; */
+}
+.color p {
+  text-decoration-line: underline;
+  text-decoration-color: cyan;
+}
+/* skip */
+.skip p {
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-skip: edges;
+}
+/*  */
+.ink p {
+  font-size: 1.5em;
+  text-decoration: underline blue;
+}
+.none {
+  text-decoration-skip-ink: none;
+}
+.auto {
+  text-decoration-skip-ink: auto;
+}
+.underline-position {
+  text-underline-position: under;
+}
+.emphasis p {
+  text-emphasis: triangle #d55;
+  text-emphasis-position: over left;
+  text-shadow: #fc0 1px 0 10px;
+}
