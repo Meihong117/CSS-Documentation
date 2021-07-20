@@ -1,0 +1,162 @@
+.h1 {
+  text-align: center;
+}
+/*  */
+#gradient-shape {
+  width: 150px;
+  height: 150px;
+  float: left;
+  background-image: linear-gradient(30deg, black, transparent 80%, transparent);
+  shape-outside: linear-gradient(30deg, black, transparent 80%, transparent);
+  shape-image-threshold: 0.2;
+  shape-margin: 20px;
+}
+/*  */
+.shape-outside {
+  width: 530px;
+  margin: 10px auto;
+}
+
+.shape-outside .left,
+.shape-outside .right {
+  width: 40%;
+  height: 12ex;
+  background-color: lightgray;
+}
+.shape-outside .left {
+  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  float: left;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.shape-outside .right {
+  -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  float: right;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.shape-outside p {
+  text-align: center;
+}
+/* basic-shape */
+.basic-shape {
+  width: 300px;
+  height: 300px;
+  background: repeating-linear-gradient(red, orange 50px);
+  clip-path: polygon(
+    50% 0%,
+    60% 40%,
+    100% 50%,
+    60% 60%,
+    50% 100%,
+    40% 60%,
+    0% 50%,
+    40% 40%
+  );
+  animation: 4s poly infinite alternate ease-in-out;
+  margin: 10px auto;
+}
+@keyframes poly {
+  from {
+    clip-path: polygon(
+      50% 0%,
+      60% 40%,
+      100% 50%,
+      60% 60%,
+      50% 100%,
+      40% 60%,
+      0% 50%,
+      40% 40%
+    );
+  }
+  to {
+    clip-path: polygon(
+      50% 30%,
+      100% 0%,
+      70% 50%,
+      100% 100%,
+      50% 70%,
+      0% 100%,
+      30% 50%,
+      0% 0%
+    );
+  }
+}
+/* ----------------------------shapes */
+.shapes,
+.path {
+  display: flex;
+  justify-content: center;
+}
+.orora {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+}
+.circle,
+.ellipse,
+.inset,
+.polygon {
+  width: 20%;
+  border: 0.5px solid black;
+  margin: 20px;
+}
+h4 {
+  text-align: center;
+}
+/* circle */
+.circle p {
+  shape-outside: circle(50%);
+}
+/* ellipse */
+.ellipse-shape {
+  float: left;
+  shape-outside: ellipse(40% 50% at left);
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+}
+/* inset */
+.inset-shape {
+  float: left;
+  width: 100px;
+  height: 100px;
+  shape-outside: inset(20px 50px 10px 0 round 50px);
+  background-color: rebeccapurple;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+/* polygon */
+.polygon-shape {
+  float: left;
+  shape-outside: polygon(
+    0px 0px,
+    0px 189px,
+    100.48% 94.71%,
+    200px 120px,
+    80.67% 37.17%
+  );
+  width: 200px;
+  height: 200px;
+}
+/*  */
+.parent {
+  width: 200px;
+  height: 200px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 40px;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  offset-path: path("M100,0 A100,100 0 1,1 100,200 A100,100 0 1,1 100,0");
+}

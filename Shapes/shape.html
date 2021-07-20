@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="shape.css" />
+    <title>Shapes</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="h1"><h1>Shapes Overall</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>CSS Shapes</li></a>
+        <ul>
+          <a href=""><li>shape-image-threshold</li></a>
+          <a href=""><li>shape-margin</li></a>
+          <a href=""><li>shape-outside</li></a>
+        </ul>
+
+        <a href=""
+          ><li>
+            < basic-shape >: represents a shape used in the clip-path,
+            shape-outside, and offset-path properties.
+          </li></a
+        >
+        <ul>
+          <a href=""><li>basic-shape.circle()</li></a>
+          <a href=""><li>basic-shape.ellipse()</li></a>
+          <a href=""><li>basic-shape.inset()</li></a>
+          <a href=""><li>basic-shape.polygon()</li></a>
+        </ul>
+
+        <a href=""><li>path()</li></a>
+      </ol>
+    </div>
+
+    <!-- shape-image-threshold -->
+    <div class="h1"><h1>shape-image-threshold | shape-margin</h1></div>
+    <div id="gradient-shape"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel at commodi
+      voluptates enim, distinctio officia. Saepe optio accusamus doloribus sint
+      facilis itaque ab nulla, dolor molestiae assumenda cum sit placeat
+      adipisci, libero quae nihil porro debitis laboriosam inventore animi
+      impedit nostrum nesciunt quisquam expedita! Dolores consectetur iure atque
+      a mollitia dicta repudiandae illum exercitationem aliquam repellendus
+      ipsum porro modi, id nemo eligendi, architecto ratione quibusdam iusto
+      nisi soluta? Totam inventore ea eum sed velit et eligendi suscipit
+      accusamus iusto dolore, at provident eius alias maxime pariatur non
+      deleniti ipsum sequi rem eveniet laboriosam magni expedita? We are not
+      quite sure of any one thing in biology; our knowledge of geology is
+      relatively very slight, and the economic laws of society are uncertain to
+      every one except some individual who attempts to set them forth; but
+      before the world was fashioned the square on the hypotenuse was equal to
+      the sum of the squares on the other two sides of a right triangle, and it
+      will be so after this world is dead; and the inhabitant of Mars, if one
+      exists, probably knows its truth as we know it. We are not quite sure of
+      any one thing in biology; our knowledge of geology is relatively very
+      slight, and the economic laws of society are uncertain to every one except
+      some individual who attempts to set them forth; but before the world was
+      fashioned the square on the hypotenuse was equal to the sum of the squares
+      on the other two sides of a right triangle, and it will be so after this
+      world is dead; and the inhabitant of Mars, if one exists, probably knows
+      its truth as we know it.
+    </p>
+    <!-- shape-outside -->
+    <div class="h1">
+      <h1>
+        shape-outside
+      </h1>
+    </div>
+    <div class="shape-outside">
+      <div class="left"></div>
+      <div class="right"></div>
+      <p>
+        Sometimes a web page's text content appears to be funneling your
+        attention towards a spot on the page to drive you to follow a particular
+        link. Sometimes you don't notice.
+      </p>
+    </div>
+    <!-- < basic-shape > -->
+    <div class="h1"><h1>< basic-shape ></h1></div>
+    <div class="basic-shape"></div>
+    <div>
+      <img
+        src="img/shape.png"
+        alt=""
+        style="width: 90%; height:auto; margin-left: 5%;"
+      />
+    </div>
+    <!-- shapes -->
+    <div class="shapes">
+      <!-- basic-shape.circle() -->
+      <div class="circle">
+        <h4>basic-shape.circle()</h4>
+        <img src="img/orora.jpg" alt="balloon" class="orora" />
+        <p>
+          Sometimes a web page's text content appears to be funneling your
+          attention towards a spot on the page to drive you to follow a
+          particular link. Sometimes you don't notice.
+        </p>
+      </div>
+
+      <!-- ellipse() -->
+      <div class="ellipse">
+        <h4>basic-shape.ellipse()</h4>
+        <div class="ellipse-shape"></div>
+        <p>
+          Sometimes a web page's text content appears to be funneling your
+          attention towards a spot on the page to drive you to follow a
+          particular link. Sometimes you don't notice.
+        </p>
+      </div>
+
+      <!-- inset() -->
+      <div class="inset">
+        <h4>basic-shape.inset()</h4>
+        <div class="inset-shape"></div>
+        <p>
+          Sometimes a web page's text content appears to be funneling your
+          attention towards a spot on the page to drive you to follow a
+          particular link. Sometimes you don't notice.
+        </p>
+      </div>
+
+      <!-- polygon() -->
+      <div class="polygon">
+        <h4>basic-shape.polygon()</h4>
+        <div class="polygon-shape"></div>
+        <p>
+          Sometimes a web page's text content appears to be funneling your
+          attention towards a spot on the page to drive you to follow a
+          particular link. Sometimes you don't notice.
+        </p>
+      </div>
+    </div>
+
+    <!-- path() -->
+    <div class="h1"><h1>path()</h1></div>
+    <div class="path">
+      <div class="parent">
+        <div class="item"></div>
+      </div>
+      <button id="button">Click me</button>
+    </div>
+    <script>
+      let btn = document.getElementById("button");
+      btn.addEventListener("click", function(evt) {
+        document
+          .querySelector(".parent > .item")
+          .animate([{ offsetDistance: 0 }, { offsetDistance: "100%" }], {
+            duration: 1200,
+            easing: "linear",
+            iterations: 3,
+            fill: "forwards"
+          });
+      });
+    </script>
+  </body>
+</html>
