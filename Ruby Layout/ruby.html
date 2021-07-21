@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ruby.css" />
+    <title>Ruby Layout</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="h1"><h1>Ruby Layout</h1></div>
+    <ol>
+      <a href=""
+        ><li>ruby-align: start | center | space-between | space-around</li></a
+      >
+      <a href=""
+        ><li>ruby-position: over | under | inter-character | alternate</li></a
+      >
+    </ol>
+    <!-- ruby-align -->
+    <div class="h1"><h1>ruby-align</h1></div>
+    <div>
+      <ruby style="ruby-align: start;">
+        <rb>This is a long text to check</rb>
+        <rp>（</rp><rt>short ruby</rt><rp>）</rp>
+      </ruby>
+      <br />
+      <ruby style="ruby-align: center">
+        <rb>This is a long text to check</rb>
+        <rp>（</rp><rt>short ruby</rt><rp>）</rp>
+      </ruby>
+    </div>
+    <!-- ruby-position -->
+    <div class="h1"><h1>ruby-position</h1></div>
+    <div>
+      <ruby style="ruby-position:over;">
+        <rb>超電磁砲</rb>
+        <rp>（</rp><rt>レールガン</rt><rp>）</rp>
+      </ruby>
+      <br />
+      <ruby style="ruby-position:under;">
+        <rb>超電磁砲</rb>
+        <rp>（</rp><rt>レールガン</rt><rp>）</rp>
+      </ruby>
+    </div>
+  </body>
+</html>
