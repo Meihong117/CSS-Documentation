@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scoping.css" />
+    <title>Scoping</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="h1"><h1></h1></div>
+    <div>
+      <ol>
+        <a href="https://devdocs.io/css/::slotted"><li>::slotted</li></a>
+        <a href=""><li>:host</li></a>
+        <a href=""><li>:host()</li></a>
+        <a href=""><li>:host-context()</li></a>
+      </ol>
+    </div>
+    <!-- ::slotted -->
+    <div class="h1"><h1>::slotted</h1></div>
+    <div>
+      <code>::slotted(span) { font-weight: bold; }</code>
+      <person-details>
+        <p slot="person-name">Dr. Shazaam</p>
+        <span slot="person-age">Immortal</span>
+        <span slot="person-occupation">Superhero</span>
+      </person-details>
+    </div>
+    <!-- :host -->
+    <div class="h1"><h1>:host | :host() | hostcontext()</h1></div>
+    <h1>
+      Host selectors <a href="#"><context-span>example</context-span></a>
+    </h1>
+
+    <!-- :scope -->
+    <div class="h1"><h1>:scope</h1></div>
+    <p id="para">
+      This is a paragraph. It is not an interesting paragraph. Sorry about that.
+    </p>
+    <p id="output"></p>
+    <!--------------------------------script -->
+    <!-- ::slotted  -->
+    <script>
+      customElements.define(
+        "person-details",
+        class extends HTMLElement {
+          constructor() {
+            super();
+            let template = document.getElementById("person-template");
+            let templateContent = template.content;
+
+            const shadowRoot = this.attachShadow({ mode: "open" });
+
+            let style = document.createElement("style");
+            style.textContent =
+              "div { padding: 10px; border: 1px solid gray; width: 200px; margin: 10px; }" +
+              "h2 { margin: 0 0 10px; }" +
+              "ul { margin: 0; }" +
+              "p { margin: 10px 0; }" +
+              "::slotted(*) { color: gray; font-family: sans-serif; } ";
+
+            shadowRoot.appendChild(style);
+            shadowRoot.appendChild(templateContent.cloneNode(true));
+          }
+        }
+      );
+    </script>
+    <!-- :host -->
+    <script>
+      let style = document.createElement("style");
+      let span = document.createElement("span");
+      span.textContent = this.textContent;
+
+      const shadowRoot = this.attachShadow({ mode: "open" });
+      shadowRoot.appendChild(style);
+      shadowRoot.appendChild(span);
+
+      style.textContent =
+        "span:hover { text-decoration: underline; }" +
+        ":host-context(h1) { font-style: italic; }" +
+        ':host-context(h1):after { content: " - no links in headers!" }' +
+        ":host-context(article, aside) { color: gray; }" +
+        ":host(.footer) { color : red; }" +
+        ":host { background: rgba(0,0,0,0.1); padding: 2px 5px; }";
+    </script>
+
+    <!-- :scope -->
+    <script>
+      let paragraph = document.getElementById("para");
+      let output = document.getElementById("output");
+
+      if (paragraph.matches(":scope")) {
+        output.innerText = "Yep, the element is its own scope as expected!";
+      }
+    </script>
+  </body>
+</html>
