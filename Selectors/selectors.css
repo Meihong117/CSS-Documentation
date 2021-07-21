@@ -1,0 +1,93 @@
+.h1 {
+  text-align: center;
+}
+/* ----------------------------- whole box */
+.all-container {
+  display: flex;
+  justify-content: center;
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  overflow: scroll;
+}
+.content {
+  float: left;
+  width: 70%;
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  padding: 0px 20px;
+}
+/* ----------------------------------------- */
+/* any-link */
+#any-link a:any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+/* autofill */
+#autofill input {
+  border: 3px solid grey;
+  border-radius: 3px;
+}
+#autofill input:autofill {
+  border: 3px solid blue;
+}
+/* checked */
+#checked div,
+#checked select {
+  margin: 8px;
+}
+#checked input:checked + label {
+  color: red;
+}
+#checked input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+#checked input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+#fruit option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+/*  */
+#default input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+#default input:default + label {
+  color: coral;
+}
+/* dir */
+#dir :dir(ltr) {
+  background-color: yellow;
+}
+
+#dir :dir(rtl) {
+  background-color: powderblue;
+}

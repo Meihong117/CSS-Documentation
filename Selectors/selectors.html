@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="selectors.css" />
+    <title>Selectors</title>
+  </head>
+  <body>
+    <!-- overall -->
+    <div class="h1"><h1>Selectors Overall</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>:any-link</li></a>
+        <a href=""><li>:autofill</li></a>
+        <a href=""><li>:blank</li></a>
+        <a href=""><li>:checked</li></a>
+        <a href=""><li>:current</li></a>
+        <a href=""><li>:default</li></a>
+        <a href=""><li>:defined</li></a>
+        <a href=""><li>:dir</li></a>
+        <a href=""><li>:disabled</li></a>
+        <a href=""><li>:empty</li></a>
+        <a href=""><li>:enabled</li></a>
+        <a href=""><li>:first-of-type</li></a>
+        <a href=""><li>:focus-visible</li></a>
+        <a href=""><li>:focus-within</li></a>
+        <a href=""><li>:future</li></a>
+        <a href=""><li>:has</li></a>
+        <a href=""><li>:hover</li></a>
+        <a href=""><li>:in-range</li></a>
+        <a href=""><li>:indeterminate</li></a>
+        <a href=""><li>:invalid</li></a>
+        <a href=""><li>:is</li></a>
+        <a href=""><li>:last-child</li></a>
+        <a href=""><li>:last-of-type</li></a>
+        <a href=""><li>:local-link</li></a>
+        <a href=""><li>:not</li></a>
+        <a href=""><li>:nth-child</li></a>
+        <a href=""><li>:nth-col</li></a>
+        <a href=""><li>:nth-last-child</li></a>
+        <a href=""><li>:nth-last-col</li></a>
+        <a href=""><li>:nth-last-of-type</li></a>
+        <a href=""><li>:nth-of-type</li></a>
+        <a href=""><li>:only-child</li></a>
+        <a href=""><li>:only-of-type</li></a>
+        <a href=""><li>:optional</li></a>
+        <a href=""><li>:out-of-range</li></a>
+        <a href=""><li>:past</li></a>
+        <a href=""><li>:paused</li></a>
+        <a href=""><li>:picture-in-picture</li></a>
+        <a href=""><li>:placeholder-shown</li></a>
+        <a href=""><li>:playing</li></a>
+        <a href=""><li>:read-only</li></a>
+        <a href=""><li>:read-write</li></a>
+        <a href=""><li>:required</li></a>
+        <a href=""><li>:root</li></a>
+        <a href=""><li>:scope</li></a>
+        <a href=""><li>:state</li></a>
+        <a href=""><li>:target</li></a>
+        <a href=""><li>:target-within</li></a>
+        <a href=""><li>:user-invalid</li></a>
+        <a href=""><li>:user-valid</li></a>
+        <a href=""><li>:valid</li></a>
+        <a href=""><li>:where</li></a>
+        <a href=""><li>Column combinator(Experimental)</li></a>
+        <a href=""><li>General sibling combinator</li></a>
+      </ol>
+    </div>
+    <!--  -->
+    <div class="all-container">
+      <div class="tab">
+        <!-- button -->
+        <button
+          class="tablinks"
+          onclick="openClick(event, 'any-link')"
+          id="defaultOpen"
+        >
+          :any-link
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'autofill')">
+          :autofill
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'blank')">
+          :blank
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'checked')">
+          :checked
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'current')">
+          :current
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'default')">
+          :default
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'defined')">
+          :defined
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'dir')">
+          :dir
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'disabled')">
+          :disabled
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'empty')">
+          :empty
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'enabled')">
+          :enabled
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'first-of-type')">
+          :first-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'focus-visible')">
+          :focus-visible
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'focus-within')">
+          :focus-within
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'future')">
+          :future
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'has')">
+          :has
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'hover')">
+          :hover
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'in-range')">
+          :in-range
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'indeterminate')">
+          :indeterminate
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'invalid')">
+          :invalid
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'is')">
+          :is
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'last-child')">
+          :last-child
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'last-of-type')">
+          :last-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'local-link')">
+          :local-link
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'not')">
+          :not
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-child')">
+          :nth-child
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-child')">
+          :nth-col
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-last-child')">
+          :nth-last-child
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-last-col')">
+          :nth-last-col
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-last-of-type')">
+          :nth-last-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-last-of-type')">
+          :nth-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'nth-of-type')">
+          :nth-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'only-child')">
+          :only-child
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'only-of-type')">
+          :only-of-type
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'optional')">
+          :optional
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'out-of-range')">
+          :out-of-range
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'past')">
+          :past
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'paused')">
+          :paused
+        </button>
+        <button
+          class="tablinks"
+          onclick="openClick(event, 'picture-in-picture')"
+        >
+          :picture-in-picture
+        </button>
+        <button
+          class="tablinks"
+          onclick="openClick(event, 'placeholder-shown')"
+        >
+          :placeholder-shown
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'playing')">
+          :playing
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'playing')">
+          :read-only
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'read-write')">
+          :read-write
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'required')">
+          :required
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'root')">
+          :root
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'scope')">
+          :scope
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'state')">
+          :state
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'target')">
+          :target
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'target-within')">
+          :target-within
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'user-invalid')">
+          :user-invalid
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'user-valid')">
+          :user-valid
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'valid')">
+          :valid
+        </button>
+        <button class="tablinks" onclick="openClick(event, 'where')">
+          :where
+        </button>
+      </div>
+
+      <div class="content">
+        <!-- any-link -->
+        <div id="any-link" class="tabcontent">
+          <h4>Using for < a ></h4>
+          <a href="https://example.com">External link</a><br />
+          <a href="#">Internal target link</a><br />
+          <a>Placeholder link (won't get styled)</a>
+        </div>
+        <!-- autofill -->
+        <div id="autofill" class="tabcontent">
+          <h4>Using for < input ></h4>
+          <form method="post" action="">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" />
+          </form>
+        </div>
+
+        <!-- blank -->
+        <div id="blank" class="tabcontent">
+          <p>Experimental</p>
+        </div>
+        <!-- checked -->
+        <div id="checked" class="tabcontent">
+          <h4>
+            Using for radio (< input type="radio">), checkbox (< input
+            type="checkbox">), or option (< option > in a < select >)
+          </h4>
+          <div>
+            <input type="radio" name="my-input" id="yes" />
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="my-input" id="no" />
+            <label for="no">No</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="my-checkbox" id="opt-in" />
+            <label for="opt-in">Check me!</label>
+          </div>
+
+          <select name="my-select" id="fruit">
+            <option value="opt1">Apples</option>
+            <option value="opt2">Grapes</option>
+            <option value="opt3">Pears</option>
+          </select>
+        </div>
+        <!-- current -->
+        <div id="current" class="tabcontent">
+          <h4>Using for display like video</h4>
+        </div>
+        <!-- default -->
+        <div id="default" class="tabcontent">
+          <h4>Using for display like video</h4>
+          <fieldset>
+            <legend>Favorite season</legend>
+
+            <input type="radio" name="season" id="spring" />
+            <label for="spring">Spring</label>
+
+            <input type="radio" name="season" id="summer" checked />
+            <label for="summer">Summer</label>
+
+            <input type="radio" name="season" id="fall" />
+            <label for="fall">Fall</label>
+
+            <input type="radio" name="season" id="winter" />
+            <label for="winter">Winter</label>
+          </fieldset>
+        </div>
+        <!-- defined -->
+        <div id="defined" class="tabcontent">
+          <h4>defined</h4>
+        </div>
+        <!-- dir -->
+        <div id="dir" class="tabcontent">
+          <h4>dir</h4>
+          <div dir="rtl">
+            <span>test1</span>
+            <div dir="ltr">
+              test2
+              <div dir="auto">עִבְרִית</div>
+            </div>
+          </div>
+        </div>
+        <!-- disabled -->
+        <div id="disabled" class="tabcontent">
+          <h4>disabled</h4>
+        </div>
+        <!-- empty -->
+        <div id="empty" class="tabcontent">
+          <h4>empty</h4>
+        </div>
+        <!-- enabled -->
+        <div id="enabled" class="tabcontent">
+          <h4>enabled</h4>
+        </div>
+        <!-- first-of-type -->
+        <div id="first-of-type" class="tabcontent">
+          <h4>first-of-type</h4>
+        </div>
+        <!-- focus-visible -->
+        <div id="focus-visible" class="tabcontent">
+          <h4>focus-visible</h4>
+        </div>
+        <!-- focus-visible -->
+        <div id="focus-within" class="tabcontent">
+          <h4>focus-within</h4>
+        </div>
+        <!-- future -->
+        <div id="future" class="tabcontent">
+          <h4>future</h4>
+        </div>
+        <!-- has -->
+        <div id="has" class="tabcontent">
+          <h4>has</h4>
+        </div>
+        <!-- hover -->
+        <div id="hover" class="tabcontent">
+          <h4>hover</h4>
+        </div>
+        <!-- in-range -->
+        <div id="in-range" class="tabcontent">
+          <h4>in-range</h4>
+        </div>
+        <!-- indeterminate -->
+        <div id="indeterminate" class="tabcontent">
+          <h4>indeterminate</h4>
+        </div>
+        <!-- invalid -->
+        <div id="invalid" class="tabcontent">
+          <h4>invalid</h4>
+        </div>
+        <!-- is -->
+        <div id="is" class="tabcontent">
+          <h4>is</h4>
+        </div>
+        <!-- last-child -->
+        <div id="last-child" class="tabcontent">
+          <h4>last-child</h4>
+        </div>
+        <!-- last-child -->
+        <div id="last-of-type" class="tabcontent">
+          <h4>last-of-type</h4>
+        </div>
+        <!-- local-link -->
+        <div id="local-link" class="tabcontent">
+          <h4>local-link</h4>
+        </div>
+        <!-- not -->
+        <div id="not" class="tabcontent">
+          <h4>not</h4>
+        </div>
+        <!-- nth-child -->
+        <div id="nth-child" class="tabcontent">
+          <h4>nth-child</h4>
+        </div>
+        <!-- nth-col -->
+        <div id="nth-col" class="tabcontent">
+          <h4>nth-col</h4>
+        </div>
+        <!-- nth-last-child -->
+        <div id="nth-last-child" class="tabcontent">
+          <h4>nth-last-child</h4>
+        </div>
+        <!-- nth-last-col -->
+        <div id="nth-last-col" class="tabcontent">
+          <h4>nth-last-col</h4>
+        </div>
+        <!-- nth-last-of-type -->
+        <div id="nth-last-of-type" class="tabcontent">
+          <h4>nth-last-of-type</h4>
+        </div>
+        <!-- nth-of-type -->
+        <div id="nth-of-type" class="tabcontent">
+          <h4>nth-of-type</h4>
+        </div>
+        <!-- only-child -->
+        <div id="only-child" class="tabcontent">
+          <h4>only-child</h4>
+        </div>
+        <!-- only-of-type -->
+        <div id="only-of-type" class="tabcontent">
+          <h4>only-of-type</h4>
+        </div>
+        <!-- optional -->
+        <div id="optional" class="tabcontent">
+          <h4>optional</h4>
+        </div>
+        <!-- out-of-range -->
+        <div id="out-of-range" class="tabcontent">
+          <h4>out-of-range</h4>
+        </div>
+        <!-- past -->
+        <div id="past" class="tabcontent">
+          <h4>past</h4>
+        </div>
+        <!-- paused -->
+        <div id="paused" class="tabcontent">
+          <h4>paused</h4>
+        </div>
+        <!-- picture-in-picture -->
+        <div id="picture-in-picture" class="tabcontent">
+          <h4>picture-in-picture</h4>
+        </div>
+        <!-- placeholder-shown -->
+        <div id="placeholder-shown" class="tabcontent">
+          <h4>placeholder-shown</h4>
+        </div>
+        <!-- playing -->
+        <div id="playing" class="tabcontent">
+          <h4>playing</h4>
+        </div>
+        <!-- read-only -->
+        <div id="read-only" class="tabcontent">
+          <h4>read-only</h4>
+        </div>
+        <!-- read-write -->
+        <div id="read-write" class="tabcontent">
+          <h4>read-write</h4>
+        </div>
+        <!-- required -->
+        <div id="required" class="tabcontent">
+          <h4>required</h4>
+        </div>
+        <!-- root -->
+        <div id="root" class="tabcontent">
+          <h4>root</h4>
+        </div>
+        <!-- scope -->
+        <div id="scope" class="tabcontent">
+          <h4>scope</h4>
+        </div>
+        <!-- state -->
+        <div id="state" class="tabcontent">
+          <h4>state</h4>
+        </div>
+        <!-- target -->
+        <div id="target" class="tabcontent">
+          <h4>target</h4>
+        </div>
+        <!-- target-within -->
+        <div id="target-within" class="tabcontent">
+          <h4>target-within</h4>
+        </div>
+        <!-- user-invalid -->
+        <div id="user-invalid" class="tabcontent">
+          <h4>user-invalid</h4>
+        </div>
+        <!-- user-valid -->
+        <div id="user-valid" class="tabcontent">
+          <h4>user-valid</h4>
+        </div>
+        <!-- valid -->
+        <div id="valid" class="tabcontent">
+          <h4>valid</h4>
+        </div>
+        <!-- where -->
+        <div id="where" class="tabcontent">
+          <h4>where</h4>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!--  -->
+    <script>
+      function openClick(evt, cityName) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
