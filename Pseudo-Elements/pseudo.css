@@ -1,0 +1,44 @@
+.h1 {
+  text-align: center;
+}
+/* ::cue */
+video::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+}
+
+video::cue(b) {
+  color: peachpuff;
+}
+/*  */
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+/*  */
+input::placeholder {
+  color: red;
+  font-size: 1.2em;
+  font-style: italic;
+  opacity: 1;
+}
+/*  ::selection */
+/* Make selected text gold on a red background */
+::selection {
+  color: gold;
+  background-color: red;
+}
+
+/* Make selected text in a paragraph white on a blue background */
+.selection p::selection {
+  color: white;
+  background-color: blue;
+}
