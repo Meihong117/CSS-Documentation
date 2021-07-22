@@ -1,0 +1,16 @@
+.h1 {
+  text-align: center;
+}
+@page :first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+@page :left {
+  margin: 2in 3in;
+}
+@page :right {
+  margin: 2in 3in;
+}
+.first p {
+  break-after: always;
+}
