@@ -1,0 +1,130 @@
+.h1 {
+  text-align: center;
+}
+/*  */
+.scroll-margin,
+.scroll-margin-inline {
+  text-align: left;
+  width: 250px;
+  height: 250px;
+  overflow-x: scroll;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  scroll-snap-type: x mandatory;
+}
+.scroll-margin > div,
+.scroll-margin-inline > div {
+  flex: 0 0 250px;
+  width: 250px;
+  background-color: #663399;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.scroll-margin > div:nth-child(2n),
+.scroll-margin-inline > div:nth-child(2n) {
+  background-color: #fff;
+  color: #663399;
+}
+/* scroll-margin */
+.scroll-margin > div:nth-child(2) {
+  scroll-margin: 1rem;
+}
+.scroll-margin > div:nth-child(3) {
+  scroll-margin: 2rem;
+}
+/* scroll-margin-inline */
+.scroll-margin-inline > div:nth-child(2) {
+  scroll-margin-inline-end: 20px;
+}
+.scroll-margin-inline > div:nth-child(3) {
+  scroll-margin-inline-start: 2rem;
+}
+/*  */
+
+.holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+}
+
+.container.x {
+  width: 100%;
+  height: 128px;
+  flex-flow: row nowrap;
+}
+
+.container.y {
+  width: 256px;
+  height: 256px;
+  flex-flow: column nowrap;
+}
+/* definite scroll snap */
+.mandatory-scroll-snapping > div {
+  scroll-snap-stop: always;
+}
+.proximity-scroll-snapping > div {
+  scroll-snap-stop: normal;
+}
+/* scroll-snap */
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+.x.proximity-scroll-snapping {
+  scroll-snap-type: x proximity;
+}
+
+.y.proximity-scroll-snapping {
+  scroll-snap-type: y proximity;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x.container > div {
+  line-height: 128px;
+  font-size: 64px;
+  width: 100%;
+  height: 128px;
+}
+
+.y.container > div {
+  line-height: 256px;
+  font-size: 128px;
+  width: 256px;
+  height: 100%;
+}
+/* appearance fixes */
+.y.container > div:first-child {
+  line-height: 1.3;
+  font-size: 64px;
+}
+/* coloration */
+.container > div:nth-child(even) {
+  background-color: #87ea87;
+}
+
+.container > div:nth-child(odd) {
+  background-color: #87ccea;
+}

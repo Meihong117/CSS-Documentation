@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scrollsnap.css" />
+    <title>Scroll Snap</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="h1"><h1>Scroll Snap</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>CSS Scroll Snap</li></a>
+        <a href=""><li>scroll-margin</li></a>
+        <ul>
+          <a href=""><li>scroll-margin-bottom</li></a>
+          <a href=""><li>scroll-margin-left</li></a>
+          <a href=""><li>scroll-margin-right</li></a>
+          <a href=""><li>scroll-margin-top</li></a>
+        </ul>
+        <ol>
+          <a href=""><li>scroll-margin-block(上下)</li></a>
+          <ul>
+            <a href=""><li>scroll-margin-block-end</li></a>
+            <a href=""><li>scroll-margin-block-start</li></a>
+          </ul>
+
+          <a href=""><li>scroll-margin-inline(左右)</li></a>
+          <ul>
+            <a href=""><li>scroll-margin-inline-end</li></a>
+            <a href=""><li>scroll-margin-inline-start</li></a>
+          </ul>
+
+          <a href=""><li>scroll-snap-align: none | start | end | cneter</li></a>
+          <a href=""><li>scroll-snap-stop: normal | always</li></a>
+        </ol>
+        <a href=""><li>scroll-padding</li></a>
+        <ul>
+          <a href=""><li>scroll-padding-bottom</li></a>
+          <a href=""><li>scroll-padding-left</li></a>
+          <a href=""><li>scroll-padding-right</li></a>
+          <a href=""><li>scroll-padding-top</li></a>
+        </ul>
+        <ol>
+          <a href=""><li>scroll-padding-block</li></a>
+          <ul>
+            <a href=""><li>scroll-padding-block-end</li></a>
+            <a href=""><li>scroll-padding-block-start</li></a>
+          </ul>
+
+          <a href=""><li>scroll-padding-inline</li></a>
+          <ul>
+            <a href=""><li>scroll-padding-inline-end</li></a>
+            <a href=""><li>scroll-padding-inline-start</li></a>
+          </ul>
+          <a href=""><li>scroll-snap-type</li></a>
+        </ol>
+      </ol>
+    </div>
+    <!-- scroll-margin -->
+    <div class="h1"><h1>scroll-margin</h1></div>
+    <div class="scroll-margin">
+      <div style="text-align: center;"><p>scroll >></p></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <!-- scroll-margin-inline -->
+    <div class="h1">
+      <h1>
+        scroll-margin-inline
+      </h1>
+    </div>
+
+    <div class="scroll-margin-inline">
+      <div style="text-align: center;"><p>scroll >></p></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <!-- scroll-padding -->
+    <div class="h1"><h1>scroll-padding</h1></div>
+    <div></div>
+    <!-- scroll-padding-block -->
+    <div class="h1">
+      <h1>
+        scroll-padding-block
+      </h1>
+    </div>
+    <div></div>
+    <!-- scroll-snap-align -->
+    <div class="h1"><h1>scroll-snap-align</h1></div>
+    <div></div>
+    <!-- scroll-snap-type -->
+    <div class="h1"><h1>scroll-snap-type</h1></div>
+    <div class="holster">
+      <div
+        class="container x mandatory-scroll-snapping"
+        dir="ltr"
+        style="margin: 20px;"
+      >
+        <div>X Mand. LTR</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <div
+        class="container x proximity-scroll-snapping"
+        dir="ltr"
+        style="margin: 20px;"
+      >
+        <div>X Prox. LTR</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <div
+          class="container y mandatory-scroll-snapping"
+          dir="ltr"
+          style="margin: 20px;"
+        >
+          <div>Y Mand. LTR</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+
+        <div
+          class="container y proximity-scroll-snapping"
+          dir="ltr"
+          style="margin: 20px;"
+        >
+          <div>Y Prox. LTR</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+      </div>
+
+      <div
+        class="container x mandatory-scroll-snapping"
+        dir="rtl"
+        style="margin: 20px;"
+      >
+        <div>X Mand. RTL</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <div
+        class="container x proximity-scroll-snapping"
+        dir="rtl"
+        style="margin: 20px;"
+      >
+        <div>X Prox. RTL</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <div
+          class="container y mandatory-scroll-snapping"
+          dir="rtl"
+          style="margin: 20px;"
+        >
+          <div>Y Mand. RTL</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+
+        <div
+          class="container y proximity-scroll-snapping"
+          dir="rtl"
+          style="margin: 20px;"
+        >
+          <div>Y Prox. RTL</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
