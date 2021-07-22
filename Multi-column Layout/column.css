@@ -1,0 +1,74 @@
+.h1 {
+  text-align: center;
+}
+/*------------------------------ container */
+.columns,
+.column-fill,
+.column-span-section,
+.break-inside-section,
+.break-before,
+.orphans {
+  width: 90%;
+  max-width: 700px;
+  border: 1px solid #4d4e53;
+  border-radius: 2px;
+  padding: 10px 14px 10px 10px;
+  margin-bottom: 10px;
+}
+/* columns */
+.columns {
+  width: 200px;
+  /* column-gap: 40px; */
+}
+.content-box {
+  columns: 3 auto;
+}
+/* column-fill */
+.column-fill {
+  width: 250px;
+}
+.column-fill p {
+  height: 7em;
+  background: #ff9;
+  columns: 3;
+  column-rule: 1px solid;
+  /* column-rule: thick inset blue; */
+}
+.column-fill p.fill-auto {
+  column-fill: auto;
+}
+.column-fill p.fill-balance {
+  column-fill: balance;
+}
+/* column-span */
+.column-span {
+  width: 500px;
+  column-width: 200px;
+}
+.column-span article {
+  border: 1px solid red;
+  padding: 10px;
+}
+.column-span h2 {
+  column-span: all;
+  background-color: blueviolet;
+}
+/* break-inside */
+.break-inside {
+  column-width: 200px;
+}
+.break-inside figure {
+  break-inside: avoid;
+}
+/*  */
+.break-before .container {
+  column-width: 200px;
+}
+.break-before h2 {
+  break-before: column;
+}
+/* orphans and widows */
+.orphans .container {
+  column-width: 200px;
+  orphans: 3;
+}
