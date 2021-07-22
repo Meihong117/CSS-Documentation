@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="overflow.css" />
+    <title>Overflow</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="h1"><h1>Overflow Overall</h1></div>
+    <div>
+      <ol>
+        <a href=""><li>overflow-block: visible | hidden | scroll | auto</li></a>
+        <a href=""><li>overflow-clip-margin: Not for Firefox</li></a>
+        <a href=""><li>overflow-inline</li></a>
+        <a href=""><li>overflow-x</li></a>
+        <a href=""><li>overflow-y</li></a>
+        <a href=""><li>scrollbar-gutter: Not for Firefox</li></a>
+        <a href=""><li>text-overflow</li></a>
+      </ol>
+    </div>
+    <!-- overflow-block -->
+    <div class="h1"><h1>overflow-block | overflow-y</h1></div>
+    <div class="overflow-block">
+      <div>
+        <code>overflow-block:hidden</code>
+        <div id="div1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-block:scroll</code>
+        <div id="div2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-block:visible</code>
+        if needed
+        <div id="div3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-block:auto</code>
+        <code>scroll</code>
+        <div id="div4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+      </div>
+    </div>
+    <!-- overflow-inline -->
+    <div class="h1"><h1>overflow-inline | overflow-x</h1></div>
+    <div class="overflow-inline">
+      <div>
+        <code>overflow-inline:hidden</code>
+        <div class="div1">
+          ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-inline:scroll</code>
+        <div class="div2">
+          ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-inline:visible</code>
+        if needed
+        <div class="div3">
+          ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div>
+        <code>overflow-inline:auto</code>
+        <code>scroll</code>
+        <div class="div4">
+          ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        </div>
+      </div>
+    </div>
+    <!-- text-overflow -->
+    <div class="h1"><h1>text-overflow</h1></div>
+    <div class="text-overflow">
+      <p class="overflow-visible">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <p class="overflow-clip">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <p class="overflow-ellipsis">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <p class="overflow-string">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </div>
+  </body>
+</html>

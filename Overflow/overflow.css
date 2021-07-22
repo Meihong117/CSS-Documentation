@@ -1,0 +1,82 @@
+.h1 {
+  text-align: center;
+}
+
+.overflow-block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* overflow-block = overflow-y */
+#div1,
+#div2,
+#div3,
+#div4 {
+  border: 1px solid black;
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+}
+
+#div1 {
+  overflow-block: hidden;
+}
+#div2 {
+  overflow-block: scroll;
+}
+#div3 {
+  overflow-block: visible;
+}
+#div4 {
+  overflow-block: auto;
+}
+/* overflow-inline = overflow-x*/
+.div1,
+.div2,
+.div3,
+.div4 {
+  border: 1px solid black;
+  width: 250px;
+  margin-bottom: 12px;
+}
+
+.div1 {
+  /* overflow-x: visible; */
+  /* same as */
+  overflow-inline: hidden;
+}
+.div2 {
+  overflow-inline: scroll;
+}
+.div3 {
+  overflow-inline: visible;
+}
+.div4 {
+  overflow-inline: auto;
+}
+/*  */
+.text-overflow p {
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+  /* BOTH of the following are required for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.overflow-visible {
+  white-space: initial;
+}
+.overflow-clip {
+  text-overflow: clip;
+}
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+.overflow-string {
+  /* Not supported in most browsers,
+       see the 'Browser compatibility' section below */
+  text-overflow: " [..]";
+  /* text-overflow: "-"; */
+}
