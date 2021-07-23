@@ -133,7 +133,7 @@
         <li>writing-mode</li>
       </div>
 
-      <h4>Table</h4>
+      <h4><a href="https://devdocs.io/css/css_table">Table >></a></h4>
       <div>
         <li>border-collapse</li>
         <li>border-spacing</li>
@@ -143,7 +143,9 @@
         <li>vertical-align</li>
       </div>
 
-      <h4>Positioning</h4>
+      <h4>
+        <a href="https://devdocs.io/css/css_positioning">Positioning >></a>
+      </h4>
       <div>
         <li>bottom</li>
         <li>clear</li>
@@ -155,7 +157,7 @@
         <li>z-index</li>
       </div>
 
-      <h4>Overflow</h4>
+      <h4><a href="https://devdocs.io/css/css_overflow">Overflow >></a></h4>
       <div>
         <li>overflow</li>
         <li>overflow-block</li>
@@ -212,7 +214,7 @@
     </div>
 
     <!------------------------------------------------------------------------------ overall -->
-    <div class="h1"><h1>Miscellaneous Level 1 Overall</h1></div>
+    <div class="h1"><h1>Miscellaneous Level Overall</h1></div>
     <div class="overall">
       <ol>
         <!-- --------------------------------------------------- -->
@@ -595,112 +597,89 @@
           <li>Hash mark (#): bold smaller#</li>
           <li>Exclamation point (!): [ bold? smaller? ]!</li>
         </ul>
-      </ol>
 
-      <!--  -->
-      <a href=""><li>actual value</li></a>
-      <ol>
-        <li>
-          First, the specified value is determined based on the result of
-          cascading, inheritance, or using the initial value.
-        </li>
-        <li>
-          Next, the computed value is calculated according to the specification
-          (for example, a span with position: absolute will have its computed
-          display changed to block).
-        </li>
-        <li>Then, layout is calculated, resulting in the used value.</li>
-        <li>
-          Finally, the used value is transformed according to the limitations of
-          the local environment, resulting in the actual value.
-        </li>
-      </ol>
-      <!--  -->
-      <a href=""><li>computed value</li></a>
-      <ol>
-        <li>
-          Handling the special values inherit, initial, unset, and revert.
-        </li>
-        <li>
-          Doing the computation needed to reach the value described in the
-          "Computed value" line in the property's definition table.
-        </li>
-      </ol>
-      <!--  -->
-      <a href=""><li>used value</li></a>
+        <!--  -->
+        <a href=""><li>actual value</li></a>
+        <ol>
+          <li>
+            First, the specified value is determined based on the result of
+            cascading, inheritance, or using the initial value.
+          </li>
+          <li>
+            Next, the computed value is calculated according to the
+            specification (for example, a span with position: absolute will have
+            its computed display changed to block).
+          </li>
+          <li>Then, layout is calculated, resulting in the used value.</li>
+          <li>
+            Finally, the used value is transformed according to the limitations
+            of the local environment, resulting in the actual value.
+          </li>
+        </ol>
+        <!--  -->
+        <a href=""><li>computed value</li></a>
+        <ol>
+          <li>
+            Handling the special values inherit, initial, unset, and revert.
+          </li>
+          <li>
+            Doing the computation needed to reach the value described in the
+            "Computed value" line in the property's definition table.
+          </li>
+        </ol>
+        <!--  -->
+        <a href=""><li>used value</li></a>
+        <!--  -->
+        <a href=""><li>specified value</li></a>
+        <ol>
+          <li>
+            If the document's style sheet explicitly specifies a value for the
+            property, the given value will be used.
+          </li>
+          <li>
+            If the document's style sheet doesn't specify a value but it is an
+            inherited property, the value will be taken from the parent element.
+          </li>
+          <li>
+            If none of the above pertain, the element's initial value will be
+            used.
+          </li>
+        </ol>
+        <!--  -->
+        <a href=""
+          ><li>
+            attr(string | color | url | integer | number | length | em, ex, px,
+            rem, vw, vh, vmin, vmax, mm, cm, in, pt, or pc | angle | deg, grad,
+            rad | time | s,ms | frequency | Hz, kHz | % | )
+          </li></a
+        >
+        <!--  -->
+        <a href=""><li>counter()</li></a>
+        <ul>
+          <a href=""><li>counter-increment</li></a>
+          <a href=""><li>counter-reset</li></a>
+          <a href=""><li>counters()</li></a>
+        </ul>
+        <!--  -->
+        <a href=""
+          ><li>
+            unicode-bidi(together with the direction property, overrides this
+            algorithm and allows the developer to control the text embedding.):
+            normal | embed | bidi-override | isolate | isolate-override |
+            plaintext
+          </li></a
+        >
+        <!--  -->
+        <a href=""
+          ><li>
+            white-space: normal | nowrap | pre | pre-wrap | pre-line |
+            break-spaces
+          </li></a
+        >
 
-      <!--  -->
-      <a href=""
-        ><li>
-          attr(string | color | url | integer | number | length | em, ex, px,
-          rem, vw, vh, vmin, vmax, mm, cm, in, pt, or pc | angle | deg, grad,
-          rad | time | s,ms | frequency | Hz, kHz | % | )
-        </li></a
-      >
-      <a href=""><li>counter()</li></a>
-      <ul>
-        <a href=""><li>counter-increment</li></a>
-        <a href=""><li>counter-reset</li></a>
-        <a href=""><li>counters()</li></a>
-      </ul>
-
-      <a href=""><li>specified value</li></a>
-      <ol>
-        <li>
-          If the document's style sheet explicitly specifies a value for the
-          property, the given value will be used.
-        </li>
-        <li>
-          If the document's style sheet doesn't specify a value but it is an
-          inherited property, the value will be taken from the parent element.
-        </li>
-        <li>
-          If none of the above pertain, the element's initial value will be
-          used.
-        </li>
+        <!-- Box Model -->
+        <a href=""><li>CSS Box Model: Mastering margin collapsing</li></a>
       </ol>
-      <a href=""
-        ><li>
-          unicode-bidi(together with the direction property, overrides this
-          algorithm and allows the developer to control the text embedding.):
-          normal | embed | bidi-override | isolate | isolate-override |
-          plaintext
-        </li></a
-      >
-      <a href=""
-        ><li>
-          white-space: normal | nowrap | pre | pre-wrap | pre-line |
-          break-spaces
-        </li></a
-      >
-
-      <!-- Box Model -->
-      <a href=""><li>CSS Box Model: Mastering margin collapsing</li></a>
-      <!-- Overflow -->
-      <a href=""><li>CSS Overflow</li></a>
-      <ul>
-        <a href=""><li>overflow</li></a>
-      </ul>
-      <!-- Positioning -->
-      <a href=""><li>CSS Positioning</li></a>
-      <ul>
-        <a href=""><li>left</li></a>
-        <a href=""><li>right</li></a>
-        <a href=""><li>top</li></a>
-        <a href=""><li>bottom</li></a>
-        <a href=""><li>position</li></a>
-        <a href=""><li>z-index</li></a>
-      </ul>
-      <!-- Table -->
-      <a href=""><li>CSS Table</li></a>
-      <ul>
-        <a href=""><li>table-layout</li></a>
-        <a href=""><li>border-collapse</li></a>
-        <a href=""><li>border-spacing</li></a>
-        <a href=""><li>caption-side</li></a>
-        <a href=""><li>empty-cells</li></a>
-        <a href=""><li>vertical-align</li></a>
-      </ul>
     </div>
   </body>
 </html>
