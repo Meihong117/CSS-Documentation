@@ -133,6 +133,42 @@
         <li>writing-mode</li>
       </div>
 
+      <h4>Table</h4>
+      <div>
+        <li>border-collapse</li>
+        <li>border-spacing</li>
+        <li>caption-side</li>
+        <li>empty-cells</li>
+        <li>table-layout</li>
+        <li>vertical-align</li>
+      </div>
+
+      <h4>Positioning</h4>
+      <div>
+        <li>bottom</li>
+        <li>clear</li>
+        <li>float</li>
+        <li>left</li>
+        <li>position</li>
+        <li>right</li>
+        <li>top</li>
+        <li>z-index</li>
+      </div>
+
+      <h4>Overflow</h4>
+      <div>
+        <li>overflow</li>
+        <li>overflow-block</li>
+        <li>overflow-inline</li>
+        <li>overflow-x</li>
+        <li>overflow-y</li>
+        <li>text-overflow</li>
+        <li>block-overflow</li>
+        <li>line-clamp</li>
+        <li>line-clamp</li>
+        <li>continue</li>
+      </div>
+
       <h4>Pseudo-elements</h4>
       <div>
         <li>::after (:after)</li>
@@ -160,9 +196,9 @@
         >
       </h4>
       <div>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>:first-child</li>
+        <li>:focus</li>
+        <li>:lang()</li>
         <li></li>
         <li></li>
         <li></li>
@@ -175,10 +211,11 @@
       </div>
     </div>
 
-    <!-- overall -->
+    <!------------------------------------------------------------------------------ overall -->
     <div class="h1"><h1>Miscellaneous Level 1 Overall</h1></div>
     <div class="overall">
       <ol>
+        <!-- --------------------------------------------------- -->
         <a href="https://devdocs.io/css/::first-letter"
           ><li>::first-letter</li></a
         >
@@ -218,6 +255,11 @@
         <ul>
           <h4>represents links that the user has already visited</h4>
         </ul>
+
+        <a href=""><li>:first-child</li></a>
+        <a href=""><li>:focus</li></a>
+        <a href=""><li>:lang</li></a>
+        <!-- ------------------------------------------- Data Type -->
         <a href=""><li>< integer ></li></a>
         <ul>
           <h4>Valid integers</h4>
@@ -294,12 +336,35 @@
         <ul>
           <li>" " or ' '</li>
         </ul>
+        <a href=""><li>< shape > (When animated)</li></a>
+        <ul>
+          <a href=""><li>rect(top, right, bottom, left)</li></a>
+          <a href=""><li>clip</li></a>
+        </ul>
+        <a href=""><li>< time > (used in animation, transition)</li></a>
+        <!---------------------------------------------------  -->
 
-        <!--  -->
+        <a href=""><li>@charset</li></a>
+        <ul>
+          <li>@charset "UTF-8";</li>
+          <li>@charset "iso-8859-15";</li>
+        </ul>
+        <!---------------------------------------------------  -->
         <a href=""><li>CSS Selectors</li></a>
         <ul>
           <h4>Basic selectors:</h4>
-          <li>Universal selector: * ns|**|*</li>
+          <li>
+            Universal selector:
+            <ul>
+              * - all element
+              <br />
+              ns|* - matches all elements in namespace ns
+              <br />
+              * | * - matches all elements<br />
+              | * - matches all elements without any declared namespace
+            </ul>
+          </li>
+
           <li>Type selector: eg: input</li>
           <li>Class selector:.classname</li>
           <li>ID selector: #idname</li>
@@ -531,6 +596,111 @@
           <li>Exclamation point (!): [ bold? smaller? ]!</li>
         </ul>
       </ol>
+
+      <!--  -->
+      <a href=""><li>actual value</li></a>
+      <ol>
+        <li>
+          First, the specified value is determined based on the result of
+          cascading, inheritance, or using the initial value.
+        </li>
+        <li>
+          Next, the computed value is calculated according to the specification
+          (for example, a span with position: absolute will have its computed
+          display changed to block).
+        </li>
+        <li>Then, layout is calculated, resulting in the used value.</li>
+        <li>
+          Finally, the used value is transformed according to the limitations of
+          the local environment, resulting in the actual value.
+        </li>
+      </ol>
+      <!--  -->
+      <a href=""><li>computed value</li></a>
+      <ol>
+        <li>
+          Handling the special values inherit, initial, unset, and revert.
+        </li>
+        <li>
+          Doing the computation needed to reach the value described in the
+          "Computed value" line in the property's definition table.
+        </li>
+      </ol>
+      <!--  -->
+      <a href=""><li>used value</li></a>
+
+      <!--  -->
+      <a href=""
+        ><li>
+          attr(string | color | url | integer | number | length | em, ex, px,
+          rem, vw, vh, vmin, vmax, mm, cm, in, pt, or pc | angle | deg, grad,
+          rad | time | s,ms | frequency | Hz, kHz | % | )
+        </li></a
+      >
+      <a href=""><li>counter()</li></a>
+      <ul>
+        <a href=""><li>counter-increment</li></a>
+        <a href=""><li>counter-reset</li></a>
+        <a href=""><li>counters()</li></a>
+      </ul>
+
+      <a href=""><li>specified value</li></a>
+      <ol>
+        <li>
+          If the document's style sheet explicitly specifies a value for the
+          property, the given value will be used.
+        </li>
+        <li>
+          If the document's style sheet doesn't specify a value but it is an
+          inherited property, the value will be taken from the parent element.
+        </li>
+        <li>
+          If none of the above pertain, the element's initial value will be
+          used.
+        </li>
+      </ol>
+      <a href=""
+        ><li>
+          unicode-bidi(together with the direction property, overrides this
+          algorithm and allows the developer to control the text embedding.):
+          normal | embed | bidi-override | isolate | isolate-override |
+          plaintext
+        </li></a
+      >
+      <a href=""
+        ><li>
+          white-space: normal | nowrap | pre | pre-wrap | pre-line |
+          break-spaces
+        </li></a
+      >
+
+      <!-- Box Model -->
+      <a href=""><li>CSS Box Model: Mastering margin collapsing</li></a>
+      <!-- Overflow -->
+      <a href=""><li>CSS Overflow</li></a>
+      <ul>
+        <a href=""><li>overflow</li></a>
+      </ul>
+      <!-- Positioning -->
+      <a href=""><li>CSS Positioning</li></a>
+      <ul>
+        <a href=""><li>left</li></a>
+        <a href=""><li>right</li></a>
+        <a href=""><li>top</li></a>
+        <a href=""><li>bottom</li></a>
+        <a href=""><li>position</li></a>
+        <a href=""><li>z-index</li></a>
+      </ul>
+      <!-- Table -->
+      <a href=""><li>CSS Table</li></a>
+      <ul>
+        <a href=""><li>table-layout</li></a>
+        <a href=""><li>border-collapse</li></a>
+        <a href=""><li>border-spacing</li></a>
+        <a href=""><li>caption-side</li></a>
+        <a href=""><li>empty-cells</li></a>
+        <a href=""><li>vertical-align</li></a>
+      </ul>
     </div>
   </body>
 </html>
