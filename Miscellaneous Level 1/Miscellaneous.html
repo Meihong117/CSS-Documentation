@@ -141,8 +141,7 @@
         <li>::cue</li>
         <li>::cue-region</li>
         <li>::first-letter (:first-letter)</li>
-        <li>::first-line</li>
-        <li>(:first-line)</li>
+        <li>::first-line(:first-line)</li>
         <li>::file-selector-button</li>
         <li>::grammar-error</li>
         <li>::marker</li>
@@ -152,6 +151,27 @@
         <li>::slotted()</li>
         <li>::spelling-error</li>
         <li>::target-text</li>
+      </div>
+
+      <h4>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+          >Pseudo classes >></a
+        >
+      </h4>
+      <div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </div>
     </div>
 
@@ -274,19 +294,8 @@
         <ul>
           <li>" " or ' '</li>
         </ul>
-        <a href=""><li>Class selectors</li></a>
-        <ul>
-          <h4>
-            .class_name { style properties } = [class~=class_name] { style
-            properties }
-          </h4>
-        </ul>
-        <a href="https://devdocs.io/css/clear"
-          ><li>
-            clear: The clear property applies to floating and non-floating
-            elements.
-          </li></a
-        >
+
+        <!--  -->
         <a href=""><li>CSS Selectors</li></a>
         <ul>
           <h4>Basic selectors:</h4>
@@ -325,32 +334,202 @@
           <li>200hz</li>
           <li>200Hz</li>
         </ul>
-        <a href=""
-          ><li>float: left | wight | none | inline-start | inline-end</li></a
-        >
-        <a href=""
+        <!--  -->
+        <a href="https://devdocs.io/css/vertical-align"
           ><li>
-            ID selectors: #id_value { style properties } = [id=id_value] { style
-            properties }
+            vertical-align: baseline | sub | super | text-top | text-bottom |
+            middle | top | bottom
           </li></a
         >
-        <a href=""><li>letter-spacing: normal | < length ></li></a>
-        <a href=""><li>line-height: < p >上下间距</li></a>
-
+        <ul>
+          <div>
+            An
+            <img src="img/black.jpg" alt="link" width="32" height="32" />
+            image with a default alignment.
+          </div>
+          <br />
+          <div>
+            An
+            <img
+              class="top"
+              src="img/black.jpg"
+              alt="link"
+              width="32"
+              height="32"
+              style="vertical-align: text-top; "
+            />
+            image with a text-top alignment.
+          </div>
+          <!-- <img src="img/align.png" alt="" style="width: 60%; height: 50%;" /> -->
+        </ul>
+        <!--  -->
         <a href=""
+          ><li>float: left | right | none | inline-start | inline-end</li></a
+        >
+        <!-- clear -->
+        <a href="https://devdocs.io/css/clear"
           ><li>
-            Specificity <span style="color: royalblue;">satrt from here</span>
+            clear: The clear property applies to floating and non-floating
+            elements.
           </li></a
         >
-        <a href=""><li>text-align</li></a>
-        <a href=""><li>text-decoration</li></a>
+        <!--  -->
+        <a href=""
+          ><li>
+            text-transform: none | capitalize | uppercase | lowercase |
+            full-width | full-size-kana
+          </li></a
+        >
+        <ul>
+          eg: float & clear: left; & text-transform: capitalize
+          <section class="float">
+            <div class="left">float: left;</div>
+            <div class="right">float: right;</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              tristique sapien ac erat tincidunt, sit amet dignissim lectus
+              vulputate. Donec id iaculis velit. Aliquam vel malesuada erat.
+              Praesent non magna ac massa aliquet tincidunt vel in massa.
+              Phasellus feugiat est vel leo finibus congue. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Morbi tristique sapien ac
+              erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+              iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac
+              massa aliquet tincidunt vel in massa. Phasellus feugiat est vel
+              leo finibus congue.
+            </p>
+          </section>
+        </ul>
+        <a href=""><li>text-align: left | right | center | justify</li></a>
+        <ul>
+          <div style="text-align: center; background-color: powderblue;">
+            <p><code>text-align: center;</code></p>
+          </div>
+        </ul>
         <a href=""><li>text-indent</li></a>
-        <a href=""><li>text-transform</li></a>
-        <a href=""><li>Type selectors</li></a>
+        <ul>
+          eg:
+          <p
+            style="  text-indent: 5em;
+          background: powderblue;"
+          >
+            <code>text-indent: 5em;</code>
+          </p>
+          <p
+            style=" 
+          background: powderblue;"
+          >
+            <code>text-indent: none;</code>
+          </p>
+        </ul>
+
+        <!--  -->
+        <a href=""><li>letter-spacing: normal | < length ></li></a>
+        <ul>
+          <p style="background-color: powderblue; letter-spacing: .2rem;">
+            letter-spacing: .2rem;
+          </p>
+        </ul>
+        <!--  -->
+        <a href=""><li>line-height: 上下间距</li></a>
+        <ul>
+          <div style="border: 1px solid black; width: 50%; ">
+            <p style="line-height: 2.5; background-color: powderblue;">
+              line-height: 2.5;line-height: 2.5;line-height: 2.5;line-height:
+              2.5;line-height: 2.5;line-height: 2.5;line-height:
+              2.5;line-height: 2.5;line-height: 2.5;line-height:
+              2.5;line-height: 2.5;line-height: 2.5;line-height:
+              2.5;line-height: 2.5;line-height: 2.5;line-height: 2.5;
+            </p>
+          </div>
+        </ul>
+        <!--  -->
+        <a href=""><li>word-spacing: 左右间距</li></a>
+        <ul>
+          <div style="border: 1px solid black; width: 50%; ">
+            <p style="word-spacing: 1rem; background-color: powderblue;">
+              word-spacing: 1rem;word-spacing: 1rem;word-spacing:
+              1rem;word-spacing: 1rem;word-spacing: 1rem;word-spacing:
+              1rem;word-spacing: 1rem;word-spacing: 1rem;word-spacing:
+              1rem;word-spacing: 1rem;word-spacing: 1rem;word-spacing:
+              1rem;word-spacing: 1rem;word-spacing: 1rem;word-spacing:
+            </p>
+          </div>
+        </ul>
+        <!--  -->
+        <a href=""
+          ><li>
+            Specificity
+          </li></a
+        >
+        <ul>
+          <li>
+            Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+          </li>
+
+          <li>
+            Class selectors (e.g., .example), attributes selectors (e.g.,
+            [type="radio"]) and pseudo-classes (e.g., :hover).
+          </li>
+
+          <li>ID selectors (e.g., #example).</li>
+          <li>The !important exception</li>
+          <li>The :is() and :not() exceptions</li>
+        </ul>
+
+        <!--  -->
         <a href=""><li>url()</li></a>
-        <a href=""><li>Value definition syntax</li></a>
-        <a href=""><li>vertical-align</li></a>
-        <a href=""><li>word-spacing</li></a>
+        <ul>
+          <li>Simple usage:</li>
+          <ul>
+            <li>url(https://example.com/images/myImg.jpg);</li>
+            <li>url(data:image/png;base64,iRxVB0…);</li>
+            <li>url(myFont.woff);</li>
+            <li>url(#IDofSVGpath);</li>
+          </ul>
+          <li>
+            background: url('https://mdn.mozillademos.org/files/16761/star.gif')
+            bottom right repeat-x blue;
+          </li>
+          <li>
+            background-image:url("https://mdn.mozillademos.org/files/16761/star.gif")
+          </li>
+          <li>list-style:</li>
+          <li>list-style-image: url('../images/bullet.jpg');</li>
+          <li>content: url("pdficon.jpg");</li>
+          <li>cursor: url(mycursor.cur);</li>
+          <li>border</li>
+          <li>border-image:</li>
+          <li>border-image-source: url(/media/diamonds.png)</li>
+          <li>mask</li>
+          <li>mask-image: url("masks.svg#mask1");</li>
+          <li>src: url('fantasticfont.woff');</li>
+          <li>offset-path: url(#path);</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--  -->
+        <a href="https://devdocs.io/css/value_definition_syntax"
+          ><li>Value definition syntax</li></a
+        >
+        <ul>
+          <li>Keywords: like inherit, initial and unset</li>
+          <li>Literals</li>
+          <li>Data types: symbol '<' and '>'</li>
+          <li>Brackets: bold [ thin && < length > ]</li>
+          <li>Juxtaposition: bold < length > , thin</li>
+          <li>Double ampersand: bold && < length ></li>
+          <li>Double bar: ||</li>
+          <li>
+            Single bar: < percentage > | < length > | left | center | right |
+            top | bottom
+          </li>
+          <li>Asterisk (*): bold smaller*</li>
+          <li>Plus (+): bold smaller+</li>
+          <li>Question mark (?): bold smaller?</li>
+          <li>Curly braces ({ }): bold smaller{1,3}</li>
+          <li>Hash mark (#): bold smaller#</li>
+          <li>Exclamation point (!): [ bold? smaller? ]!</li>
+        </ul>
       </ol>
     </div>
   </body>

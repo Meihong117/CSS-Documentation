@@ -9,12 +9,16 @@ body {
   font: 15px;
   color: red;
 }
-.properties div {
-  columns: 6;
-  margin: 10px 20px;
+.properties a {
+  text-decoration: none;
+  color: purple;
 }
 .properties h4 {
   color: purple;
+}
+.properties div {
+  columns: 6;
+  margin: 10px 20px;
 }
 
 .length_div {
@@ -23,4 +27,28 @@ body {
 }
 .length_div div {
   margin: 0 30px;
+}
+/* float */
+.float {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+.float div {
+  margin: 5px;
+  width: 100px;
+}
+.float .left {
+  height: 100px;
+  float: left;
+  background: pink;
+}
+.float .right {
+  height: 50px;
+  float: right;
+  background: cyan;
+}
+.float p {
+  clear: left;
+  text-transform: capitalize;
 }
