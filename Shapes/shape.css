@@ -1,6 +1,9 @@
 .h1 {
   text-align: center;
 }
+ol a {
+  text-decoration: none;
+}
 /*  */
 #gradient-shape {
   width: 150px;
@@ -119,6 +122,43 @@ h4 {
   margin: 20px;
   width: 100px;
   height: 200px;
+}
+/* box */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.margi-box,
+.border-box,
+.padding-box,
+.content-box {
+  margin: 0 20px;
+}
+.margin-box-shape,
+.border-box-shape,
+.padding-box-shape,
+.content-box-shape {
+  background-color: rebeccapurple;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  margin: 20px;
+  border: 10px solid black;
+  border-radius: 50%;
+  float: left;
+}
+.margin-box-shape {
+  shape-outside: margin-box;
+}
+.border-box-shape {
+  shape-outside: border-box;
+}
+.padding-box-shape {
+  shape-outside: padding-box;
+}
+.content-box-shape {
+  shape-outside: content-box;
 }
 /* inset */
 .inset-shape {

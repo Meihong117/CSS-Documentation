@@ -11,13 +11,10 @@ Containing block
 CSS animated properties
 CSS Backgrounds and Borders: Resizing background images
 CSS Backgrounds and Borders: Using multiple backgrounds
+
 CSS Basic User Interface: Using URL values for the cursor property
-CSS Box Alignment
-CSS Box Alignment: Box Alignment In Block Abspos Tables
-CSS Box Alignment: Box Alignment in Flexbox
-CSS Box Alignment: Box Alignment In Grid Layout
-CSS Box Alignment: Box Alignment in Multi-column Layout
-CSS Colors: Color picker tool
+
+
 CSS Conditional Rules: Using Feature Queries
 CSS Flow Layout
 CSS Flow Layout: Block and Inline Layout in Normal Flow
@@ -29,6 +26,7 @@ CSS Logical Properties: Basic concepts
 CSS Logical Properties: Floating and positioning
 CSS Logical Properties: Margins borders padding
 CSS Logical Properties: Sizing
+
 CSS Positioning: Understanding z index
 CSS Positioning: Understanding z index: Adding z-index
 CSS Positioning: Understanding z index: Stacking and float
@@ -37,14 +35,12 @@ CSS Positioning: Understanding z index: Stacking context example 2
 CSS Positioning: Understanding z index: Stacking context example 3
 CSS Positioning: Understanding z index: Stacking without z-index
 CSS Positioning: Understanding z index: The stacking context
+
 CSS Properties Reference
 CSS Scroll Snap: Basic concepts
 CSS Scroll Snap: Browser compat
 CSS Selectors: Using the :target pseudo-class in selectors
-CSS Shapes: Basic Shapes
-CSS Shapes: From box values
-CSS Shapes: Overview of CSS Shapes
-CSS Shapes: Shapes From Images
+
 CSS Text: Wrapping Text
 display.two-value syntax of display
 font-variant-alternates
