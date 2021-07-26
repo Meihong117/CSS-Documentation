@@ -43,3 +43,21 @@ article {
   display: table-cell;
   margin: 5px;
 }
+/*  */
+.new_syntax {
+}
+.flex {
+  border: 5px solid #ccc;
+  gap: 10px;
+}
+.flex > * {
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
+.new_syntax .flex1 {
+  display: block flex;
+}
+.new_syntax .flex2 {
+  display: inline flex;
+}

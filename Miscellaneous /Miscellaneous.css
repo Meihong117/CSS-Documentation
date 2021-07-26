@@ -21,6 +21,18 @@ body {
   margin: 10px 20px;
 }
 
+table {
+  border-collapse: collapse;
+  width: 30%;
+  margin: 20px;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 .length_div {
   display: flex;
   justify-content: start;

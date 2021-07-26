@@ -1,55 +1,10 @@
 Containing block
-
-
-
-CSS Flow Layout
-CSS Flow Layout: Block and Inline Layout in Normal Flow
-CSS Flow Layout: Flow Layout and Overflow
-CSS Flow Layout: Flow Layout and Writing Modes
-CSS Flow Layout: In Flow and Out of Flow
-CSS Flow Layout: Intro to formatting contexts
-
-CSS Properties Reference
-
-CSS Scroll Snap: Basic concepts
-CSS Scroll Snap: Browser compat
-
-CSS Selectors: Using the :target pseudo-class in selectors
-
-CSS Text: Wrapping Text
-
-align-tracks
-background-color
-border-left-style
-box-align
-box-direction
 box-orient
 box-pack
-display.two-value syntax of display
 font-variant-alternates
 inheritance
-initial value
 justify-tracks
-Layout mode
-masonry-auto-flow
-math-style
-max-content
-min-content
-overflow-anchor.Guide to scroll anchoring
-Privacy and the :visited selector
 Replaced element
-resolved value
 Scaling of SVG backgrounds
-scroll-snap-coordinate
-scroll-snap-destination
-scroll-snap-points-y
-scroll-snap-type-x
-scroll-snap-type-y
-Shorthand properties
-Syntax
-text-size-adjust
 touch-action
-Using CSS custom properties
-Visual formatting model
 will-change
-zoom
