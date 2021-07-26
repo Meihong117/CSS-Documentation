@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="position.css" />
+    <title>Positioning</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="h1"><h1>Positioning Z-index</h1></div>
+    <div>
+      <ol>
+        <a
+          href="https://devdocs.io/css/css_positioning/understanding_z_index/adding_z-index"
+          ><li>Using z-index</li></a
+        >
+        <a
+          href="https://devdocs.io/css/css_positioning/understanding_z_index/stacking_and_float"
+          ><li>Stacking with floated blocks</li></a
+        >
+        <a
+          href="https://devdocs.io/css/css_positioning/understanding_z_index/stacking_context_example_1"
+          ><li>
+            Stacking context example
+          </li></a
+        >
+        <a
+          href="https://devdocs.io/css/css_positioning/understanding_z_index/the_stacking_context"
+          ><li>The stacking context</li></a
+        >
+      </ol>
+    </div>
+    <!-- Using z-index -->
+    <div class="h1"><h1>Using z-index</h1></div>
+    <div class="z-index">
+      <div id="abs1">
+        <b>DIV #1</b>
+        <br />position: absolute; <br />z-index: 5;
+      </div>
+
+      <div id="rel1">
+        <b>DIV #2</b>
+        <br />position: relative; <br />z-index: 3;
+      </div>
+
+      <div id="rel2">
+        <b>DIV #3</b>
+        <br />position: relative; <br />z-index: 2;
+      </div>
+
+      <div id="abs2">
+        <b>DIV #4</b>
+        <br />position: absolute; <br />z-index: 1;
+      </div>
+
+      <div id="sta1">
+        <b>DIV #5</b>
+        <br />no positioning <br />z-index: 8;
+      </div>
+    </div>
+    <!-- Stacking with floated blocks -->
+    <div class="h1"><h1>Stacking with floated blocks</h1></div>
+    <div class="float">
+      <div id="abs1"><b>FLOAT #1</b><br />position: absolute;</div>
+
+      <div id="flo1"><b>FLOAT #2</b><br />float: left;</div>
+
+      <div id="flo2"><b>FLOAT #3</b><br />float: right;</div>
+
+      <br />
+
+      <div id="sta1"><b>FLOAT #4</b><br />no positioning</div>
+
+      <div id="abs2"><b>FLOAT #5</b><br />position: absolute;</div>
+
+      <div id="rel1"><b>FLOAT #6</b><br />position: relative;</div>
+    </div>
+    <!-- The stacking context -->
+    <div class="h1"><h1>The stacking context</h1></div>
+    <div class="stacking">
+      <div id="div1">
+        <h1>Division Element #1</h1>
+        <code
+          >position: relative;<br />
+          z-index: 5;</code
+        >
+      </div>
+
+      <div id="div2">
+        <h1>Division Element #2</h1>
+        <code
+          >position: relative;<br />
+          z-index: 2;</code
+        >
+      </div>
+
+      <div id="div3">
+        <div id="div4">
+          <h1>Division Element #4</h1>
+          <code
+            >position: relative;<br />
+            z-index: 6;</code
+          >
+        </div>
+
+        <h1>Division Element #3</h1>
+        <code
+          >position: absolute;<br />
+          z-index: 4;</code
+        >
+
+        <div id="div5">
+          <h1>Division Element #5</h1>
+          <code
+            >position: relative;<br />
+            z-index: 1;</code
+          >
+        </div>
+
+        <div id="div6">
+          <h1>Division Element #6</h1>
+          <code
+            >position: absolute;<br />
+            z-index: 3;</code
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
