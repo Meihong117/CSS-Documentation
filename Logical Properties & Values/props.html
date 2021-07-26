@@ -14,6 +14,55 @@
       <a href="https://devdocs.io/css/css_logical_properties"
         ><li>CSS Logical Properties</li></a
       >
+      <table>
+        <tr>
+          <th>Logical property or value</th>
+          <th>Physical property or value</th>
+        </tr>
+        <tr>
+          <td>float: inline-start</td>
+          <td>float: left</td>
+        </tr>
+        <tr>
+          <td>float: inline-end</td>
+          <td>float: right</td>
+        </tr>
+        <tr>
+          <td>clear: inline-start</td>
+          <td>clear: left</td>
+        </tr>
+        <tr>
+          <td>clear: inline-end</td>
+          <td>clear: right</td>
+        </tr>
+        <tr>
+          <td>inset-inline-start</td>
+          <td>left</td>
+        </tr>
+
+        <tr>
+          <td>inset-inline-end</td>
+          <td>right</td>
+        </tr>
+        <tr>
+          <td>inset-block-start</td>
+          <td>top</td>
+        </tr>
+        <tr>
+          <td>inset-block-end</td>
+          <td>bottom</td>
+        </tr>
+
+        <tr>
+          <td>text-align: start</td>
+          <td>text-align: left</td>
+        </tr>
+        <tr>
+          <td>text-align: end</td>
+          <td>text-align: right</td>
+        </tr>
+      </table>
+
       <!---------------- sizing -->
       <h3>Properties for Sizing:</h3>
       <ol>
@@ -28,8 +77,8 @@
       <!----------------- positioning -->
       <h3>Properties for Floating and Positioning:</h3>
       <ol>
-        <a href=""><li>clear</li></a>
-        <a href=""><li>float</li></a>
+        <a href=""><li>clear: inline-start | inline-end</li></a>
+        <a href=""><li>float: inline-start | inline-end</li></a>
         <!-- inset -->
         <a href=""><li>inset</li></a>
         <ul>
@@ -49,6 +98,126 @@
       <!------------------ Properties for margins, borders and padding -->
 
       <h3>Properties for Margins, Borders and Padding:</h3>
+      <table>
+        <tr>
+          <th>Logical property or value</th>
+          <th>Physical property or value</th>
+        </tr>
+
+        <tr>
+          <td>border-block-end</td>
+          <td>border-bottom</td>
+        </tr>
+        <tr>
+          <td>border-block-end-color</td>
+          <td>border-bottom-color</td>
+        </tr>
+        <tr>
+          <td>border-block-end-style</td>
+          <td>border-bottom-style</td>
+        </tr>
+        <tr>
+          <td>border-block-end-width</td>
+          <td>border-bottom-width</td>
+        </tr>
+        <tr>
+          <td>border-block-start</td>
+          <td>border-top</td>
+        </tr>
+        <tr>
+          <td>border-block-start-color</td>
+          <td>border-top-color</td>
+        </tr>
+        <tr>
+          <td>border-block-start-style</td>
+          <td>border-top-style</td>
+        </tr>
+        <tr>
+          <td>border-block-start-width</td>
+          <td>border-top-width</td>
+        </tr>
+        <tr>
+          <td>border-inline-end</td>
+          <td>border-right</td>
+        </tr>
+        <tr>
+          <td>border-inline-end-color</td>
+          <td>border-right-color</td>
+        </tr>
+        <tr>
+          <td>border-inline-end-style</td>
+          <td>border-right-style</td>
+        </tr>
+        <tr>
+          <td>border-inline-end-width</td>
+          <td>border-right-width</td>
+        </tr>
+        <tr>
+          <td>border-inline-start</td>
+          <td>border-left</td>
+        </tr>
+        <tr>
+          <td>border-inline-start-color</td>
+          <td>border-left-color</td>
+        </tr>
+        <tr>
+          <td>border-inline-start-style</td>
+          <td>border-left-style</td>
+        </tr>
+        <tr>
+          <td>border-inline-start-width</td>
+          <td>border-left-width</td>
+        </tr>
+        <tr>
+          <td>border-start-start-radius</td>
+          <td>border-top-left-radius</td>
+        </tr>
+        <tr>
+          <td>border-start-end-radius</td>
+          <td>border-bottom-left-radius</td>
+        </tr>
+        <tr>
+          <td>border-end-start-radius</td>
+          <td>border-top-right-radius</td>
+        </tr>
+        <tr>
+          <td>border-end-end-radius</td>
+          <td>border-bottom-right-radius</td>
+        </tr>
+        <tr>
+          <td>margin-block-end</td>
+          <td>margin-bottom</td>
+        </tr>
+        <tr>
+          <td>margin-block-start</td>
+          <td>margin-top</td>
+        </tr>
+        <tr>
+          <td>margin-inline-end</td>
+          <td>margin-right</td>
+        </tr>
+        <tr>
+          <td>margin-inline-start</td>
+          <td>margin-left</td>
+        </tr>
+        <tr>
+          <td>padding-block-end</td>
+          <td>padding-bottom</td>
+        </tr>
+        <tr>
+          <td>padding-block-start</td>
+          <td>padding-top</td>
+        </tr>
+        <tr>
+          <td>padding-inline-end</td>
+          <td>padding-right</td>
+        </tr>
+        <tr>
+          <td>padding-inline-start</td>
+          <td>padding-left</td>
+        </tr>
+      </table>
+
       <!-- border-block-->
       <ol>
         <a href=""><li>border-block</li></a>
@@ -346,6 +515,24 @@
         </h3>
         <div class="padding-inline">
           <p>Example text</p>
+        </div>
+      </div>
+    </div>
+    <!-- Logical VS Physical -->
+    <div class="h1"><h1>Logical VS Physical</h1></div>
+    <div>
+      <div class="p-l-container">
+        <div class="inner">
+          <div class="physical box"></div>
+          Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
+          kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus
+          winter purslane kale.
+        </div>
+        <div class="inner">
+          <div class="logical box"></div>
+          Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
+          kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus
+          winter purslane kale.
         </div>
       </div>
     </div>

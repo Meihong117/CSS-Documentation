@@ -4,6 +4,20 @@
 .overall a {
   text-decoration: none;
 }
+/* table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 /* ----------------------------------- layout for all */
 .size,
 .position,
@@ -187,4 +201,29 @@
   writing-mode: vertical-rl;
   padding-inline: 20px 40px;
   background-color: #c8c800;
+}
+/* Logical VS Physical */
+.p-l-container {
+  display: flex;
+}
+.p-l-container .box {
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.p-l-container .inner {
+  writing-mode: horizontal-tb;
+}
+
+.p-l-container .physical {
+  float: left;
+}
+
+.p-l-container .logical {
+  float: inline-start;
 }
