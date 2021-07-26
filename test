@@ -1,21 +1,7 @@
-align-tracks
-background-color
-border-left-style
-box-align
-box-direction
-box-orient
-box-pack
-
-Comments
 Containing block
-CSS animated properties
-CSS Backgrounds and Borders: Resizing background images
-CSS Backgrounds and Borders: Using multiple backgrounds
-
-CSS Basic User Interface: Using URL values for the cursor property
 
 
-CSS Conditional Rules: Using Feature Queries
+
 CSS Flow Layout
 CSS Flow Layout: Block and Inline Layout in Normal Flow
 CSS Flow Layout: Flow Layout and Overflow
@@ -23,17 +9,22 @@ CSS Flow Layout: Flow Layout and Writing Modes
 CSS Flow Layout: In Flow and Out of Flow
 CSS Flow Layout: Intro to formatting contexts
 
-CSS Logical Properties: Basic concepts
-CSS Logical Properties: Floating and positioning
-CSS Logical Properties: Margins borders padding
-CSS Logical Properties: Sizing
-
 CSS Properties Reference
+
 CSS Scroll Snap: Basic concepts
 CSS Scroll Snap: Browser compat
+
 CSS Selectors: Using the :target pseudo-class in selectors
 
 CSS Text: Wrapping Text
+
+align-tracks
+background-color
+border-left-style
+box-align
+box-direction
+box-orient
+box-pack
 display.two-value syntax of display
 font-variant-alternates
 inheritance
