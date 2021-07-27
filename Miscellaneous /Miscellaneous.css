@@ -64,3 +64,24 @@ th {
   clear: left;
   text-transform: capitalize;
 }
+/* font-variant-alternates */
+@font-feature-values "Leitura Display Swashes" {
+  @swash {
+    fancy: 1;
+  }
+}
+.variant {
+  font-size: 1.5rem;
+}
+.variant {
+  font-family: Leitura Display Swashes;
+  font-variant-alternates: swash(fancy);
+}
+
+/* touch-action */
+#map {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(blue, green);
+  touch-action: pan-up;
+}

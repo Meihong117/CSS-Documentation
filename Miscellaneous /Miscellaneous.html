@@ -35,7 +35,7 @@
         <li>background-position</li>
         <li>background-size</li>
         <li>block-size</li>
-        <li>border (all relate to border)</li>
+        <li>border (all)</li>
         <li>top</li>
         <li>bottom</li>
         <li>left</li>
@@ -298,13 +298,39 @@
         <li>top/bottom left/right</li>
         <li>top right bottom left</li>
       </div>
-
-      <h4>Custom Properties</h4>
+      <!--  -->
+      <h4>
+        <a href="https://devdocs.io/css/will-change">Replaced elements >></a>
+      </h4>
       <div>
-        <li>--main-bg-color: brown;</li>
-        <li>background-color: var(--main-bg-color);调用</li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
+            >< iframe ></a
+          >
+        </li>
+        <li>< video ></li>
+        <li>< embed ></li>
+        <li>< img ></li>
+        <p>
+          some only in specific cases:
+        </p>
+        <li>< option ></li>
+        <li>< audio ></li>
+        <li>< canvas ></li>
+        <li>< object ></li>
+        <li>< applet ></li>
       </div>
 
+      <!--  -->
+      <h4>
+        <a href="https://devdocs.io/css/will-change">Custom Properties >></a>
+      </h4>
+      <div>
+        <li>--main-bg-color: brown;</li>
+        <li>var(--main-bg-color);调用</li>
+      </div>
+      <!--  -->
       <h4>
         <a href="https://devdocs.io/css/css_properties_reference"
           >CSS Properties Reference >></a
@@ -1085,6 +1111,49 @@
             ><li>
               CSS
               <span style="background-color: greenyellow;">Flow</span> Layout
+            </li></a
+          >
+          <!-- font-variant-alternates -->
+          <a href="https://devdocs.io/css/will-change"
+            ><li>font-variant-alternates</li></a
+          >
+          <ul>
+            <p>Firefox rocks!</p>
+            <p class="variant">Firefox rocks!</p>
+          </ul>
+          <!-- justify-tracks -->
+          <a href="https://devdocs.io/css/will-change"
+            ><li>
+              justify-tracks(just Firefox): start | space-between | center |
+              start,center,end
+            </li></a
+          >
+
+          <!-- touch-action -->
+          <a href="https://devdocs.io/css/will-change"
+            ><li>
+              touch-action(property sets how an element's region can be
+              manipulated by a touchscreen user (for example, by zooming
+              features built into the browser)): auto | none | pan-x | pan-left
+              | pan-right | pan-y | pan-up | pan-down | pinch-zoom |
+              manipulation
+            </li></a
+          >
+          <ul>
+            <div id="map"></div>
+          </ul>
+          <!-- Scaling of SVG backgrounds -->
+          <a href="https://devdocs.io/css/will-change"
+            ><li>Scaling of SVG backgrounds</li></a
+          >
+          <code>background: url(no-dimensions-or-ratio.svg); </code>
+          <br>
+          <code>background-size: 125px 175px; | contain; | cover | auto auto</code>
+          <!-- will-change -->
+          <a href="https://devdocs.io/css/will-change"
+            ><li>
+              will-change: auto | scroll-position | contents | transform |
+              opacity | left, top
             </li></a
           >
         </div>
