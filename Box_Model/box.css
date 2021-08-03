@@ -1,15 +1,31 @@
+.h1{
+  text-align: center;
+}
+.box_model a,.box_size a{
+  text-decoration: none;
+  color: black;
+}
+.box_model a:hover,.box_size a:hover{
+  color: rgb(10, 159, 245);
+}
+.box_model,.box_size,.margin_trip,.sapect_ration,.box_sizing,.fit_content,.max_height{
+  display: flex;
+  justify-content: center;
+}
+.content_box,.border_box{
+  margin: 0 20px;
+}
 /* ------------------------------------------- 2.1 margin-trim */
 article {
   box-sizing: border-box;
   border: solid #5b6dcd 10px;
   width: 50%;
   background-color: red;
+  display: inline-block;
   margin: 20px;
   padding: 20px;
-  display: inline-block;
   /* margin-trim: in-flow; */ /*cannt find trim*/
 }
-
 article > span {
   background-color: black;
   color: white;
