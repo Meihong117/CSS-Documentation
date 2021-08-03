@@ -1,13 +1,32 @@
+.h1{
+  text-align: center;
+}
+.user_interface_overall a{
+  text-decoration: none;
+  color: black;
+}
+.user_interface_overall a:hover{
+  color: rgb(10, 159, 245);
+}
+/* display */
+.user_interface_overall,
+.caret-color,
+.cursor,
+.pseudo,
+.resize,
+.user_select{
+  display: flex;
+  justify-content: center;
+}
+/* Caret Color */
 .default_caret {
   caret-color: auto;
   display: block;
   margin-bottom: 0.5em;
 }
-
 .custom_caret {
   caret-color: red;
 }
-
 .para_caret {
   caret-color: #5729e9;
 }

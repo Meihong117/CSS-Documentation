@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="user_interface.css" />
-    <title>User Interface</title>
-  </head>
-  <body>
-    <div class="user_interface_overall">
-      <h2>1. User Interface overall</h2>
-      <ol>
-        <a href="https://devdocs.io/css/appearance"><li>appearance</li></a>
-        <a href="https://devdocs.io/css/caret-color"><li>caret-color</li></a>
-        <a href="https://devdocs.io/css/cursor"><li>cursor</li></a>
-        <a href="https://devdocs.io/css/outline"
-          ><li>outline (vs border)</li>
-          <ul>
-            <a href="https://devdocs.io/css/outline-color"
-              ><li>outline-color</li></a
-            >
-            <a href="https://devdocs.io/css/outline-style"
-              ><li>outline-style</li></a
-            >
-            <a href="https://devdocs.io/css/outline-width"
-              ><li>outline-width</li></a
-            >
-          </ul>
-        </a>
-        <a href="https://devdocs.io/css/outline-offset"
-          ><li>outline-offset</li></a
-        >
-        <a href="https://devdocs.io/css/pseudo-classes"
-          ><li>
-            Pseudo-classes: eg: :hover/:active/:dir/:lang/:link
-          </li></a
-        >
-        <a href="https://devdocs.io/css/resize"><li>resize</li></a>
-        <a href="https://devdocs.io/css/user-select"><li>user-select</li></a>
-      </ol>
-    </div>
-    <div class="caret-color">
-      <h2>2. Caret Color</h2>
-      <input
-        class="default_caret"
-        value="This field uses a default caret."
-        size="64"
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="user_interface.css" />
+  <title>User Interface</title>
+</head>
+
+<body>
+  <!-- overall -->
+  <div class="h1">
+    <h1>User Interface overall</h1>
+  </div>
+  <div class="user_interface_overall">
+    <ol>
+      <a href="https://devdocs.io/css/appearance">
+        <li>appearance</li>
+      </a>
+      <a href="https://devdocs.io/css/caret-color">
+        <li>caret-color</li>
+      </a>
+      <a href="https://devdocs.io/css/cursor">
+        <li>cursor</li>
+      </a>
+      <a href="https://devdocs.io/css/outline">
+        <li>outline (vs border)</li>
+        <ul>
+          <a href="https://devdocs.io/css/outline-color">
+            <li>outline-color</li>
+          </a>
+          <a href="https://devdocs.io/css/outline-style">
+            <li>outline-style</li>
+          </a>
+          <a href="https://devdocs.io/css/outline-width">
+            <li>outline-width</li>
+          </a>
+        </ul>
+      </a>
+      <a href="https://devdocs.io/css/outline-offset">
+        <li>outline-offset</li>
+      </a>
+      <a href="https://devdocs.io/css/pseudo-classes">
+        <li>
+          Pseudo-classes: eg: :hover/:active/:dir/:lang/:link
+        </li>
+      </a>
+      <a href="https://devdocs.io/css/resize">
+        <li>resize</li>
+      </a>
+      <a href="https://devdocs.io/css/user-select">
+        <li>user-select</li>
+      </a>
+    </ol>
+  </div>
+
+
+  <!-- Caret Color -->
+  <div class="h1">
+    <h1>Caret Color</h1>
+  </div>
+  <div class="caret-color">
+    <div>
+      <input class="default_caret" value="This field uses a default caret." size="64" />
       <input class="custom_caret" value="I have a red caret color!" size="64" />
       <p contenteditable class="para_caret" style="width: 50%;">
         This paragraph can be edited, and its caret has a purple color.
       </p>
     </div>
-    <div class="cursor">
-      <h2>3. Cursor</h2>
+  </div>
+
+
+  <!-- Cursor -->
+  <div class="h1">
+    <h1>Cursor</h1>
+  </div>
+  <div class="cursor">
+    <div>
       <p class="cursor1">This is pointer cursor.</p>
       <p class="cursor2">This is wait cursor.</p>
       <p class="cursor3">This is crosshair cursor.</p>
       <p class="cursor4">This is zoom-in cursor.</p>
     </div>
-    <div class="pseudo">
-      <h2>4. Pseudo</h2>
+  </div>
+
+
+  <!-- Pseudo -->
+  <div class="h1">
+    <h1>Pseudo</h1>
+  </div>
+  <div class="pseudo">
+    <div>
       <button class="hover_button">:hover</button>
       <button class="active_button">:active</button>
       <h4>:active</h4>
@@ -68,9 +99,7 @@
         <li><a href="#p1">Jump to the first paragraph!</a></li>
         <li><a href="#p2">Jump to the second paragraph!</a></li>
         <li>
-          <a href="#nowhere"
-            >This link goes nowhere, because the target doesn't exist.</a
-          >
+          <a href="#nowhere">This link goes nowhere, because the target doesn't exist.</a>
         </li>
         <p id="p1" class="target_para">
           You can target <i>this paragraph</i> using a URL fragment. Click on
@@ -82,18 +111,34 @@
         </p>
       </div>
     </div>
-    <div class="resize">
-      <h2>4. Resize</h2>
+  </div>
+
+
+  <!-- Resize -->
+  <div class="h1">
+    <h1>Resize</h1>
+  </div>
+  <div class="resize">
+    <div>
       <p class="resizable">
         This paragraph is resizable in all directions, because the CSS `resize`
         property is set to `both` on this element.
       </p>
     </div>
-    <div class="user_select">
-      <h2>5. User Select</h2>
+  </div>
+
+
+  <!-- User Select -->
+  <div class="h1">
+    <h1>User Select</h1>
+  </div>
+  <div class="user_select">
+    <div>
       <p class="selectable">You should be able to select this text.</p>
       <p class="unselectable">Hey, you can't select this text!</p>
       <p class="all_select">Clicking once will select all of this text.</p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
