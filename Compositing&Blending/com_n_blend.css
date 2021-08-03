@@ -42,18 +42,18 @@
 }
 .circle-1 {
   background: red;
-  left: 460px;
+  left: 43%;
 }
 
 .circle-2 {
   background: lightgreen;
-  left: 540px;
+  left: 48%;
 }
 
 .circle-3 {
   background: blue;
-  left: 510px;
-  top: 1050px;
+  left: 45.5%;
+  top: 1060px;
 }
 .div_circle {
   width: 400px;
