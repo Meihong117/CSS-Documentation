@@ -1,342 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="box.align.css" />
-    <title>Box Alignment</title>
-  </head>
-  <body>
-    <!-- 1.Overall -->
-    <div class="box_align_overall">
-      <div class="h1"><h1>Box Alignment Overall</h1></div>
-      <!-- align -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="box.align.css" />
+  <title>Box Alignment</title>
+</head>
+
+<body>
+  <!-- 1.Overall -->
+  <div class="h1">
+    <h1>Box Alignment Overall</h1>
+  </div>
+  <div class="box_align_overall">
+    <!-- align -->
+    <div>
       <ul>
         <h4>align- (上下)</h4>
-        <a href="https://devdocs.io/css/align-content"
-          ><li>
+        <a href="https://devdocs.io/css/align-content">
+          <li>
             align-content: property sets the distribution of space between and
             around content items along a flexbox's cross-axis or a grid's block
             axis.
-          </li></a
-        >
-        <a href="https://devdocs.io/css/align-items"
-          ><li>
+          </li>
+        </a>
+        <a href="https://devdocs.io/css/align-items">
+          <li>
             align-items: align conent 会把每个小box大小统一，align
             item是各个自己的大小。
-          </li></a
-        >
-        <a href="https://devdocs.io/css/align-self"
-          ><li>align-self (自己动)</li></a
-        >
+          </li>
+        </a>
+        <a href="https://devdocs.io/css/align-self">
+          <li>align-self (自己动)</li>
+        </a>
       </ul>
 
       <!-- jsutify -->
       <ul>
         <h4>justify- (左右)</h4>
-        <a href="https://devdocs.io/css/justify-content"
-          ><li>justify-content</li></a
-        >
-        <a href="https://devdocs.io/css/justify-items"
-          ><li>justify-items</li></a
-        >
-        <a href="https://devdocs.io/css/justify-self"><li>justify-self</li></a>
+        <a href="https://devdocs.io/css/justify-content">
+          <li>justify-content</li>
+        </a>
+        <a href="https://devdocs.io/css/justify-items">
+          <li>justify-items</li>
+        </a>
+        <a href="https://devdocs.io/css/justify-self">
+          <li>justify-self</li>
+        </a>
       </ul>
       <!-- place -->
       <ul>
         <h4>place-</h4>
-        <a href="https://devdocs.io/css/place-content"
-          ><li>place-content</li></a
-        >
-        <a href="https://devdocs.io/css/place-items"><li>place-items</li></a>
-        <a href="https://devdocs.io/css/place-self"><li>place-self</li></a>
+        <a href="https://devdocs.io/css/place-content">
+          <li>place-content</li>
+        </a>
+        <a href="https://devdocs.io/css/place-items">
+          <li>place-items</li>
+        </a>
+        <a href="https://devdocs.io/css/place-self">
+          <li>place-self</li>
+        </a>
       </ul>
 
       <!-- gap -->
       <ul>
         <h4>gap</h4>
-        <a href="https://devdocs.io/css/gap"
-          ><li>gap: shorthand for row-gap and column-gap.</li>
+        <a href="https://devdocs.io/css/gap">
+          <li>gap: shorthand for row-gap and column-gap.</li>
           <ul>
-            <a href="https://devdocs.io/css/column-gap"><li>column-gap</li></a>
-            <a href="https://devdocs.io/css/row-gap"><li>row-gap</li></a>
+            <a href="https://devdocs.io/css/column-gap">
+              <li>column-gap</li>
+            </a>
+            <a href="https://devdocs.io/css/row-gap">
+              <li>row-gap</li>
+            </a>
           </ul>
         </a>
       </ul>
     </div>
-    <!----------------------------------------Align Content -->
-    <div class="h1"><h1>Align Content</h1></div>
-    <div class="align_content">
-      <div>
-        <div id="container" class="flex">
-          <div id="item1">1</div>
-          <div id="item2">2</div>
-          <div id="item3">3</div>
-          <div id="item4">4</div>
-          <div id="item5">5</div>
-          <div id="item6">6</div>
-        </div>
-        <div class="row">
-          <label for="display">display: </label>
-          <select id="display" class="select">
-            <option value="flex">flex</option>
-            <option value="grid">grid</option>
-          </select>
-        </div>
-        <div class="row">
-          <label for="values">align-content: </label>
-          <select id="values" class="select">
-            <option value="center" selected>center</option>
-            <option value="start">start</option>
-            <option value="end">end</option>
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
 
-            <option value="normal">normal</option>
+  </div>
+  <!----------------------------------------Align Content -->
+  <div class="h1">
+    <h1>Align Content</h1>
+  </div>
+  <div class="align_content">
+    <div>
+      <div id="container" class="flex">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+        <div id="item6">6</div>
+      </div>
+      <div class="row">
+        <label for="display">display: </label>
+        <select id="display" class="select">
+          <option value="flex">flex</option>
+          <option value="grid">grid</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="values">align-content: </label>
+        <select id="values" class="select">
+          <option value="center" selected>center</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
 
-            <option value="baseline">baseline</option>
-            <option value="first baseline">first baseline</option>
-            <option value="last baseline">last baseline</option>
+          <option value="normal">normal</option>
 
-            <option value="space-between">space-between</option>
-            <option value="space-around">space-around</option>
-            <option value="space-evenly">space-evenly</option>
-            <option value="stretch">stretch</option>
+          <option value="baseline">baseline</option>
+          <option value="first baseline">first baseline</option>
+          <option value="last baseline">last baseline</option>
 
-            <option value="safe center">safe center</option>
-            <option value="unsafe center">unsafe center</option>
-            <option value="safe right">safe right</option>
-            <option value="unsafe right">unsafe right</option>
-            <option value="safe end">safe end</option>
-            <option value="unsafe end">unsafe end</option>
-            <option value="safe flex-end">safe flex-end</option>
-            <option value="unsafe flex-end">unsafe flex-end</option>
-          </select>
-        </div>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+          <option value="stretch">stretch</option>
+
+          <option value="safe center">safe center</option>
+          <option value="unsafe center">unsafe center</option>
+          <option value="safe right">safe right</option>
+          <option value="unsafe right">unsafe right</option>
+          <option value="safe end">safe end</option>
+          <option value="unsafe end">unsafe end</option>
+          <option value="safe flex-end">safe flex-end</option>
+          <option value="unsafe flex-end">unsafe flex-end</option>
+        </select>
       </div>
     </div>
+  </div>
 
-    <!---------------------------------------Align Self -->
-    <div class="h1"><h1>Align Self</h1></div>
-    <div class="align_self">
-      <section class="align_self_section">
-        <div class="self">flex-start</div>
-        <div class="self">self-start</div>
-        <div class="self">flex-end</div>
-      </section>
-    </div>
-    <!----------------------------------------Gap -->
-    <div class="h1"><h1>Column Gap</h1></div>
-    <div class="column_gap">
+  <!---------------------------------------Align Self -->
+  <div class="h1">
+    <h1>Align Self</h1>
+  </div>
+  <div class="align_self">
+    <section class="align_self_section">
+      <div class="self">flex-start</div>
+      <div class="self">self-start</div>
+      <div class="self">flex-end</div>
+    </section>
+  </div>
+  <!----------------------------------------Gap -->
+  <div class="h1">
+    <h1>Column Gap</h1>
+  </div>
+  <div class="column_gap">
+    <div>
       <div>
         <div>
-          <div><h4>flex box</h4></div>
-          <div
-            id="flexbox"
-            style="
+          <h4>flex box</h4>
+        </div>
+        <div id="flexbox" style="
         display: flex; 
         height: 100px; 
         width: 300px; 
-        column-gap: 20px;"
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        column-gap: 20px;">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
+      </div>
 
+      <div>
         <div>
-          <div><h4>grid</h4></div>
-          <div
-            id="grid"
-            style="
+          <h4>grid</h4>
+        </div>
+        <div id="grid" style="
         display: grid;
         height: 100px;
         width: 400px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100px;
-        column-gap: 20px;"
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        column-gap: 20px;">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h4>multi layout</h4>
+        </div>
+        <div class="multi-layout" style="width: 400px; height: 100px; overflow: auto; border: 1px solid gray;">
+          <p class="content-box" style="
+          column-count: 3;
+          column-gap: 40px; ">
+            This is some multi-column text with a 40px column gap created with
+            the CSS `column-gap` property. Don't you think that's fun and
+            exciting? I sure do!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------Justify Content -->
+  <div class="h1">
+    <h1>Justify Content</h1>
+  </div>
+  <div class="justify_content" style="width: 50%; margin: 0 auto; ">
+    <div id="justify_id" style="display: flex;
+      justify-content: space-between; border: 1px solid gray;">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <br />
+    <div style="text-align: center;">
+      <select name="" id="justifyContent" style="font-size: 16px;">
+        <option value="start">start</option>
+        <option value="end">end</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="normal">normal</option>
+        <option value="stretch">stretch</option>
+        <option value="safe center">safe center</option>
+        <option value="space-around">space-around</option>
+        <option value="space-between">space-between</option>
+        <option value="space-evenly">space-evenly</option>
+      </select>
+    </div>
+  </div>
+  <!---------------------------------------Place Content -->
+  <div class="h1">
+    <h1>Place Content</h1>
+  </div>
+  <div class="place_content">
+    <div>
+      <div id="place_container">
+        <div class="small">Lorem</div>
+        <div class="small">Lorem<br />ipsum</div>
+        <div class="large">Lorem</div>
+        <div class="large">Lorem<br />ipsum</div>
+        <div class="large"></div>
+        <div class="large"></div>
+      </div>
+      <br />
+      <div class="container_of_selection" style="display: grid; width: max-content;">
+        <div>
+          <select name="" id="writingMode" style="font-size: 16px;">
+            <option value="horizontal-tb">horizontal-tb</option>
+            <option value="vertical-rl">vertical-rl</option>
+            <option value="sideways-rl">sideways-rl</option>
+            <option value="sideways-lr">sideways-lr</option>
+          </select>
         </div>
 
         <div>
-          <div><h4>multi layout</h4></div>
-          <div
-            class="multi-layout"
-            style="width: 400px; height: 100px; overflow: auto; border: 1px solid gray;"
-          >
-            <p
-              class="content-box"
-              style="
-          column-count: 3;
-          column-gap: 40px; "
-            >
-              This is some multi-column text with a 40px column gap created with
-              the CSS `column-gap` property. Don't you think that's fun and
-              exciting? I sure do!
-            </p>
-          </div>
+          <select name="" id="direction" style="font-size: 16px;">
+            <option value="ltr">ltr</option>
+            <option value="rtl">rtl</option>
+          </select>
+        </div>
+
+        <div>
+          <select name="" id="alignContentAlignment" style="font-size: 16px;">
+            <option value="normal">normal</option>
+            <option value="center">center</option>
+            <option value="end">end</option>
+            <option value="first baseline">first baseline</option>
+            <option value="last baseline"> last baseline</option>
+            <option value="space-between">space-between</option>
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="safe">safe</option>
+            <option value="unsafe">unsafe</option>
+          </select>
+        </div>
+
+        <div>
+          <select name="" id="justifyContentAlignment" style="font-size: 16px;">
+            <option value="normal">normal</option>
+            <option value="center">center</option>
+            <option value="start">start</option>
+            <option value="space-around">space-around</option>
+            <option value="space-between">space-between</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="safe">safe</option>
+            <option value="unsafe">unsafe</option>
+            <option value="center">center</option>
+            <option value="end">end</option>
+          </select>
         </div>
       </div>
     </div>
-    <!---------------------------------------Justify Content -->
-    <div class="h1"><h1>Justify Content</h1></div>
-    <div class="justify_content" style="width: 50%; margin: 0 auto; ">
-      <div
-        id="justify_id"
-        style="display: flex;
-      justify-content: space-between; border: 1px solid gray;"
-      >
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <br />
-      <div style="text-align: center;">
-        <select name="" id="justifyContent" style="font-size: 16px;">
-          <option value="start">start</option>
-          <option value="end">end</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="left">left</option>
-          <option value="right">right</option>
-          <option value="normal">normal</option>
-          <option value="stretch">stretch</option>
-          <option value="safe center">safe center</option>
-          <option value="space-around">space-around</option>
-          <option value="space-between">space-between</option>
-          <option value="space-evenly">space-evenly</option>
-        </select>
-      </div>
-    </div>
-    <!---------------------------------------Place Content -->
-    <div class="h1"><h1>Place Content</h1></div>
-    <div class="place_content">
-      <div>
-        <div id="place_container">
-          <div class="small">Lorem</div>
-          <div class="small">Lorem<br />ipsum</div>
-          <div class="large">Lorem</div>
-          <div class="large">Lorem<br />ipsum</div>
-          <div class="large"></div>
-          <div class="large"></div>
-        </div>
-        <br />
-        <div
-          class="container_of_selection"
-          style="display: grid; width: max-content;"
-        >
-          <div>
-            <select name="" id="writingMode" style="font-size: 16px;">
-              <option value="horizontal-tb">horizontal-tb</option>
-              <option value="vertical-rl">vertical-rl</option>
-              <option value="sideways-rl">sideways-rl</option>
-              <option value="sideways-lr">sideways-lr</option>
-            </select>
-          </div>
+  </div>
+  <!-- 2. align content -->
+  <script>
+    let container = document.getElementById("container");
+    let values = document.getElementById("values");
+    let display = document.getElementById("display");
 
-          <div>
-            <select name="" id="direction" style="font-size: 16px;">
-              <option value="ltr">ltr</option>
-              <option value="rtl">rtl</option>
-            </select>
-          </div>
+    values.addEventListener("change", function (evt) {
+      container.style.alignContent = evt.target.value;
+    });
+    display.addEventListener("change", function (evt) {
+      container.className = evt.target.value;
+    });
+  </script>
+  <!-- 6. justify content -->
+  <script>
+    let justifyContent = document.getElementById("justifyContent");
+    justifyContent.addEventListener("change", function (evt) {
+      document.getElementById("justify_id").style.justifyContent =
+        evt.target.value;
+    });
+  </script>
+  <!-- 7. place content -->
+  <script>
+    let alignContentAlignment = document.getElementById(
+      "alignContentAlignment"
+    );
+    let justifyContentAlignment = document.getElementById(
+      "justifyContentAlignment"
+    );
+    let writeM = document.getElementById("writingMode");
+    let direction = document.getElementById("direction");
 
-          <div>
-            <select name="" id="alignContentAlignment" style="font-size: 16px;">
-              <option value="normal">normal</option>
-              <option value="center">center</option>
-              <option value="end">end</option>
-              <option value="first baseline">first baseline</option>
-              <option value="last baseline"> last baseline</option>
-              <option value="space-between">space-between</option>
-              <option value="stretch">stretch</option>
-              <option value="flex-start">flex-start</option>
-              <option value="flex-end">flex-end</option>
-              <option value="safe">safe</option>
-              <option value="unsafe">unsafe</option>
-            </select>
-          </div>
+    function update() {
+      document.getElementById("place_container").style.placeContent =
+        document.getElementById("alignContentAlignment").value +
+        " " +
+        document.getElementById("justifyContentAlignment").value;
+    }
 
-          <div>
-            <select
-              name=""
-              id="justifyContentAlignment"
-              style="font-size: 16px;"
-            >
-              <option value="normal">normal</option>
-              <option value="center">center</option>
-              <option value="start">start</option>
-              <option value="space-around">space-around</option>
-              <option value="space-between">space-between</option>
-              <option value="flex-start">flex-start</option>
-              <option value="flex-end">flex-end</option>
-              <option value="safe">safe</option>
-              <option value="unsafe">unsafe</option>
-              <option value="center">center</option>
-              <option value="end">end</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 2. align content -->
-    <script>
-      let container = document.getElementById("container");
-      let values = document.getElementById("values");
-      let display = document.getElementById("display");
+    alignContentAlignment.addEventListener("change", update);
+    justifyContentAlignment.addEventListener("change", update);
 
-      values.addEventListener("change", function(evt) {
-        container.style.alignContent = evt.target.value;
-      });
-      display.addEventListener("change", function(evt) {
-        container.className = evt.target.value;
-      });
-    </script>
-    <!-- 6. justify content -->
-    <script>
-      let justifyContent = document.getElementById("justifyContent");
-      justifyContent.addEventListener("change", function(evt) {
-        document.getElementById("justify_id").style.justifyContent =
-          evt.target.value;
-      });
-    </script>
-    <!-- 7. place content -->
-    <script>
-      let alignContentAlignment = document.getElementById(
-        "alignContentAlignment"
-      );
-      let justifyContentAlignment = document.getElementById(
-        "justifyContentAlignment"
-      );
-      let writeM = document.getElementById("writingMode");
-      let direction = document.getElementById("direction");
+    writeM.addEventListener("change", function (evt) {
+      document.getElementById("place_container").style.writingMode =
+        evt.target.value;
+    });
 
-      function update() {
-        document.getElementById("place_container").style.placeContent =
-          document.getElementById("alignContentAlignment").value +
-          " " +
-          document.getElementById("justifyContentAlignment").value;
-      }
+    direction.addEventListener("change", function (evt) {
+      document.getElementById("place_container").style.direction =
+        evt.target.value;
+    });
+  </script>
+</body>
 
-      alignContentAlignment.addEventListener("change", update);
-      justifyContentAlignment.addEventListener("change", update);
-
-      writeM.addEventListener("change", function(evt) {
-        document.getElementById("place_container").style.writingMode =
-          evt.target.value;
-      });
-
-      direction.addEventListener("change", function(evt) {
-        document.getElementById("place_container").style.direction =
-          evt.target.value;
-      });
-    </script>
-  </body>
 </html>

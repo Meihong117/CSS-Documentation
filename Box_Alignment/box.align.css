@@ -1,6 +1,14 @@
 .h1 {
   text-align: center;
 }
+.box_align_overall a{
+  text-decoration: none;
+  color: black;
+}
+.box_align_overall a:hover{
+  color: rgb(10, 159, 245);
+}
+.box_align_overall,
 .align_content,
 .align_self,
 .place_content,
