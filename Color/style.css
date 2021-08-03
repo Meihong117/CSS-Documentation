@@ -1,3 +1,19 @@
+
+.h1{
+  text-align: center;
+}
+.overall a{
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover{
+  color: rgb(10, 159, 245);
+}
+.overall,.enterColorName{
+  display: flex;
+  justify-content: center;
+}
+/*  */
 .all_circle {
   display: flex;
 }
@@ -95,4 +111,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+/*  */
+.enter_color {
+  width: 100%;
+  height: 200px;
 }

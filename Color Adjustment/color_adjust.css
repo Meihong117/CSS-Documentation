@@ -1,9 +1,23 @@
-/* 2. color adjust */
+.h1{
+  text-align: center;
+}
+.overall a{
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover{
+  color: rgb(10, 159, 245);
+}
+.overall,.color_scheme,.forced_color_adjust{
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------------------- color adjust */
 .color_adjust {
   background-color: black;
   background-image: linear-gradient(
     rgba(0, 0, 180, 0.5),
-    rgba(70, 140, 220, 0.5)
+    rgba(152, 183, 219, 0.5)
   );
   color: white;
   font: 24px "Helvetica", sans-serif;
