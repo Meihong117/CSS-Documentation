@@ -1,11 +1,25 @@
-/* 2. background blend mode */
+.h1{
+  text-align: center;
+}
+.overall a{
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover{
+  color: rgb(10, 159, 245);
+}
+.overall,.back_ground_mode,.isolate,.mix_blend_mode{
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------------------------- background blend mode */
 #back_img {
   width: 500px;
   height: 300px;
   background-blend-mode: screen;
   background: url("love.jpg"), url("swan.jpg");
 }
-/* 3. isolation */
+/* ----------------------------------------- isolation */
 .all {
   background-color: pink;
   width: 200px;
@@ -18,7 +32,7 @@
   padding: 2px;
   mix-blend-mode: difference;
 }
-/* 4. mix blend mode */
+/* ----------------------------------------- mix blend mode */
 .circle {
   width: 130px;
   height: 130px;
@@ -28,21 +42,22 @@
 }
 .circle-1 {
   background: red;
+  left: 460px;
 }
 
 .circle-2 {
   background: lightgreen;
-  left: 80px;
+  left: 540px;
 }
 
 .circle-3 {
   background: blue;
-  left: 50px;
-  top: 950px;
+  left: 510px;
+  top: 1050px;
 }
 .div_circle {
   width: 400px;
   height: 300px;
-  border: 1px solid black;
+
   isolation: isolate; /* Without isolation, the background color will be taken into account */
 }
