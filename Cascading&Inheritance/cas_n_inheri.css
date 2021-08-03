@@ -1,18 +1,32 @@
-/* 2. initial */
+.h1{
+  text-align: center;
+}
+.overall a{
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover{
+  color: rgb(10, 159, 245);
+}
+.overall,.initial,.inherit,.unset_n_revert {
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------------- initial */
 .initial_p {
   color: red;
 }
 .initial_p em {
   color: initial;
 }
-/* 3. inherit */
+/* ----------------------------- inherit */
 .inherit_p {
   color: blue;
 }
 .inherit_p em {
   color: inherit;
 }
-/* 4. unset & revert */
+/* ----------------------------- unset & revert */
 .unset,
 .revert {
   font-weight: normal;

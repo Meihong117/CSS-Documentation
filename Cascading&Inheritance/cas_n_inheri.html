@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="cas_n_inheri.css" />
-    <title>Cascading & Inheritance</title>
-  </head>
-  <body>
-    <!-- 1. overall -->
-    <div class="overall">
-      <h2>1. Cascading and Inheritance</h2>
-      <ol>
-        <a href="https://devdocs.io/css/@import"
-          ><li>
-            @import: <br />
-            is used to import style rules from other style sheets.
-            <br />
-            eg: @import 'custom.css'; or @import
-            url("chrome://communicator/skin/")
-          </li></a
-        >
-        <a href=""
-          ><li>all</li>
-          <ol>
-            <a href=""
-              ><li>
-                inherit: the computed value of the property from its parent
-                element
-              </li></a
-            >
-            <a href=""
-              ><li>
-                initial: applies the initial (or default) value of a property to
-                an element
-              </li></a
-            >
-            <a href=""><li>revert</li></a>
-            <a href=""><li>unset</li></a>
-          </ol>
-        </a>
-        <a href=""><li>Cascade</li></a>
-      </ol>
-    </div>
-    <!-- 2. initial -->
-    <div class="initial">
-      <h2>2. Initial</h2>
-      <p class="initial_p">
-        <span>This text is red.</span>
-        <em>This text is in the initial color (typically black).</em>
-        <span>This is red again.</span>
-      </p>
-    </div>
-    <!-- 3.inherit -->
-    <div class="inherit">
-      <h2>3. Inherit</h2>
-      <p class="inherit_p">
-        <span>This text is red.</span>
-        <em>This text is in the initial color (typically black).</em>
-        <span>This is red again.</span>
-      </p>
-    </div>
-    <!-- 4. unset & revert -->
-    <div class="unset_n_revert">
-      <h2>4. Unset & Revert</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="cas_n_inheri.css" />
+  <title>Cascading & Inheritance</title>
+</head>
+
+<body>
+  <!-- 1. overall -->
+  <div class="h1">
+    <h1>Cascading and Inheritance</h1>
+  </div>
+  <div class="overall">
+    <ol>
+      <a href="https://devdocs.io/css/@import">
+        <li>
+          @import: <br />
+          is used to import style rules from other style sheets.
+          <br />
+          eg: @import 'custom.css'; or @import
+          url("chrome://communicator/skin/")
+        </li>
+      </a>
+      <a href="">
+        <li>all</li>
+        <ol>
+          <a href="">
+            <li>
+              inherit: the computed value of the property from its parent
+              element
+            </li>
+          </a>
+          <a href="">
+            <li>
+              initial: applies the initial (or default) value of a property to
+              an element
+            </li>
+          </a>
+          <a href="">
+            <li>revert</li>
+          </a>
+          <a href="">
+            <li>unset</li>
+          </a>
+        </ol>
+      </a>
+      <a href="">
+        <li>Cascade</li>
+      </a>
+    </ol>
+  </div>
+
+  <!-- 2. initial -->
+  <div class="h1">
+    <h1>Initial</h1>
+  </div>
+  <div class="initial">
+    <p class="initial_p">
+      <span>This text is red.</span>
+      <em>This text is in the initial color (typically black).</em>
+      <span>This is red again.</span>
+    </p>
+  </div>
+  <!-- 3.inherit -->
+  <div class="h1">
+    <h1>Inherit</h1>
+  </div>
+  <div class="inherit">
+    <p class="inherit_p">
+      <span>This text is red.</span>
+      <em>This text is in the initial color (typically black).</em>
+      <span>This is red again.</span>
+    </p>
+  </div>
+  <!-- 4. unset & revert -->
+  <div class="h1">
+    <h1>Unset & Revert</h1>
+  </div>
+  <div class="unset_n_revert">
+    <div>
       <h3 class="unset" style="font-weight: unset; color: unset;">
         Unset: This will still have font-weight: normal, but color: black
       </h3>
@@ -73,5 +91,7 @@
         black
       </h3>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
