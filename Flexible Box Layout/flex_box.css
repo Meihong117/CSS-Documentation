@@ -1,7 +1,18 @@
-/* overall */
-ol a {
-  text-decoration: none;
+.h1 {
+  text-align: center;
 }
+.overall a {
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover {
+  color: rgb(10, 159, 245);
+}
+.overall {
+  display: flex;
+  justify-content: center;
+}
+
 /* layout for all of imgs */
 .box-layout,
 .all,
