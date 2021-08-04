@@ -8,8 +8,9 @@
     <title>Filter Effects</title>
   </head>
   <body>
-    <div class="">
-      <h2>Overall</h2>
+    <!-- overall -->
+    <div class="h1"><h1>Overall</h1></div>
+    <div class="overall">
       <ol>
         <a href="https://devdocs.io/css/backdrop-filter"
           ><li>backdrop-filter</li></a
@@ -54,17 +55,16 @@
       </ol>
     </div>
     <!-- 1. backdrop-filter -->
-    <div>
-      <h2>1. backdrop-filter</h2>
-      <div class="filter_container">
-        <div class="filter_box">
-          backdrop-filter: blur(10px)
-        </div>
+    <div class="h1"><h1>backdrop-filter</h1></div>
+    <div class="filter_container" style="margin: 0 auto;">
+      <div class="filter_box">
+        backdrop-filter: blur(10px)
       </div>
     </div>
+   
     <!-- 2. filter -->
+    <div class="h1"><h1>filter</h1></div>
     <div class="filter_all">
-      <h2>2. filter</h2>
       <div class="filter">
         <div class="img_container">
           <div class="content">
@@ -110,10 +110,10 @@
       </div>
     </div>
     <!-- 3. filter-function -->
+    <div class="h1"><h1>Filter Function</h1></div>
     <div class="filter_func">
-      <h2>3. Filter Function</h2>
       <!--  -->
-      <div class="show_here" id="show"></div>
+     <div><div class="show_here" id="show"></div></div> 
       <ul>
         <li>
           <label for="filter-select">Choose a filter function:</label>
@@ -145,7 +145,7 @@
         </li>
       </ul>
     </div>
-    <!-- 3. script -->
+    <!--  script -->
     <script>
       const selectElem = document.querySelector("#filter-select");
       const divElem = document.querySelector("#show");
