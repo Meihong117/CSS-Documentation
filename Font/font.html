@@ -20,11 +20,9 @@
 
 
   <body>
-      <a href="file:///Users/estelle.wu/Desktop/css_html_doc_portpolio/Home/index.html#Home"><button>Back to Home</button></a>
-
-    <!--0 all fonts-->
-    <div class="all_fonts">
-      <a href="https://devdocs.io/css-fonts/"><h2>All Fonts</h2></a>
+    <!--overall-->
+    <div class="h1"><h1>Font Overall</h1></div>
+    <div class="overall">
       <ol>
         <li><a href="https://devdocs.io/css/@font-face">@font-face</a></li>
         <li><a href="https://devdocs.io/css/@font-face/ascent-override">@font-face.ascent-override</a></li>
@@ -40,81 +38,56 @@
         <li><a href="https://devdocs.io/css/@font-face/src">@font-face.src</a></li>
         <li><a href="https://devdocs.io/css/@font-face/unicode-range">@font-face.unicode-range</a></li>
         <li><a href="https://devdocs.io/css/@font-feature-values">@font-feature-values</a></li>
-        <li><a href="https://devdocs.io/css/css_fonts">aCSS Fonts</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://devdocs.io/css/css_fonts">CSS Fonts</a></li>
         <li><a href="https://devdocs.io/css/css_fonts/opentype_fonts_guide">CSS Fonts: OpenType fonts guide</a></li>
         <li><a href="https://devdocs.io/css/css_fonts/variable_fonts_guide">CSS Fonts: Variable Fonts Guide</a></li>
         <li><a href="https://devdocs.io/css/font">font</a></li>
-        <li><a href="https://devdocs.io/css/font-family">font-family</a></li>
-        <li><a href="https://devdocs.io/css/font-feature-settings">font-feature-settings</a></li>
-        <li><a href=""></a>font-kerning</li>
-        <li><a href=""></a>font-language-override</li>
-        <li><a href=""></a>font-optical-sizing</li>
-        <li><a href=""></a>font-size</li>
-        <li><a href=""></a>font-size-adjust</li>
-        <li><a href=""></a>font-stretch</li>
-        <li><a href=""></a>font-style</li>
-        <li><a href=""></a>font-synthesis</li>
-        <li><a href=""></a>font-variant</li>
-        <li><a href=""></a>font-variant-caps</li>
-        <li><a href=""></a>font-variant-east-asian</li>
-        <li><a href=""></a>font-variant-ligatures</li>
-        <li><a href=""></a>font-variant-numeric</li>
-        <li><a href=""></a>font-variant-ligatures</li>
-        <li><a href=""></a>font-variant-position</li>
-        <li><a href="https://devdocs.io/css/font-variation-settings">font-variant-settings</a></li>
-        <li><a href=""></a>font-weight</li>
+        <ul>
+          <li><a href="https://devdocs.io/css/font-family">font-family</a></li>
+          <li><a href="https://devdocs.io/css/font-feature-settings">font-feature-settings</a></li>
+          <li><a href=""></a>font-kerning</li>
+          <li><a href=""></a>font-language-override</li>
+          <li><a href=""></a>font-optical-sizing</li>
+          <li><a href=""></a>font-size</li>
+          <li><a href=""></a>font-size-adjust</li>
+          <li><a href=""></a>font-stretch</li>
+          <li><a href=""></a>font-style</li>
+          <li><a href=""></a>font-synthesis</li>
+          <li><a href=""></a>font-variant</li>
+          <li><a href=""></a>font-variant-caps</li>
+          <li><a href=""></a>font-variant-east-asian</li>
+          <li><a href=""></a>font-variant-ligatures</li>
+          <li><a href=""></a>font-variant-numeric</li>
+          <li><a href=""></a>font-variant-ligatures</li>
+          <li><a href=""></a>font-variant-position</li>
+          <li><a href="https://devdocs.io/css/font-variation-settings">font-variant-settings</a></li>
+          <li><a href=""></a>font-weight</li>
+        </ul>
       </ol>
+        
+     
     </div>
 
 
-    <!--1 intro of font-->
-    <div class="instruction">
-      <p>
-        If <span style="color:blue;font-weight:bold">font</span> is specified as a system keyword, it must be one of: 
-        <ol>
-            <li>caption: The system font used for captioned controls (e.g., buttons, drop-downs, etc.).</li>
-            <li>icon: The system font used to label icons.</li>
-            <li>menu: The system font used in menus (e.g., dropdown menus and menu lists).</li>
-            <li>message-box: The system font used in dialog boxes.</li>
-            <li>small-caption: The system font used for labeling small controls.</li>
-            <li>status-bar: The system font used in window status bars.</li>
-          </ol> 
-      </p>
-      <p>
-        If <span style="color:blue;font-weight:bold">font</span> is specified as a shorthand for several font-related properties,
-        then:<br />
-        it must include values for: 
-        <ol>
-            <li>font-size</li>
-            <li>font-family</li>
-            <li>font-variant</li>
-            <li>font-weight</li>
-            <li>font-strecth</li>
-            <li>font-height</li>
-          </ol> 
-          <ul>
-          <li>font-style, font-variant and font-weight must precede font-size</li>
-          <li>font-variant may only specify the values defined in CSS 2.1, that is normal and small-caps</li>
-          <li>font-stretch may only be a single keyword value.</li>
-          <li>line-height must immediately follow font-size, preceded by "/", like this: "16px/3"</li>
-          <li>font-family must be the last value specified.</li>
-          </ul>
-      </p>
-    </div>
+ 
 
-<!-- @font-face -->
-<div style="margin: 0 20px;"> <code><span style="color: purple;" >@font-face</span> { <br>
-      font-family: "Open Sans"; <br>
-      src: local("Open Sans") format("woff2"), <br>
-           url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); <br>
-      font-variant: small-caps; <br>
-    }</code>
-   
-</div>
+    <!-- @font-face -->
+    <div class="h1"><h1>@font-face</h1></div>
+    <div class="font_face">
+      <div style="margin: 0 20px;"> <code><span style="color: purple;" >@font-face</span> { <br>
+          font-family: "Open Sans"; <br>
+          src: local("Open Sans") format("woff2"), <br>
+              url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); <br>
+          font-variant: small-caps; <br>
+        }</code>
+    </div>
+    </div>
+    
     <!--2 vertical tap font-->
+    <div class="h1"><h1> Font Family</h1></div>
     <div class="vertical_tab_font">
-      <h2 style="color: blueviolet;">1. Font Family</h2>
-
       <div class="vertical_tab">
         <button
           class="tablinks"
@@ -133,8 +106,8 @@
           font-family: Sans-serif;
         </button>
       </div>
-
-      <div id="Cursive" class="tabcontent">
+      <div class="tab_content">
+        <div id="Cursive" class="tabcontent">
         <p style="font-family: Cursive">
           Three hundred years ago<br />
           I thought I might get some sleep<br />
@@ -152,7 +125,7 @@
         </p>
       </div>
 
-      <div id="Serif" class="tabcontent">
+       <div id="Serif" class="tabcontent">
         <p style="font-family: Serif;">
           Three hundred years ago<br />
           I thought I might get some sleep<br />
@@ -169,106 +142,106 @@
           An' my spirit did a midnite creep
         </p>
       </div>
+      </div>
     </div>
 
 
-    <!--3 form of live example of font-->
-    <!-- An HTML 'form' is used to collect user input. The user input is most often sent to a server for processing.  -->
+   
+    <!-- live example -->
+    <div class="h1"><h1>Live Example</h1></div>
     <form action="createShortHand()">
       <!--how to change style -->
     <div class="all_for_font">
-      <h2 style="margin-top: 350px; color: blueviolet;">2. Font of live example.</h2>
-      <!--1: font style-->
-    <div class="live_sample">
-        font-style
-      <br>
-      <input id="font-style-none" type="radio" name="font_style" checked="" value="none" onchange="setCss()">
-      <label for="font-style-none">none</label>
-      <br>
-      <input id="font-style-normal" type="radio" name="font_style"  value="normal" onchange="setCss()">
-      <label for="font-style-normal">normal</label>
-      <br>
-      <input id="font-style-italic" type="radio" name="font_style"  value="italic" onchange="setCss()">
-      <label for="font-style-italic">italic</label>
-      <br>
-      <input id="font-style-oblique" type="radio" name="font_style"  value="oblique" onchange="setCss()">
-      <label for="font-style-oblique">oblique</label>
-      <br>
+        <!--1: font style-->
+        <div class="live_sample">
+            font-style
+          <br>
+          <input id="font-style-none" type="radio" name="font_style" checked="" value="none" onchange="setCss()">
+          <label for="font-style-none">none</label>
+          <br>
+          <input id="font-style-normal" type="radio" name="font_style"  value="normal" onchange="setCss()">
+          <label for="font-style-normal">normal</label>
+          <br>
+          <input id="font-style-italic" type="radio" name="font_style"  value="italic" onchange="setCss()">
+          <label for="font-style-italic">italic</label>
+          <br>
+          <input id="font-style-oblique" type="radio" name="font_style"  value="oblique" onchange="setCss()">
+          <label for="font-style-oblique">oblique</label>
+          <br>
+        </div>
+        <!--2: variant -->
+        <div class="live_sample">
+            font-variant
+          <br>
+          <input id="font-variant-none" type="radio" name="font_variant" checked="" value="none" onchange="setCss()">
+          <label for="font-variant-none">none</label>
+          <br>
+          <input id="font-variant-normal" type="radio" name="font_variant"  value="normal" onchange="setCss()">
+          <label for="font-variant-normal">normal</label>
+          <br>
+          <input id="font-variant-small-caps" type="radio" name="font_variant"  value="small-caps" onchange="setCss()">
+          <label for="font-variant-small-caps">small-caps</label>
+          <br>
+        </div>
+        <!--3: weight-->
+        <div class="live_sample">
+            font-weight
+          <br>
+          <input id="font-weight-none" type="radio" name="font_weight" checked="" value="none" onchange="setCss()">
+          <label for="font-weight-none">none</label>
+          <br>
+          <input id="font-weight-normal" type="radio" name="font_weight"  value="400" onchange="setCss()">
+          <label for="font-weight-normal">normal</label>
+          <br>
+          <input id="font-weight-bold" type="radio" name="font_weight"  value="700" onchange="setCss()">
+          <label for="font-weight-bold">bold</label>
+          <br>
+        </div>
+        <!--4: size-->
+        <div class="live_sample">
+            font-size
+          <br>
+          <input id="font-size-12px" type="radio" name="font_size" checked="" value="12px" onchange="setCss()">
+          <label for="font-size-12px">12px</label>
+          <br>
+          <input id="font-size-16px" type="radio" name="font_size"  value="16px" onchange="setCss()">
+          <label for="font-size-16px">16px</label>
+          <br>
+          <input id="font-size-24px" type="radio" name="font_size"  value="24px" onchange="setCss()">
+          <label for="font-size-24px">24px</label>
+          <br>
+        </div>
+        <!--5: height-->
+        <div class="live_sample">
+            font-height
+          <br>
+          <input id="line-height-none" type="radio" name="line_height" checked="" value="0" onchange="setCss()">
+          <label for="line-height-none">none</label>
+          <br>
+          <input id="line-height-1.2" type="radio" name="line_height"  value="/1.2" onchange="setCss()">
+          <label for="line-height-1.2">1.2</label>
+          <br>
+          <input id="line-height-3" type="radio" name="line_height"  value="/3" onchange="setCss()">
+          <label for="line-height-3">3</label>
+          <br>
+        </div>
+        <!--6: family-->
+        <div class="live_sample fontfamily">
+            font-family
+          <br>
+          <input id="font-family-courier" type="radio" name="font_family" checked="" value="courier" onchange="setCss(5,'courier')">
+          <label for="font-family-courier">courier</label>
+          <br>
+          <input id="font-family-serif" type="radio" name="font_family"  value="serif" onchange="setCss()">
+          <label for="font-family-serif">serif</label>
+          <br>
+          <input id="font-family-sans-serif" type="radio" name="font_family"  value="sans-serif" onchange="setCss()">
+          <label for="font-family-sans-serif">sans-serif</label>
+          <br>
+          <input id="font-family-Arial" type="radio" name="font_family"  value="Arial" onchange="setCss()">
+          <label for="font-family-Arial">Arial</label>
+        </div>
     </div>
-    <!--2: variant -->
-    <div class="live_sample">
-        font-variant
-      <br>
-      <input id="font-variant-none" type="radio" name="font_variant" checked="" value="none" onchange="setCss()">
-      <label for="font-variant-none">none</label>
-      <br>
-      <input id="font-variant-normal" type="radio" name="font_variant"  value="normal" onchange="setCss()">
-      <label for="font-variant-normal">normal</label>
-      <br>
-      <input id="font-variant-small-caps" type="radio" name="font_variant"  value="small-caps" onchange="setCss()">
-      <label for="font-variant-small-caps">small-caps</label>
-      <br>
-    </div>
-    <!--3: weight-->
-    <div class="live_sample">
-        font-weight
-      <br>
-      <input id="font-weight-none" type="radio" name="font_weight" checked="" value="none" onchange="setCss()">
-      <label for="font-weight-none">none</label>
-      <br>
-      <input id="font-weight-normal" type="radio" name="font_weight"  value="400" onchange="setCss()">
-      <label for="font-weight-normal">normal</label>
-      <br>
-      <input id="font-weight-bold" type="radio" name="font_weight"  value="700" onchange="setCss()">
-      <label for="font-weight-bold">bold</label>
-      <br>
-    </div>
-    <!--4: size-->
-    <div class="live_sample">
-        font-size
-      <br>
-      <input id="font-size-12px" type="radio" name="font_size" checked="" value="12px" onchange="setCss()">
-      <label for="font-size-12px">12px</label>
-      <br>
-      <input id="font-size-16px" type="radio" name="font_size"  value="16px" onchange="setCss()">
-      <label for="font-size-16px">16px</label>
-      <br>
-      <input id="font-size-24px" type="radio" name="font_size"  value="24px" onchange="setCss()">
-      <label for="font-size-24px">24px</label>
-      <br>
-    </div>
-    <!--5: height-->
-    <div class="live_sample">
-        font-height
-      <br>
-      <input id="line-height-none" type="radio" name="line_height" checked="" value="0" onchange="setCss()">
-      <label for="line-height-none">none</label>
-      <br>
-      <input id="line-height-1.2" type="radio" name="line_height"  value="/1.2" onchange="setCss()">
-      <label for="line-height-1.2">1.2</label>
-      <br>
-      <input id="line-height-3" type="radio" name="line_height"  value="/3" onchange="setCss()">
-      <label for="line-height-3">3</label>
-      <br>
-    </div>
-    <!--6: family-->
-    <div class="live_sample fontfamily">
-        font-family
-      <br>
-      <input id="font-family-courier" type="radio" name="font_family" checked="" value="courier" onchange="setCss(5,'courier')">
-      <label for="font-family-courier">courier</label>
-      <br>
-      <input id="font-family-serif" type="radio" name="font_family"  value="serif" onchange="setCss()">
-      <label for="font-family-serif">serif</label>
-      <br>
-      <input id="font-family-sans-serif" type="radio" name="font_family"  value="sans-serif" onchange="setCss()">
-      <label for="font-family-sans-serif">sans-serif</label>
-      <br>
-      <input id="font-family-Arial" type="radio" name="font_family"  value="Arial" onchange="setCss()">
-      <label for="font-family-Arial">Arial</label>
-    </div>
-    </div>
-   
     <!-----show------->
     <div class="to_show_the_font" >
       <div class="show_font tar">font: </div>
@@ -322,12 +295,13 @@
       </div>
     </div>
     </form>
+  
     <!--showed text-->
-    <div class="fontShortHand"><h1>This is test text.</h1></div>
+    <div class="fontShortHand" style="color: blue;"><h1>This is test text.</h1></div>
 
 
     <!--4 weight display-->
-    <h2 class="h2_four" style="color: blueviolet;">3. Weight Display</h2>
+    <div class="h1"><h1>Weight Display</h1></div>
     <div class="wrapper" >
       <!--demo1-->
       <div class="demo1">
