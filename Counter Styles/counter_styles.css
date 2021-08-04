@@ -1,6 +1,22 @@
 .h1 {
   text-align: center;
 }
+.overall a {
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover {
+  color: rgb(10, 159, 245);
+}
+.overall,
+.list_style_type,
+.counter,
+.example_reset,
+.counter-sub {
+  display: flex;
+  justify-content: center;
+}
+
 /* all_counter_style */
 .all_counter_style {
   display: flex;
@@ -11,6 +27,7 @@
   width: 200px;
   height: 300px;
   border: 0.1px solid black;
+  margin: 10px;
 }
 .all_counter_style h2 {
   text-align: center;
@@ -143,6 +160,12 @@
 /* counter() */
 .counter-sub {
   counter-reset: section;
+}
+.counter-sub-div {
+  border: 0.5px solid gray;
+}
+.counter-sub-div > * {
+  margin: 20px;
 }
 .counter-sub h1 {
   counter-reset: subsection;
