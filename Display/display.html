@@ -9,57 +9,56 @@
   </head>
   <body>
     <!-- overall -->
+    <div class="h1"><h1>Display Overall</h1></div>
     <div class="overall">
-      <h2>1. Overall</h2>
       <ol>
         <a href="https://devdocs.io/css/display"><li>display</li></a>
         <ul>
           <a href="https://devdocs.io/css/display-box"
             ><li>
-              display-box(property): <code>display: content / none;</code>
+              display-box: <ul><code>display: content / none;</code></ul> 
             </li></a
           >
           <a href="https://devdocs.io/css/display-inside"
             ><li>
-              display-inside(property):
-              <code>display flow-root / table / flex / grid / ruby; </code>
+              display-inside: <ul><code>display: flow-root / table / flex / grid / ruby; </code></ul>
             </li></a
           >
           <a href="https://devdocs.io/css/display-internal"
             ><li>
-              display-internal: like tables(property):
-              <code
+              display-internal: like tables: <ul><code
                 >display: table-row-group / table-header-group /
                 table-footer-group / table-row / table-cell / table-column-group
                 / table-column / table-caption;
-              </code>
+              </code></ul>
+              
             </li></a
           >
           <a href="https://devdocs.io/css/display-legacy"
             ><li>
-              display-legacy(property):
-              <code
+              display-legacy: <ul><code
                 >display: inline-block/ inline-table / inline-flex /
                 inline-grid;</code
-              >
+              ></ul>
+              
             </li></a
           >
           <a href="https://devdocs.io/css/display-listitem"
             ><li>
-              display-listitem(property): <code>display: list-item;</code>
+              display-listitem: <ul><code>display: list-item;</code></ul> 
             </li></a
           >
           <a href="https://devdocs.io/css/display-outside"
             ><li>
-              display-outside(property): <code>display: inline / block;</code>
+              display-outside: <ul><code>display: inline / block;</code></ul> 
             </li></a
           >
         </ul>
       </ol>
     </div>
     <!-- display -->
+    <div class="h1"><h1>Display</h1></div>
     <div class="display">
-      <h2>2. Display</h2>
       <article class="container">
         <span>First</span>
         <span>Second</span>
@@ -73,7 +72,7 @@
       </article>
 
       <div>
-        <label for="display">Choose a display value:</label>
+        <label for="display" style="margin: 0 30px;"> <code>display:</code> </label>
         <select id="display">
           <option selected>block</option>
           <option>inline</option>
@@ -89,9 +88,10 @@
       </div>
     </div>
     <!-- 3. display-box -->
+    <div class="h1"><h1>Display Box</h1></div>
     <div class="display_box">
-      <h2>3. Display Box</h2>
-      <div class="dis_none">
+      <div>
+        <div class="dis_none">
         1.
         <code>display:none;</code>
         <p>Visible text</p>
@@ -103,18 +103,19 @@
         <code>display:contents;</code>
         <div class="inner">Inner div.</div>
       </div>
+      </div>
     </div>
     <!-- 4. display inside -->
+    <div class="h1"><h1>Display Inside: <code>display: flow-root;</code></h1></div>
     <div>
-      <h2>4. Display Inside: <code>display: flow-root;</code></h2>
       <div class="box">
         <div class="float">I am a floated box!</div>
         <p>I am content inside the container.</p>
       </div>
     </div>
     <!-- 5. display internal -->
-    <div>
-      <h2>5. Display Internal: set the property one-by-one, show like table</h2>
+    <div class="h1"><h1>Display Internal: set the property one-by-one, show like table</h1></div>
+    <div class="display_int">
       <main style="display: table;">
         <div class="internal" style="display: table-row;">
           <label for="name">Name</label>
@@ -127,8 +128,8 @@
       </main>
     </div>
     <!-- 6. display legacy -->
-    <div>
-      <h2>6. Display Legacy: <code>display: inline-table;</code></h2>
+    <div class="h1"><h1>Display Legacy: <code>display: inline-table;</code></h1></div>
+    <div class="display_legacy">
       <div style="display: inline-table;">
         <div>Flex Item</div>
         <div>Flex Item</div>
@@ -138,15 +139,12 @@
     <div class="h1"><h1>new two-value syntax of display</h1></div>
     <div class="new_syntax">
       <h1>Two values for display</h1>
-
       <div class="flex flex1">
         <div>block flex1</div>
         <div>block flex2</div>
         <div>block flex3</div>
       </div>
-
       <p>The first example is a block element with flex children.</p>
-
       <div class="flex flex2">
         <div>inline flex1</div>
         <div>inline flex2</div>
@@ -154,7 +152,7 @@
       </div>
       The second example is an inline element with flex children.
     </div>
-    <!-- display -->
+    <!-- script display -->
     <script>
       const articles = document.querySelectorAll(".container");
       const select = document.querySelector("select");

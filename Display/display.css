@@ -1,3 +1,21 @@
+.h1 {
+  text-align: center;
+}
+.overall a {
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover {
+  color: rgb(10, 159, 245);
+}
+.overall,
+.display_box,
+.display_legacy,
+.display_int {
+  display: flex;
+  justify-content: center;
+}
+/*  */
 article {
   background-color: rgb(233, 173, 173);
 }
