@@ -1,3 +1,25 @@
+.h1 {
+  text-align: center;
+}
+.overall a {
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover {
+  color: rgb(10, 159, 245);
+}
+.overall,
+.rect,
+.region_btn,
+.radius_p,
+.clamp_div,
+.scrolling,
+.stroke_div,
+.first_node {
+  display: flex;
+  justify-content: center;
+}
+
 /* 1. rect */
 #rect_container {
   width: 267px;
@@ -70,7 +92,7 @@
   top: 600px;
 }
 .overflow_scrolling p {
-  width: 100%;
+  width: 400px;
   background: #f5f9fa;
   border: 2px solid #eaf2f4;
   padding: 10px;
