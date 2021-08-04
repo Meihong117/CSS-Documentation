@@ -26,6 +26,9 @@ table {
   width: 30%;
   margin: 20px;
 }
+th {
+  background-color: antiquewhite;
+}
 td,
 th {
   border: 1px solid #dddddd;

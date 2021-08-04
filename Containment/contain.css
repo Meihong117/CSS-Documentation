@@ -1,4 +1,23 @@
-/* 2. */
+.h1 {
+  text-align: center;
+}
+.overall a {
+  text-decoration: none;
+  color: black;
+}
+.overall a:hover {
+  color: rgb(10, 159, 245);
+}
+.overall {
+  display: flex;
+  justify-content: center;
+}
+/* contain */
+.contain {
+  width: 500px;
+  margin: 0 auto;
+  background-color: azure;
+}
 .contain_img {
   width: 100px;
   height: 100px;
@@ -10,11 +29,10 @@ article {
   border: 1px solid black;
   contain: content; /*put all inside of the <article>*/
 }
-/*3 */
+article > * {
+  margin: 20px;
+}
+/* content visibility */
 .content_visibility {
   /* content-visibility: hidden; */
-}
-/* 4. */
-.contain_article {
-  contain: strict style;
 }

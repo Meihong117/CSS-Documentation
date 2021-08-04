@@ -9,36 +9,44 @@
   </head>
   <body>
     <!-- overall -->
-    <div>
-      <h2>1. Containment</h2>
+    <div class="h1"><h1>Containment</h1></div>
+    <div class="overall">
       <ol>
+        <a href="https://devdocs.io/css/css_containment"
+          ><li>CSS Containment</li></a
+        >
         <a href="https://devdocs.io/css/contain"><li>contain</li></a>
         <a href="https://devdocs.io/css/content-visibility"
           ><li>content-visibility</li></a
         >
-        <a href="https://devdocs.io/css/css_containment"
-          ><li>CSS Containment</li></a
-        >
       </ol>
     </div>
-    <!-- 2. Contain -->
+    <!-- Contain -->
+    <div class="h1"><h1>Contain</h1></div>
     <div class="contain">
-      <h2>2. Contain</h2>
-      <h1>My blog</h1>
-      <article>
+      <div>
+       <div class="h1"><h1>My blog</h1></div> 
+      <article style="border-bottom: none;">
         <h2>Heading of a nice article</h2>
-        <p>Content here.</p>
+        <p><code>contain: content;</code></p>
+        <p><code>contain: layout;</code></p>
+        <p><code>contain: paint;</code></p>
+        <p><code>contain: size;</code></p>
+        <p><code>contain: style;</code></p>
+        <p><code>contain: strict;</code></p>
+        <p><code>contain: strict style;;</code></p>
         <img src="city.jpg" alt="social" class="contain_img" />
       </article>
       <article>
         <h2>Another heading of another article</h2>
         <img src="love.jpg" alt="photo" class="contain_img" />
-        <p>More content here.</p>
+        <p><code>contain: content;</code></p>
       </article>
+      </div>
     </div>
-    <!-- 3. content visibility -->
+    <!-- content visibility -->
+    <div class="h1"><h1>Content Visibility</h1></div>
     <div>
-      <h2>3. Content Visibility</h2>
       <p class="content_visibility">
         The content-visibility CSS property controls whether or not an element
         renders its contents at all, along with forcing a strong set of
@@ -49,18 +57,6 @@
         faster.
       </p>
     </div>
-    <!-- 4.  -->
-    <div>
-      <h2>4. Containment</h2>
-      <h1>My blog</h1>
-      <article class="contain_article">
-        <h2>Heading of a nice article</h2>
-        <p>Content here.</p>
-      </article>
-      <article class="contain_article">
-        <h2>Another heading of another article</h2>
-        <p>More content here.</p>
-      </article>
-    </div>
+  
   </body>
 </html>
