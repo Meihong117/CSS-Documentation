@@ -21,6 +21,10 @@
   height: 170px;
   margin: 10px;
 }
+.card img:hover {
+  scale: 1.2;
+  transition: all 0.2s ease-in-out;
+}
 
 .card p {
   display: block;
