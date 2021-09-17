@@ -167,3 +167,36 @@
   background-color: #ddf;
   text-align: center;
 }
+
+/* position */
+.parent-color {
+  background-color: #090;
+  height: 150px;
+}
+.bg-color1 {
+  background-color: yellow;
+}
+.bg-color2 {
+  background-color: tomato;
+}
+.bg-color3 {
+  background-color: wheat;
+}
+
+/* relative */
+.position-child-one {
+  position: relative;
+  left: 20px;
+}
+.position-child {
+  margin: 10px;
+}
+
+/* absolute */
+.position-parent2 {
+  position: relative; /* try to delect that  */
+}
+.position-child-five {
+  position: absolute;
+  top: 0;
+}
