@@ -1,3 +1,3 @@
 # CSS-Documentation
 
-Start with 'Home Page'.
+Start from 'Home Page'.
