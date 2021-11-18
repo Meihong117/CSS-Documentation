@@ -91,18 +91,18 @@
       <div class="vertical_tab">
         <button
           class="tablinks"
-          onclick="openCity(event, 'Cursive')"
+          onclick="openFont(event, 'Cursive')"
           id="defaultOpen"
         >
           font-family: Cursive;
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Fantasy')">
+        <button class="tablinks" onclick="openFont(event, 'Fantasy')">
           font-family: Fantasy;
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Serif')">
+        <button class="tablinks" onclick="openFont(event, 'Serif')">
           font-family: Serif;
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Sans-serif')">
+        <button class="tablinks" onclick="openFont(event, 'Sans-serif')">
           font-family: Sans-serif;
         </button>
       </div>
@@ -375,7 +375,7 @@
 
 <!--------------------------------script for 2. vertical tap font-->
     <script>
-      function openCity(evt, fontName) {
+      function openFont(evt, fontName) {
         let tabcontent = document.getElementsByClassName("tabcontent");
         let tablinks = document.getElementsByClassName("tablinks");
         //no then display

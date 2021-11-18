@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- overall -->
-    <div class="h1"><h1>Overall</h1></div>
+    <div class="h1"><h1>Grid Layout Overall</h1></div>
     <div class="overall">
       <ol>
         <a href="https://devdocs.io/css/css_grid_layout"
@@ -559,7 +559,6 @@
         let dense = document.getElementById("dense");
         let gridAutoFlow = direction.value === "row" ? "row" : "column";
         if (dense.checked) {
-          // 注意dense前面空格
           gridAutoFlow += " dense";
         }
         flow.style.gridAutoFlow = gridAutoFlow;
