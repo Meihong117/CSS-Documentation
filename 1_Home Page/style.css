@@ -20,6 +20,7 @@
   width: 250px;
   height: 170px;
   margin: 10px;
+  border-radius: 2px;
 }
 .card img:hover {
   scale: 1.1;
