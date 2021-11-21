@@ -1,21 +1,22 @@
-.h1{
+.h1 {
   text-align: center;
 }
-.background_n_border a{
+.background_n_border a {
   text-decoration: none;
   color: black;
 }
-.background_n_border a:hover{
+.background_n_border a:hover {
   color: rgb(10, 159, 245);
 }
-.background_n_border{
+.background_n_border {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.background_overall, 
-.border,.back_n_bor,
-.border_n_outline{
+.background_overall,
+.border,
+.back_n_bor,
+.border_n_outline {
   margin: 0 30px;
 }
 /* ------------------- border vs outline */
@@ -31,7 +32,7 @@
   background: bisque;
 }
 /* ------------------------------------------------ background_scroll */
-.background_scroll{
+.background_scroll {
   display: flex;
   justify-content: center;
 }
@@ -41,7 +42,9 @@
   /* background-repeat: no-repeat, repeat-y; */
   overflow: auto;
 }
-
+/* .background_scroll p::before {
+  content: "  ";
+} */
 /* ------------------------------------------------ Accordian */
 .accordion {
   background-color: #eee;
@@ -60,7 +63,7 @@
 .accordion:hover {
   background-color: #ccc;
 }
-.Accordion_ex button{
+.Accordion_ex button {
   width: 300px;
 }
 
