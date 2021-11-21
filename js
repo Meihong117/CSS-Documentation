@@ -1,14 +1,5 @@
-<div class="box"></div>
-
-document.querySelector("ul"); ----------> <ul id="before" class="before_ex_ul">
-document.querySelector(".box")----------> <div class="box">
-same as
-document.getElementById("before");------> <ul id="before" class="before_ex_ul">
-
-document.getElementsByClassName("ul"); -> HTMLCollection { length: 0 }
 
 
-------------------------------------------------------------------------------------------------------
 **Chnage/Add/Replace ClassName:
 
 let dots = document.getElementsByClassName("demo");
