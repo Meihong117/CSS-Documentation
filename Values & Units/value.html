@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="value.css" />
+    <link rel="stylesheet" href="../style.css">
     <title>Values & Units</title>
   </head>
   <body>
     <!-- overall -->
-    <div class="h1"><h1>Values & Units Overall</h1></div>
-    <div>
+    <div class="h1"><h1>Values & Units</h1></div>
+    <div class="overall">
       <ol>
         <a href=""
           ><li>
@@ -68,15 +69,18 @@
     </div>
     <!-- <resolution> -->
     <div class="h1"><h1>< resolution ></h1></div>
-    <div>
-      <h3>
-        Units(1 inch is 2.54 cm):
-      </h3>
-      <h4>
-        dpi(1dpi ≈ 0.39dpcm) <br />dppx(1dpcm ≈ 2.54dpi) <br />dppx(1dppx =
-        96dpi) <br />x
-      </h4>
+    <div class="resolution">
+      <div>
+        <h3>
+          Units(1 inch is 2.54 cm):
+        </h3>
+        <h4>
+          dpi(1dpi ≈ 0.39dpcm) <br />dppx(1dpcm ≈ 2.54dpi) <br />dppx(1dppx =
+          96dpi) <br />x
+        </h4>
+      </div>
     </div>
+    
     <!-- angle-percentage-->
     <div class="h1"><h1>angle-percentage</h1></div>
 
@@ -94,13 +98,15 @@
       <h1>
         calc(expression)
       </h1>
-      <div>
-        <form>
+      <div class="calc">
+        <div >
+          <form>
           <div id="formbox">
             <label>Type something:</label>
             <input type="text" />
           </div>
         </form>
+        </div>
       </div>
     </div>
     <!-- clamp(MIN, VAL, MAX) -->

@@ -1,5 +1,9 @@
-.h1 {
-  text-align: center;
+.list {
+  display: flex;
+  justify-content: center;
+}
+.list div {
+  margin: 0 30px;
 }
 /* ----------------------------- whole box */
 .all-container {
