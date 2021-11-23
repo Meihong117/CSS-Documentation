@@ -1,9 +1,6 @@
-.h1 {
-  text-align: center;
-}
 /*  */
 .overscroll-behavior-block main {
-  height: 3000px;
+  height: 1000px;
   width: 500px;
   background-color: white;
   background-image: repeating-linear-gradient(

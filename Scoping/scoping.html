@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="scoping.css" />
+    <link rel="stylesheet" href="../style.css">
     <title>Scoping</title>
   </head>
   <body>
     <!--  -->
-    <div class="h1"><h1></h1></div>
-    <div>
+    <div class="h1"><h1>Scoping</h1></div>
+    <div class="overall">
       <ol>
         <a href="https://devdocs.io/css/::slotted"><li>::slotted</li></a>
         <a href=""><li>:host</li></a>
@@ -20,7 +21,8 @@
     </div>
     <!-- ::slotted -->
     <div class="h1"><h1>::slotted</h1></div>
-    <div>
+    <div class="overall">
+      <div>
       <code>::slotted(span) { font-weight: bold; }</code>
       <person-details>
         <p slot="person-name">Dr. Shazaam</p>
@@ -28,18 +30,29 @@
         <span slot="person-occupation">Superhero</span>
       </person-details>
     </div>
+    </div>
+    
     <!-- :host -->
     <div class="h1"><h1>:host | :host() | hostcontext()</h1></div>
-    <h1>
+   
+      <h1>
       Host selectors <a href="#"><context-span>example</context-span></a>
-    </h1>
+    
+    </div>
+    
 
     <!-- :scope -->
     <div class="h1"><h1>:scope</h1></div>
-    <p id="para">
-      This is a paragraph. It is not an interesting paragraph. Sorry about that.
-    </p>
-    <p id="output"></p>
+    <div class="overall">
+      <div>
+        <p id="para">
+          This is a paragraph. It is not an interesting paragraph. Sorry about that.
+        </p>
+        <p id="output"></p>
+      </div>
+      
+    </div>
+    
     <!--------------------------------script -->
     <!-- ::slotted  -->
     <script>

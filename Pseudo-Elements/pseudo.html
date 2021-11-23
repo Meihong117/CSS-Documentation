@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="pseudo.css" />
+    <link rel="stylesheet" href="../style.css">
     <title>Pseudo-Elements</title>
   </head>
   <body>
     <!-- Pseudo-Elements -->
     <div class="h1"><h1>Pseudo-Elements</h1></div>
-    <div>
+    <div class="overall">
       <ol>
         <a href=""><li>::cue</li></a>
         <a href=""><li>::cue-region</li></a>
@@ -24,14 +25,14 @@
     </div>
     <!-- ::cue -->
     <div class="h1"><h1>::cue</h1></div>
-    <div>
+    <div class="overall">
       <video controls autoplay src="video.webm">
         <track default src="track.vtt" />
       </video>
     </div>
     <!-- ::file-selector-button -->
     <div class="h1"><h1>::file-selector-button</h1></div>
-    <div>
+    <div class="overall">
       <form>
         <label for="fileUpload">Upload file</label>
         <input type="file" id="fileUpload" />
@@ -39,14 +40,17 @@
     </div>
     <!-- ::placeholder -->
     <div class="h1"><h1>::placeholder</h1></div>
-    <div>
+    <div class="overall">
       <input placeholder="Type here..." />
     </div>
     <!-- ::selection -->
     <div class="h1"><h1>::selection</h1></div>
-    <div class="selection">
-      Highlight me to see different.
-      <p>Also try selecting text in this paragraph.</p>
+    <div class="overall">
+      <div class="selection">
+        Highlight me to see different.
+        <p>Also try selecting text in this paragraph.</p>
+      </div>
     </div>
+    
   </body>
 </html>
