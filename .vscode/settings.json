@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c7990c7a-7b83-436b-a234-ca0b5970ed6e/resourceGroups/html/providers/Microsoft.Web/sites/css-documentations",
+    "appService.deploySubpath": "."
+}
